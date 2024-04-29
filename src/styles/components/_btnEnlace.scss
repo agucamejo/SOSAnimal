@@ -1,0 +1,40 @@
+.btn-link {
+    color: $label-btn-primary;
+    border:none;
+    background: none;
+    font-weight: $semibold;
+    padding: 4px 10px;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    //DESKTOP
+    @media screen and (min-width: $desktop) {
+        font-size: 22px; 
+    }
+
+    //TABLET
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        font-size: 22px; 
+    }
+
+    //MOBILE
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+    }
+}
+
+.link-arrow-container{
+    background-color: $primary-400;
+    border-radius: $radius-round;
+    width: 24px;
+    height: 24px;
+    justify-self: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

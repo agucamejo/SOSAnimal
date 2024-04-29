@@ -1,0 +1,99 @@
+//BREAKPOINTS
+$max: 1440px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 360px;
+
+//FONT-WEIGHT
+$extrabold: 800;
+$bold: 700;
+$semibold: 600;
+$regular: 400;
+
+//DESKTOP
+@media screen and (min-width: $desktop) {
+    h1 {
+      font-size: 56px;
+      font-weight: $extrabold;
+      line-height: 52px;
+    }
+    h2 {
+      font-size: 46px;
+      font-weight: $bold;
+      line-height: 50px;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: $semibold;
+      line-height: 48px;
+    }
+    h4 {
+      font-size: 32px;
+      font-weight: $semibold;
+      line-height: 38px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: $regular;
+      line-height: 19px;
+    }
+  }
+  
+  //TABLET
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    h1 {
+      font-size: 44px;
+      font-weight: $extrabold;
+      line-height: 46px;
+    }  
+    h2 {
+      font-size: 40px;
+      font-weight: $bold;
+      line-height: 36px;
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: $semibold;
+      line-height: 38px;
+    }
+    h4 {
+      font-size: 28px;
+      font-weight: $semibold;
+      line-height: 34px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: $regular;
+      line-height: 19px;
+    }
+  }
+  
+  //MOBILE
+  @media screen and (max-width: $tablet) {
+    h1 {
+      font-size: 36px;
+      font-weight: $extrabold;
+      line-height: 42px;
+    }  
+    h2 {
+      font-size: 32px;
+      font-weight: $bold;
+      line-height: 33px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: $semibold;
+      line-height: 34px;
+    }
+    h4 {
+      font-size: 22px;
+      font-weight: $semibold;
+      line-height: 22px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: $regular;
+      line-height: 19px;
+    }
+  }
+  

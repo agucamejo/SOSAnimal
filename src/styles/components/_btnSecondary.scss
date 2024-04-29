@@ -1,0 +1,29 @@
+$bg-arrow-container: #22D695;
+
+.btn-secondary {
+    color: $neutrals-1000;
+    border-radius: $radius-round;
+    font-weight: $bold;
+    padding: 14px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: $secondary-400;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+
+    //DESKTOP
+    @media screen and (min-width: $desktop) {
+        font-size: 18px; 
+    }
+
+    //TABLET
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        font-size: 18px; 
+    }
+
+    //MOBILE
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+    }
+}
