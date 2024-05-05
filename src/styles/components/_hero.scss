@@ -1,13 +1,136 @@
-.sos-hero {
-  img {
-    height: 260px;
-    width: 677px;
+.hero-section {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    justify-content: space-around;
   }
-}
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
 
-.dog-hero {
-  img {
-    height: 382px;
-    width: 511px;
+  .hero-sos1 {
+    .sos-hero-img1 {
+      display: none;
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        display: none;
+      }
+
+      @media screen and (max-width: $tablet) {
+        height: 144px;
+        width: 375px;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+  .hero-description {
+    margin-top: 120px;
+    margin-left: 100px;
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+      margin-top: 130px;
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .icon-hero {
+      height: 45px;
+      width: 75px;
+      margin-bottom: 14px;
+      margin-left: 6px;
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        height: 32px;
+        width: 54px;
+      }
+      @media screen and (max-width: $tablet) {
+        height: 28px;
+        width: 48px;
+        position: absolute;
+        margin-top: -40px;
+      }
+    }
+    h2 {
+      .new-line {
+        display: block;
+        font-family: 'mountriel-regular';
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        margin-bottom: 35px;
+        letter-spacing: 2px;
+        font-size: 70px;
+      }
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      font-family: 'Lato';
+      margin-bottom: 16px;
+      width: 330px;
+    }
+  }
+  .sos-dog {
+    .hero-sos {
+      position: relative;
+      z-index: 1;
+      width: 920px;
+      overflow: hidden;
+      margin-left: 10px;
+      .sos-hero-img {
+        height: 360px;
+        width: 970px;
+        margin-top: 90px;
+        @media screen and (max-width: $desktop) and (min-width: $tablet) {
+          height: 190px;
+          width: 450px;
+        }
+
+        @media screen and (max-width: $tablet) {
+          height: 144px;
+          width: 375px;
+          margin-top: 10px;
+          display: none;
+        }
+      }
+    }
+    .hero-dog {
+      position: relative;
+      z-index: 2;
+
+      @media screen and (max-width: $tablet) {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .dog-hero-img {
+        height: 382px;
+        width: 500px;
+        position: relative;
+        z-index: 1;
+        margin-top: -110px;
+        margin-left: 100px;
+
+        @media screen and (max-width: $desktop) and (min-width: $tablet) {
+          height: 240px;
+          width: 338px;
+          margin-top: -60px;
+          margin-left: 26px;
+        }
+
+        @media screen and (max-width: $tablet) {
+          height: 180px;
+          width: 246px;
+          margin-top: 20px;
+        }
+      }
+    }
   }
 }
