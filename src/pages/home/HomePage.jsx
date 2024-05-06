@@ -3,7 +3,7 @@ import Collaborations from '../../components/home/Collaborations';
 const Home = () => {
   return (
     <>
-      <Collaborations />
+      <Hero />
     </>
   );
 };
