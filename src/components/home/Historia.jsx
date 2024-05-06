@@ -86,9 +86,8 @@ function Historia() {
   }
   return (
     <section className="contentHistoria">
-      <Subtitles className="dogs" />
       <article className="contentTitles">
-        <h2 className="titleHistoria">Historias de adopción</h2>
+        <Subtitles text='Historias de adopción'/>
         <p className="subtitle">
           Estos valientes animales demuestran que el amor puede cambiar vidas al
           encontrar una familia cariñosa.

@@ -30,7 +30,7 @@ const Testimonials = () => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
       setIsPrev(false);
-    }, 2000); // Adjust the timeout as needed
+    }, 1000); 
   };
 
   const handleNext = () => {
@@ -39,7 +39,7 @@ const Testimonials = () => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
       setIsNext(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
