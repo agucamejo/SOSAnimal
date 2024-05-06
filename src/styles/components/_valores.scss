@@ -24,10 +24,11 @@ $mobile-height-banner3: 127px;
 
 .valores {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 40px 0;
 
     .banner {
         width: 100%;
