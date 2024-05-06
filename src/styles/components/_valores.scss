@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); // _valores.scss
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+$desktop-width-banner1: 904px;
+$desktop-height-banner1: 334px;
+$tablet-width-banner1: 688px;
+$tablet-height-banner1: 254px;
+$mobile-width-banner1: 359px;
+$mobile-height-banner1: 255px;
+
+$desktop-width-banner2: 442px;
+$desktop-height-banner2: 166px;
+$tablet-width-banner2: 334px;
+$tablet-height-banner2: 127px;
+$mobile-width-banner2: 359px;
+$mobile-height-banner2: 127px;
+
+$desktop-width-banner3: 442px;
+$desktop-height-banner3: 166px;
+$tablet-width-banner3: 334px;
+$tablet-height-banner3: 127px;
+$mobile-width-banner3: 359px;
+$mobile-height-banner3: 127px;
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .banner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -40px;
+        margin-top: 60px;
+    }
+
+    .banner-1 {
+        width: $desktop-width-banner1;
+        height: $desktop-height-banner1;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-1;
+        position: relative;
+        background-color: #27CA68;
+
+        .h2-left {
+            font-size: 200px;
+            color: #ffffff;
+            position: absolute;
+            top: 35%;
+            left: 35px;
+            transform: translateY(-50%);
+            font-family: Inter;
+        }
+
+        .p-right {
+            font-size: 32px;
+            color: #ffffff;
+            position: absolute;
+            top: 40%;
+            right: 40px;
+            transform: translateY(-50%);
+            white-space: pre-wrap;
+            line-height: 1.1;
+            font-family: Inter;
+        }   
+
+        .img{
+            position:absolute;
+            z-index: 3;
+            left: 30%;
+            bottom: 0%;   
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: $tablet-height-banner1;
+            width: $tablet-width-banner1;
+            background-position-y: 83px;
+            background-position-x: 220px;
+            background-size: 40%;
+            margin-bottom: -20px;
+            margin-top: 20px;
+            position: relative;
+
+            .h2-left {
+                font-size: 144px;
+                color: #ffffff;
+                position: absolute;
+                top: 35%;
+                left: 35px;
+                transform: translateY(-50%);
+                font-family: Inter;
+            }
+
+            .p-right {
+                font-size: 24px;
+                color: #ffffff;
+                position: absolute;
+                top: 40%;
+                right: 55px;
+                transform: translateY(-50%);
+                white-space: pre-wrap;
+                line-height: 1.1;
+                font-family: Inter;
+            }
+
+            .img{
+                position:absolute;
+                z-index: 3;
+                left: 30%;
+                bottom: 0%;  
+                width: 270px;
+            }
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            height: $mobile-height-banner1;
+            width: $mobile-width-banner1;
+            background-position-y: 68px;
+            background-position-x: 162px;
+            background-size: 55%;
+            margin-bottom: -20px;
+            margin-top: 20px;
+
+            .h2-left {
+                font-size: 100px;
+                color: #ffffff;
+                position: relative;
+                top: 75%;
+                left: 20px;
+                transform: translateY(-50%);
+                font-family: Inter;
+            }
+
+            .p-right {
+                font-size: 24px;
+                color: #ffffff;
+                position: absolute;
+                top: 70%;
+                right: 42%;
+                transform: translateY(-50%);
+                white-space: pre-wrap;
+                line-height: 1.1;
+                font-family: Inter;
+            }
+
+            .img{
+
+                position:absolute;
+                z-index: 3;
+                left: 50%;
+                bottom: 0%;   
+                width: 180px;
+                border-radius: $radius-lg;
+                content: url('/img-perro-big-mobile.png');
+            }
+
+        }
+    }
+
+    .banners-row {
+        justify-content: center;
+        gap: 20px;
+        display: flex;
+
+        @media screen and (max-width: $tablet) {
+            display: flex;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            display: block;
+
+        }
+
+    }
+
+    .banner-2 {
+        width: $desktop-width-banner2;
+        height: $desktop-height-banner2;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-1;
+        position: relative;
+        padding: 20px;
+        background-image: url('/small-dog.png');
+        background-color: #F4B43F;
+        background-repeat: no-repeat;
+        background-position-y: 0px;
+        background-position-x: 180px;
+
+        .h2-left {
+            font-size: 56px;
+            color: #ffffff;
+            position: absolute;
+            top: 15%;
+            font-family: Inter;
+            transform: translateY(0%)
+        }
+
+        .p-left {
+            font-size: 24px;
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            font-family: Inter;
+            white-space: pre-wrap;
+            line-height: 1.2;
+            transform: translateY(0%)
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: $tablet-height-banner2;
+            width: $tablet-width-banner2;
+            background-position-y: 0px;
+            background-position-x: 130px;
+            background-size: 62%;
+            margin-top: 6%;
+
+            .h2-left {
+                font-size: 42px;
+                color: #ffffff;
+                position: absolute;
+                top: 40px;
+                left: 25px;
+                transform: translateY(-50%);
+                font-family: Inter;
+            }
+
+            .p-left {
+                font-size: 18px;
+                color: #ffffff;
+                position: absolute;
+                top: 65px;
+                right: 200px;
+                transform: translateY(0%);
+                white-space: pre-wrap;
+                line-height: 1.3;
+                font-family: Inter;
+            }
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            height: $mobile-height-banner2;
+            width: $mobile-width-banner2;
+            margin-top: 30px;
+        }
+
+        .p-left {
+            left: 5%;
+        }
+    }
+
+    .banner-3 {
+        width: $desktop-width-banner3;
+        height: $desktop-height-banner3;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-1;
+        position: relative;
+        background-image: url('/small-cat.png');
+        background-color: #00A0BA;
+        background-repeat: no-repeat;
+        background-position-y: 0px;
+        background-position-x: 135px;
+
+        .h2-left {
+            font-size: 56px;
+            color: #ffffff;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            font-family: Inter;
+            transform: translateY(0%)
+        }
+
+        .p-left {
+            font-size: 24px;
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            font-family: Inter;
+            white-space: pre-wrap;
+            line-height: 1.2;
+            transform: translateY(0%)
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: $tablet-height-banner3;
+            width: $tablet-width-banner3;
+            background-position-y: 0px;
+            background-position-x: 110px;
+            background-size: 72%;
+            margin-top: 6%;
+
+            .h2-left {
+                font-size: 42px;
+                color: #ffffff;
+                position: absolute;
+                top: 40px;
+                left: 25px;
+                transform: translateY(-50%);
+                font-family: Inter;
+            }
+
+            .p-left {
+                font-size: 18px;
+                color: #ffffff;
+                position: absolute;
+                top: 65px;
+                right: 210px;
+                transform: translateY(0%);
+                white-space: pre-wrap;
+                line-height: 1.3;
+                font-family: Inter;
+            }
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            height: $mobile-height-banner3;
+            width: $mobile-width-banner3;
+
+            margin-top: 50px;
+        }
+    }
+
+}
