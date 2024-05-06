@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/HomePage';
 import About from './pages/about/AboutPage';
 import Adoptions from './pages/adoptions/AdoptionPage';
@@ -15,8 +15,8 @@ function App() {
         <Route path="/adoptions" element={<Adoptions />} />
         <Route path="/colaborations" element={<Colaborations />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path= "*" element={<Error />} />
-      </Routes>  
+        <Route path="*" element={<Error />} />
+      </Routes>
     </BrowserRouter>
   );
 }
