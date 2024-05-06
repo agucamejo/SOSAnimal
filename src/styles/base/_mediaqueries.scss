@@ -4,12 +4,6 @@ $desktop: 1024px;
 $tablet: 768px;
 $mobile: 360px;
 
-//FONT-WEIGHT
-$extrabold: 800;
-$bold: 700;
-$semibold: 600;
-$regular: 400;
-
 //DESKTOP
 @media screen and (min-width: $desktop) {
     h1 {
