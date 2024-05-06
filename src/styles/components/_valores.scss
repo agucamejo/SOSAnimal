@@ -28,7 +28,7 @@ $mobile-height-banner3: 127px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px 0;
+    margin: 60px 0;
 
     .banner {
         width: 100%;
@@ -75,7 +75,7 @@ $mobile-height-banner3: 127px;
             bottom: 0%;   
         }
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $desktop) {
             height: $tablet-height-banner1;
             width: $tablet-width-banner1;
             background-position-y: 83px;
@@ -117,7 +117,7 @@ $mobile-height-banner3: 127px;
 
         }
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             height: $mobile-height-banner1;
             width: $mobile-width-banner1;
             background-position-y: 68px;
@@ -167,12 +167,12 @@ $mobile-height-banner3: 127px;
         gap: 20px;
         display: flex;
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $desktop) {
             display: flex;
 
         }
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             display: block;
 
         }
@@ -212,7 +212,7 @@ $mobile-height-banner3: 127px;
             transform: translateY(0%)
         }
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $desktop) {
             height: $tablet-height-banner2;
             width: $tablet-width-banner2;
             background-position-y: 0px;
@@ -244,7 +244,7 @@ $mobile-height-banner3: 127px;
 
         }
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             height: $mobile-height-banner2;
             width: $mobile-width-banner2;
             margin-top: 30px;
@@ -289,7 +289,7 @@ $mobile-height-banner3: 127px;
             transform: translateY(0%)
         }
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $desktop) {
             height: $tablet-height-banner3;
             width: $tablet-width-banner3;
             background-position-y: 0px;
@@ -321,7 +321,7 @@ $mobile-height-banner3: 127px;
 
         }
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             height: $mobile-height-banner3;
             width: $mobile-width-banner3;
 
