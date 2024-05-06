@@ -12,14 +12,14 @@ function Info() {
         <hr className="line" />
       </article>
       <img
-        src="src/assets/infoImg/fondo.svg"
+        src="./infoImg/fondo.svg"
         alt="Hombre dandole un beso a su perro en brazos"
         className="imgFondo"
       />
       <article className="contentCards">
         <section className="card">
           <img
-            src="src/assets/infoImg/perroYHumano.svg"
+            src="./infoImg/perroYHumano.svg"
             alt="Perro y Humano"
             className="img"
           />
@@ -31,7 +31,7 @@ function Info() {
         </section>
         <section className="card">
           <img
-            src="src/assets/infoImg/huella.svg"
+            src="./infoImg/huella.svg"
             alt="Huella"
             className="img"
           />
@@ -43,7 +43,7 @@ function Info() {
         </section>
         <section className="card">
           <img
-            src="src/assets/infoImg/chacho.svg"
+            src="./infoImg/chacho.svg"
             alt="Alcancia con forma de chancho"
             className="img"
           />
@@ -55,7 +55,7 @@ function Info() {
         </section>
         <section className="card">
           <img
-            src="src/assets/infoImg/presentacion.svg"
+            src="./infoImg/presentacion.svg"
             alt="Persona haciendo una presentación"
             className="img"
           />
@@ -70,4 +70,4 @@ function Info() {
   )
 }
 
-export default Info
+export default Info;

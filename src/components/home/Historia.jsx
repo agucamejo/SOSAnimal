@@ -104,7 +104,7 @@ function Historia() {
             <h3 className="titleCard">Marea</h3>
             <button className="btn">9 años</button>
             <img
-              src="src/assets/historiaImg/Marea.png"
+              src="./historiaImg/Marea.png"
               alt=""
               className="imgMax"
             />
@@ -159,7 +159,7 @@ function Historia() {
             <h3 className="titleCard">Salvador</h3>
             <button className="btn">3 años</button>
             <img
-              src="src/assets/historiaImg/Salvador.png"
+              src="./historiaImg/Salvador.png"
               alt=""
               className="imgMin"
             />
@@ -227,7 +227,7 @@ function Historia() {
             <h3 className="titleCard">Chabela</h3>
             <button className="btn">13 años</button>
             <img
-              src="src/assets/historiaImg/Chabela.png"
+              src="./historiaImg/Chabela.png"
               alt=""
               className="imgMax"
             />
@@ -280,7 +280,7 @@ function Historia() {
             <h3 className="titleCard">Titan</h3>
             <button className="btn">3 años</button>
             <img
-              src="src/assets/historiaImg/Titan.png"
+              src="./historiaImg/Titan.png"
               alt=""
               className="imgMin"
             />
@@ -336,7 +336,7 @@ function Historia() {
             <h3 className="titleCard">Beethoven</h3>
             <button className="btn">4 años</button>
             <img
-              src="src/assets/historiaImg/Beethoven.png"
+              src="./historiaImg/Beethoven.png"
               alt=""
               className="imgMax"
             />
@@ -391,7 +391,7 @@ function Historia() {
             <h3 className="titleCard">Ramona</h3>
             <button className="btn">3 años</button>
             <img
-              src="src/assets/historiaImg/Ramona.png"
+              src="./historiaImg/Ramona.png"
               alt=""
               className="imgMin"
             />
@@ -446,4 +446,4 @@ function Historia() {
   )
 }
 
-export default Historia
+export default Historia;
