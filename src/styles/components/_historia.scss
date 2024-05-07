@@ -41,21 +41,31 @@
     width: 688px;
   }
 
+  @media screen and (max-width: 700px) {
+    max-width: 500px;
+    height: auto;
+  }
+
   @media screen and (max-width: 425px) {
     width: 375px;
-    display: flex;
+    height: auto;
     align-items: center;
     gap: 10px;
   }
 }
 
 .container {
-  // background-color: #e4e3df;
   display: flex;
   gap: 20px;
 
   @media screen and (max-width: $tablet) {
     width: 688px;
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
   }
 
   @media screen and (max-width: 425px) {
@@ -76,7 +86,12 @@
     -o-border-radius: 32px;
     cursor: pointer;
     overflow: hidden;
-    // flex: 0 1 442px;
+
+    @media screen and (max-width: 700px) {
+      width: 359px;
+      height: 262px;
+      margin-bottom: 0;
+    }
 
     @media screen and (max-width: 425px) {
       width: 359px;
@@ -115,10 +130,26 @@
       flex: 0 1 800px;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 700px) {
+      flex: none;
       width: 359px;
       height: 262px;
       margin-bottom: 0;
+
+      &:hover {
+        flex: none;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      flex: none;
+      width: 359px;
+      height: 262px;
+      margin-bottom: 0;
+
+      &:hover {
+        flex: none;
+      }
     }
 
     .imgMin {
@@ -180,11 +211,9 @@
 }
 
 .cardHistoria {
-  // flex: 1;
   transition: all 0.3s ease;
 
   &:hover {
-    // flex: 2;
     overflow: hidden;
 
     .contentTextCard {
@@ -295,6 +324,14 @@
       right: 0;
       top: 11vh;
 
+      @media screen and (max-width: $tablet) {
+        top: 10vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 1vh;
+      }
+
       @media screen and (max-width: 425px) {
         top: 1vh;
       }
@@ -303,6 +340,14 @@
     .iconSalvador {
       right: 0;
       top: 14vh;
+
+      @media screen and (max-width: $tablet) {
+        top: 10vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 3vh;
+      }
 
       @media screen and (max-width: 425px) {
         top: 1vh;
@@ -313,6 +358,14 @@
       right: 0;
       top: 15.5vh;
 
+      @media screen and (max-width: $tablet) {
+        top: 12vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 3vh;
+      }
+
       @media screen and (max-width: 425px) {
         top: 1vh;
       }
@@ -321,6 +374,14 @@
     .iconTitan {
       right: 0;
       top: 11vh;
+
+      @media screen and (max-width: $tablet) {
+        top: 9vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 0;
+      }
 
       @media screen and (max-width: 425px) {
         top: 1vh;
@@ -331,6 +392,14 @@
       right: 0;
       top: 11vh;
 
+      @media screen and (max-width: $tablet) {
+        top: 10vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 1vh;
+      }
+
       @media screen and (max-width: 425px) {
         top: 1vh;
       }
@@ -339,6 +408,14 @@
     .iconRamona {
       right: 0;
       top: 18vh;
+
+      @media screen and (max-width: $tablet) {
+        top: 14vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        top: 7.5vh;
+      }
 
       @media screen and (max-width: 425px) {
         top: 1vh;
@@ -425,6 +502,20 @@
       animation: expand-from-bottom-right 0.5s ease forwards;
       -webkit-animation: expand-from-bottom-right 0.5s ease forwards;
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .reverse {
+    flex-direction: column;
+    margin-top: -2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reverse {
+    flex-direction: column;
+    margin-top: -2em;
   }
 }
 
