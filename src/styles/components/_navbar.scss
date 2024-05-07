@@ -22,7 +22,7 @@ nav{
     .navbar-links {
       display: flex;
       list-style: none;
-      gap: 16px;
+      gap: 12px;
       align-items: center;
 
       .arrow-icon{
@@ -33,15 +33,22 @@ nav{
         text-decoration: none;
         color: $base-black;
         font-size: 18px;
+        width: 150px;
+        
+        
+        &:first-child{
+          width: 60px;
+        }
 
         .active {
           color: $secondary-900;
           font-weight: $extrabold;
+
         }
 
-        &:hover{
+        li:hover{
           font-weight: $extrabold;
-          transition: all 200ms ease-in-out;
+          transition: 100ms ease-in;
         }
       }
     }
