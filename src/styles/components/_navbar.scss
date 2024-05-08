@@ -102,6 +102,15 @@ nav{
         border-bottom-right-radius: $radius-ml2;
         z-index: -1;
 
+        a {
+          width: 100%;
+          
+          
+          &:first-child{
+            width: 100%;
+          }
+        }
+
         li{
           display: flex;
           justify-content: space-between;
