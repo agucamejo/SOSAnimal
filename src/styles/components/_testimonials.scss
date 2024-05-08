@@ -66,9 +66,10 @@
         margin-top: 0;
         gap: 40px;
 
-        .card, .card.active{
-
-           opacity: 100%;
+        .card, .card.active{   
+            transition: none;
+            transform: none; 
+            opacity: 100%;
             display: grid;
             grid-template-columns: auto 1fr;
             align-items: center;
@@ -83,11 +84,6 @@
           h4 { grid-area: title; }
           
           p { grid-area: testimonio; }
-          
-          &:hover{
-            transition: none;
-            transform: none;
-          }
 
           h4{
             font-size: 32px;
@@ -108,7 +104,8 @@
         }
 
         .card.active{
-          gap: 0;
+          transition: none;
+          transform: none;
         }
 
         .arrow{
@@ -140,9 +137,13 @@
             }
 
             .card, .card.active{
+              transition: none;
+              transform: none; 
+              opacity: 100%;
               opacity: 100%;
               margin: 16px 64px;
               gap: 28px;
+              
 
               h4{
                 font-size: 30px;
@@ -150,11 +151,6 @@
 
               p{
                 font-size: 16px;
-              }
-
-              &:hover{
-                transition: none;
-                transform: none;
               }
 
               .card-img{
