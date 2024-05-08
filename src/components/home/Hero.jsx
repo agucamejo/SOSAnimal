@@ -17,7 +17,7 @@ const Hero = () => {
         />
         <h2>
           <span className="new-line">Donde la</span>{' '}
-          <span className="new-line"> empatía animal</span>{' '}
+          <span className="new-line">empatía animal</span>{' '}
           <span className="new-line">se fortalece</span>
         </h2>
         <p>

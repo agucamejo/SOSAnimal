@@ -55,8 +55,8 @@ const Navbar = () => {
   };
   
   return (
-    <nav>
-      <div className='navbar'>
+    <header>
+      <nav className='navbar'>
         <Link to="/" onClick={() => handleNavLinkClick('/')}>
           <img
             src="/logo.svg"
@@ -111,8 +111,8 @@ const Navbar = () => {
             </span>
           </button>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

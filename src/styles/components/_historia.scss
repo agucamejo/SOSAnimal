@@ -467,6 +467,8 @@
       border-radius: $radius-m;
       -webkit-border-radius: $radius-m;
       -moz-border-radius: $radius-m;
+      display:flex;
+      align-items: center;
       -ms-border-radius: $radius-m;
       -o-border-radius: $radius-m;
       animation: expand-from-bottom-right 0.5s ease forwards;

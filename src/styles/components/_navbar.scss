@@ -1,7 +1,8 @@
-nav{
+header{
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 5000;
+  top: -1px;
 
   .navbar {
     background: $base-white;
@@ -96,6 +97,8 @@ nav{
         right: 0;
         gap: 24px;
         padding: 24px 40px;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         background: rgba(253, 244, 217, 0.8);
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
         border-bottom-left-radius: $radius-ml2;
@@ -165,6 +168,8 @@ nav{
         padding: 24px 24px;
         background: rgba(253, 244, 217, 0.8);
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         border-bottom-left-radius: $radius-ml2;
         border-bottom-right-radius: $radius-ml2;
         z-index: -1;

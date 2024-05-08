@@ -11,11 +11,11 @@ function Info() {
         </h2>
         <hr className="line" />
       </article>
-      <img
+      {/* <img
         src="./infoImg/fondo.svg"
         alt="Hombre dandole un beso a su perro en brazos"
         className="imgFondo"
-      />
+      /> */}
       <article className="contentCards">
         <section className="card">
           <img
@@ -30,11 +30,7 @@ function Info() {
           </p>
         </section>
         <section className="card">
-          <img
-            src="./infoImg/huella.svg"
-            alt="Huella"
-            className="img"
-          />
+          <img src="./infoImg/huella.svg" alt="Huella" className="img" />
           <h3 className="titleCard">Financiar castraciones</h3>
           <p className="text">
             Brindamos castraciones gratuitas para familias de bajos recursos y
@@ -70,4 +66,4 @@ function Info() {
   )
 }
 
-export default Info;
+export default Info

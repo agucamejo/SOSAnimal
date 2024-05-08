@@ -20,49 +20,33 @@ const testimonialsData = [
 ];
 
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isNext, setIsNext] = useState(false);
-  const [isPrev, setIsPrev] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(1);
 
-  const handlePrev = () => {
-    setIsPrev(true);
-    setIsNext(false);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
-      setIsPrev(false);
-    }, 1000); 
+  const handleMouseEnter = (index) => {
+    setActiveIndex(index);
   };
 
-  const handleNext = () => {
-    setIsNext(true);
-    setIsPrev(false);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
-      setIsNext(false);
-    }, 1000);
+  const handleMouseLeave = () => {
+    // Si el cursor sale de todas las tarjetas, establece la tarjeta activa como la primera
+    setActiveIndex(1);
   };
 
   return (
     <div className="testimonials">
       <Subtitles text="Que dicen de nosotros" />
       <div className="card-container">
-        <img className="arrow" src="/left-arrow-icon.svg" onClick={handlePrev} />
-        <div className={`card card-${currentIndex === 0 ? 2 : currentIndex - 1} ${isPrev ? 'prev-1' : ''} ${isNext ? 'next-1' : ''}`}>
-          <img className="card-img" src={testimonialsData[(currentIndex === 0 ? 2 : currentIndex - 1)].image} alt="Imagen de testimonio" />
-          <h4>{testimonialsData[(currentIndex === 0 ? 2 : currentIndex - 1)].name}</h4>
-          <p>{testimonialsData[(currentIndex === 0 ? 2 : currentIndex - 1)].testimonial}</p>
-        </div>
-        <div className={`card active card-${currentIndex} ${isPrev ? 'prev-2' : ''} ${isNext ? 'next-2' : ''}`}>
-          <img className="card-img" src={testimonialsData[currentIndex].image} alt="Imagen de testimonio" />
-          <h4>{testimonialsData[currentIndex].name}</h4>
-          <p>{testimonialsData[currentIndex].testimonial}</p>
-        </div>
-        <div className={`card card-${currentIndex === 2 ? 0 : currentIndex + 1} ${isPrev ? 'prev-3' : ''} ${isNext ? 'next-3' : ''}`}>
-          <img className="card-img" src={testimonialsData[(currentIndex === 2 ? 0 : currentIndex + 1)].image} alt="Imagen de testimonio" />
-          <h4>{testimonialsData[(currentIndex === 2 ? 0 : currentIndex + 1)].name}</h4>
-          <p>{testimonialsData[(currentIndex === 2 ? 0 : currentIndex + 1)].testimonial}</p>
-        </div>
-        <img className="arrow" src="/right-arrow-icon.svg" onClick={handleNext} />
+        {testimonialsData.map((testimonial, index) => (
+          <div
+            key={index}
+            className={`card ${index === activeIndex ? 'active' : ''}`}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img className="card-img" src={testimonial.image} alt="Imagen de testimonio" />
+            <h4>{testimonial.name}</h4>
+            <p>{testimonial.testimonial}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

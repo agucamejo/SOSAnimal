@@ -12,7 +12,7 @@ function Formulario() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://script.google.com/macros/s/AKfycbyph5cS65AHgy-DkLn4_tVDbNrj4E9Pruq051XUNaal4rEIG_oSGIIQvA4iKoG_PTef/exec', datos);
+      await axios.post('https://script.google.com/macros/s/AKfycby4DGfAlAyXoFl4MA-8FaKp2ILI3GnSKP6ByeQnsWl0Lt8ZfCPB2jf4Jqde2ogkdxBl/exec', datos);
       alert('Datos enviados correctamente.');
     } catch (error) {
       console.error('Error al enviar los datos:', error);
