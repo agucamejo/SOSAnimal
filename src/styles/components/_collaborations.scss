@@ -38,6 +38,7 @@
       width: 780px;
     }
     @media screen and (max-width: $tablet) {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
