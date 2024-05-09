@@ -1,6 +1,6 @@
 import ButtonCollaboration from '../ButtonCollaboration';
+import Subtitles from '../Subtitles';
 const Collaborations = () => {
-  const iconCatDog = './icons/Cat&Dog.svg';
   const imgManCollaboration = './images/desktop1.png';
   const imgDogCollaboration = './images/desktop2.png';
   const imgWomanCollaboration = './images/desktop3.png';
@@ -9,11 +9,7 @@ const Collaborations = () => {
   return (
     <div className="collaborations">
       <div className="collaborations-text">
-        <img src={iconCatDog} alt="" className="" />
-        <h2>
-          <span className="new-line-title">Cómo podés</span>{' '}
-          <span className="new-line-title">colaborar</span>
-        </h2>
+        <Subtitles text='Cómo podés colaborar' />
         <p>
           ¡Vos también puedes ser parte del cambio! Descubre cómo podés
           colaborar con SOS Animal y marcar la diferencia en la vida de los

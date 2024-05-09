@@ -7,6 +7,12 @@
   width: 100%;
   align-self: center;
 
+  .container-subtitles{
+    @media screen and (max-width: $tablet) {
+      height: 70px;
+    }
+  }
+
   .collaborations-text {
     margin-bottom: 40px;
     display: flex;
