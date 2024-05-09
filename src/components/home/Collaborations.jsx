@@ -5,6 +5,7 @@ const Collaborations = () => {
   const imgDogCollaboration = './images/desktop2.png';
   const imgWomanCollaboration = './images/desktop3.png';
   const imgWomanTablet = './images/tablet3.png';
+  
   return (
     <div className="collaborations">
       <div className="collaborations-text">

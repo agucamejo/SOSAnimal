@@ -10,12 +10,14 @@ const Home = () => {
   return (
     <div>
         <Navbar />
-        <Hero />
-        <Info />
-        <Historia />
-        <Collaborations /> 
-        <Valores />
-        <Testimonials />
+        <div style={{"display": "flex", "flexDirection": "column"}}>
+          <Hero />
+          <Info />
+          <Historia />
+          <Collaborations /> 
+          <Valores />
+          <Testimonials />
+        </div>
     </div>
   )
 }
