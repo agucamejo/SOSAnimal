@@ -16,6 +16,80 @@ function Historia() {
   const [showHistoriaBeethoven, setShowHistoriaBeethoven] = useState(false)
   const [showHistoriaRamona, setShowHistoriaRamona] = useState(false)
 
+  const [isMouseOverMarea, setIsMouseOverMarea] = useState(false)
+  const [isMouseOverSalvador, setIsMouseOverSalvador] = useState(false)
+  const [isMouseOverChabela, setIsMouseOverChabela] = useState(false)
+  const [isMouseOverTitan, setIsMouseOverTitan] = useState(false)
+  const [isMouseOverBeethoven, setIsMouseOverBeethoven] = useState(false)
+  const [isMouseOverRamona, setIsMouseOverRamona] = useState(false)
+
+  const handleMouseEnter = (historia) => {
+    switch (historia) {
+      case 'Marea':
+        setIsMouseOverMarea(true)
+        break
+      case 'Salvador':
+        setIsMouseOverSalvador(true)
+        break
+      case 'Chabela':
+        setIsMouseOverChabela(true)
+        break
+      case 'Titan':
+        setIsMouseOverTitan(true)
+        break
+      case 'Beethoven':
+        setIsMouseOverBeethoven(true)
+        break
+      case 'Ramona':
+        setIsMouseOverRamona(true)
+        break
+      default:
+        break
+    }
+  }
+
+  const handleMouseLeave = (historia) => {
+    const windowWidth = window.innerWidth
+
+    if (windowWidth > 700) {
+      switch (historia) {
+        case 'Marea':
+          setIsMouseOverMarea(false)
+          setShowIconMarea(false)
+          setShowHistoriaMarea(false)
+          break
+        case 'Salvador':
+          setIsMouseOverSalvador(false)
+          setShowIconSalvador(false)
+          setShowHistoriaSalvador(false)
+          break
+        case 'Chabela':
+          setIsMouseOverChabela(false)
+          setShowIconChabela(false)
+          setShowHistoriaChabela(false)
+
+          break
+        case 'Titan':
+          setIsMouseOverTitan(false)
+          setShowIconTitan(false)
+          setShowHistoriaTitan(false)
+          break
+        case 'Beethoven':
+          setIsMouseOverBeethoven(false)
+          setShowIconBeethoven(false)
+          setShowHistoriaBeethoven(false)
+          break
+        case 'Ramona':
+          setIsMouseOverRamona(false)
+          setShowIconRamona(false)
+          setShowHistoriaRamona(false)
+          break
+        default:
+          break
+      }
+    }
+  }
+
   const handleVerHistoriaClick = (historia) => {
     setShowIconMarea(false)
     setShowHistoriaMarea(false)
@@ -84,10 +158,11 @@ function Historia() {
     setShowIconRamona(false)
     setShowHistoriaRamona(false)
   }
+
   return (
     <section className="contentHistoria">
       <article className="contentTitles">
-        <Subtitles text='Historias de adopción'/>
+        <Subtitles text="Historias de adopción" />
         <p className="subtitle">
           Estos valientes animales demuestran que el amor puede cambiar vidas al
           encontrar una familia cariñosa.
@@ -99,14 +174,12 @@ function Historia() {
             className={`cardMax rosa cardHistoria cardNormal ${
               showHistoriaMarea ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Marea')}
+            onMouseLeave={() => handleMouseLeave('Marea')}
           >
             <h3 className="titleCard">Marea</h3>
             <button className="btn">9 años</button>
-            <img
-              src="./historiaImg/Marea.png"
-              alt=""
-              className="imgMax"
-            />
+            <img src="./historiaImg/Marea.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -154,14 +227,12 @@ function Historia() {
             className={`cardMin celeste cardHistoria cardNormal ${
               showHistoriaSalvador ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Salvador')}
+            onMouseLeave={() => handleMouseLeave('Salvador')}
           >
             <h3 className="titleCard">Salvador</h3>
             <button className="btn">3 años</button>
-            <img
-              src="./historiaImg/Salvador.png"
-              alt=""
-              className="imgMin"
-            />
+            <img src="./historiaImg/Salvador.png" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -222,14 +293,12 @@ function Historia() {
             className={`cardMax degrade cardHistoria cardNormal ${
               showHistoriaChabela ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Chabela')}
+            onMouseLeave={() => handleMouseLeave('Chabela')}
           >
             <h3 className="titleCard">Chabela</h3>
             <button className="btn">13 años</button>
-            <img
-              src="./historiaImg/Chabela.png"
-              alt=""
-              className="imgMax"
-            />
+            <img src="./historiaImg/Chabela.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -275,14 +344,12 @@ function Historia() {
             className={`cardMin anaranjado cardHistoria cardNormal ${
               showHistoriaTitan ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Titan')}
+            onMouseLeave={() => handleMouseLeave('Titan')}
           >
-            <h3 className="titleCard">Titan</h3>
+            <h3 className="titleCard">Titán</h3>
             <button className="btn">3 años</button>
-            <img
-              src="./historiaImg/Titan.png"
-              alt=""
-              className="imgMin"
-            />
+            <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -331,14 +398,12 @@ function Historia() {
             className={`cardMax aqua cardHistoria cardNormal ${
               showHistoriaBeethoven ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Beethoven')}
+            onMouseLeave={() => handleMouseLeave('Beethoven')}
           >
             <h3 className="titleCard">Beethoven</h3>
             <button className="btn">4 años</button>
-            <img
-              src="./historiaImg/Beethoven.png"
-              alt=""
-              className="imgMax"
-            />
+            <img src="./historiaImg/Beethoven.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -386,14 +451,12 @@ function Historia() {
             className={`cardMin fucsia cardHistoria cardNormal ${
               showHistoriaRamona ? 'showHistoria' : ''
             }`}
+            onMouseEnter={() => handleMouseEnter('Ramona')}
+            onMouseLeave={() => handleMouseLeave('Ramona')}
           >
             <h3 className="titleCard">Ramona</h3>
             <button className="btn">3 años</button>
-            <img
-              src="./historiaImg/Ramona.png"
-              alt=""
-              className="imgMin"
-            />
+            <img src="./historiaImg/Ramona.png" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -445,4 +508,4 @@ function Historia() {
   )
 }
 
-export default Historia;
+export default Historia

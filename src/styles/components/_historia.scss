@@ -37,7 +37,8 @@
   width: 904px;
   height: 1066px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 955px) {
+    justify-content: center;
     width: 688px;
   }
 
@@ -58,7 +59,7 @@
   display: flex;
   gap: 20px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 955px) {
     width: 688px;
   }
 
@@ -87,6 +88,10 @@
     cursor: pointer;
     overflow: hidden;
 
+    @media screen and (max-width: 955px) {
+      cursor: default;
+    }
+
     @media screen and (max-width: 700px) {
       width: 359px;
       height: 262px;
@@ -104,7 +109,7 @@
       position: absolute;
       bottom: 0;
 
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: 955px) {
         width: 22em;
         right: 0;
         left: 0;
@@ -128,6 +133,10 @@
 
     &:hover {
       flex: 0 1 800px;
+    }
+
+    @media screen and (max-width: 955px) {
+      cursor: default;
     }
 
     @media screen and (max-width: 700px) {
@@ -158,7 +167,7 @@
       bottom: 0;
       right: -9em;
 
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: 955px) {
         width: 22em;
         right: 0;
         left: 0;
@@ -170,8 +179,9 @@
     max-width: 211px;
     align-self: center;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 955px) {
       visibility: hidden;
+      overflow: hidden;
       width: 0;
       height: 0;
     }
@@ -212,6 +222,10 @@
 
 .cardHistoria {
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 
   &:hover {
     overflow: hidden;
@@ -219,7 +233,8 @@
     .contentTextCard {
       visibility: visible;
       transform: translateY(0);
-      @media screen and (max-width: $tablet) {
+
+      @media screen and (max-width: 955px) {
         visibility: hidden;
       }
     }
@@ -292,7 +307,7 @@
   width: 0;
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 955px) {
   .reverse {
     flex-direction: row-reverse;
   }
@@ -324,8 +339,8 @@
       right: 0;
       top: 11vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 10vh;
+      @media screen and (max-width: 955px) {
+        top: 15vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -341,8 +356,8 @@
       right: 0;
       top: 14vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 10vh;
+      @media screen and (max-width: 955px) {
+        top: 15vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -358,8 +373,8 @@
       right: 0;
       top: 15.5vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 12vh;
+      @media screen and (max-width: 955px) {
+        top: 17vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -375,8 +390,8 @@
       right: 0;
       top: 11vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 9vh;
+      @media screen and (max-width: 955px) {
+        top: 12vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -392,8 +407,8 @@
       right: 0;
       top: 11vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 10vh;
+      @media screen and (max-width: 955px) {
+        top: 15vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -409,8 +424,8 @@
       right: 0;
       top: 18vh;
 
-      @media screen and (max-width: $tablet) {
-        top: 14vh;
+      @media screen and (max-width: 955px) {
+        top: 20vh;
       }
 
       @media screen and (max-width: 700px) {
@@ -446,7 +461,7 @@
       justify-content: center;
       align-items: center;
 
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: 955px) {
         visibility: visible;
       }
 
@@ -470,6 +485,7 @@
       -ms-border-radius: $radius-m;
       -o-border-radius: $radius-m;
       animation: expand-from-bottom-right 0.5s ease forwards;
+      -webkit-animation: expand-from-bottom-right 0.5s ease forwards;
       opacity: 0;
       transform: translate(100%, 100%) scale(0);
       -webkit-transform: translate(100%, 100%) scale(0);
