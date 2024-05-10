@@ -1,9 +1,9 @@
 import ButtonCollaboration from '../ButtonCollaboration';
 import Subtitles from '../Subtitles';
 const Collaborations = () => {
-  const imgManCollaboration = './images/desktop1.png';
-  const imgDogCollaboration = './images/desktop2.png';
-  const imgWomanCollaboration = './images/desktop3.png';
+  const imgManCollaboration = './images/desktop1.svg';
+  const imgDogCollaboration = './images/desktop2.svg';
+  const imgWomanCollaboration = './images/desktop3.svg';
   const imgWomanTablet = './images/tablet3.png';
   
   return (
