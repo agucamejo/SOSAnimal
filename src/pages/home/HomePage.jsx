@@ -11,9 +11,9 @@ const Home = () => {
     <div>
         <Navbar />
         <div style={{"display": "flex", "flexDirection": "column"}}>
-          <Hero />
+          <Hero/>
           <Info />
-          <Historia />
+          {/* <Historia /> */}
           <Collaborations /> 
           <Valores />
           <Testimonials />
