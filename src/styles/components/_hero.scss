@@ -24,9 +24,10 @@
       margin-left: 0;
     }
   }
+
   @media screen and (max-width: $tablet) {
     flex-direction: column;
-    margin-top: 80px;
+    margin: 80px 0px 0px 0px;
   }
 
   .hero-sos1 {
@@ -53,6 +54,10 @@
       margin-top: 90px;
       margin-left: 30px;
       margin-bottom: 20px;
+      width: 330px;
+    }
+
+    @media screen and (max-width: 820px) {
       width: 290px;
     }
 
@@ -87,9 +92,6 @@
         width: 300px;
       }
 
-      @media screen and (max-width: $tablet) {
-        width: 100%;
-      }
       .new-line {
         display: block;
         font-family: 'mountriel-regular';
@@ -149,6 +151,11 @@
         margin-left: 0px;
         margin-right: 0px;
       }
+
+      @media screen and (max-width: 820px) {
+        width: 470px;
+      }
+
       .sos-hero-img {
         height: 240px;
         width: 650px;
@@ -183,6 +190,13 @@
         
 
         @media screen and (max-width: $desktop) and (min-width: $tablet) {
+          height: 320px;
+          width: 430px;
+          margin-top: -80px;
+          margin-left: 30px;
+        }
+
+        @media screen and (max-width: 820px) {
           height: 250px;
           width: 340px;
           margin-top: -60px;
