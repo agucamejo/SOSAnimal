@@ -33,7 +33,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <Subtitles text="Que dicen de nosotros" />
+      <Subtitles text="Qué dicen de nosotros" />
       <div className="card-container">
         {testimonialsData.map((testimonial, index) => (
           <div

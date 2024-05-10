@@ -25,9 +25,22 @@
     }
   }
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     margin: 80px 0px 0px 0px;
+
+    @media screen and (max-width: 768.98px) and (min-width: 540px){
+      align-items: center;
+      width: 100%;
+
+      .hero-sos1{
+        width: 80%;
+      }
+
+      .hero-description{
+        width: 80%;
+      }
+    }
   }
 
   .hero-sos1 {
@@ -50,15 +63,11 @@
     margin-top: 120px;
     
 
-    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    @media screen and (max-width: $desktop) and (min-width: 768.98px) {
       margin-top: 90px;
       margin-left: 30px;
       margin-bottom: 20px;
-      width: 330px;
-    }
-
-    @media screen and (max-width: 820px) {
-      width: 290px;
+      width: 260px;
     }
 
     @media screen and (max-width: $tablet) {
@@ -89,7 +98,7 @@
       width: 349px;
 
       @media screen and (max-width: $desktop) and (min-width: $tablet) {
-        width: 300px;
+        width: 400px;
       }
 
       .new-line {
@@ -97,14 +106,13 @@
         font-family: 'mountriel-regular';
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
-        margin-bottom: 15px;        
+        margin-bottom: 6px;        
         letter-spacing: 2px;
         font-size: 48px;
         font-weight: 800;
 
         @media screen and (max-width: $desktop) and (min-width: $tablet) {
           font-size: 32px;
-          margin-bottom: 8px;
         }
 
         @media screen and (max-width: $tablet) {
@@ -203,7 +211,12 @@
           margin-left: 20px;
         }
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: 768.98px) and (min-width: 501px) {
+          margin-top: 0px;
+          margin-left: 300px;
+        }
+
+        @media screen and (max-width: 500px) {
           height: 180px;
           width: 246px;
           margin-top: 20px;

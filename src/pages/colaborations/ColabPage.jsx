@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 
-const Colaborations = () => {
+const Collaborations = () => {
     return ( 
        <div>
            <Navbar />
@@ -9,4 +9,4 @@ const Colaborations = () => {
     );
 }
    
-export default Colaborations;
+export default Collaborations;
