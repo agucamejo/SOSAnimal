@@ -4,6 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  align-self: center;
+
+  .container-subtitles {
+    @media screen and (max-width: $tablet) {
+      height: 70px;
+    }
+  }
 
   .collaborations-text {
     margin-bottom: 40px;
@@ -32,12 +40,14 @@
   .collaborations-type {
     display: flex;
     justify-content: center;
-    width: 1500px;
+    width: 100%;
+    align-items: flex-end;
 
     @media screen and (max-width: $desktop) and (min-width: $tablet) {
-      width: 780px;
+      width: 100%;
     }
     @media screen and (max-width: $tablet) {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -50,18 +60,29 @@
       justify-content: end;
       align-items: center;
       margin-bottom: 30px;
+      gap: 39px;
+      width: 100%;
+      height: 100%;
       .desktop1 {
-        height: 180px;
-        margin-bottom: 65px;
+        width: 100%;
+        height: 100%;
+
         @media screen and (max-width: $desktop) and (min-width: $tablet) {
-          height: 160px;
-          margin-bottom: 57px;
-        }
-        @media screen and (max-width: $tablet) {
-          width: 375px;
-          height: 150px;
           margin-bottom: 30px;
         }
+
+        @media screen and (max-width: $tablet) {
+          height: auto;
+          content: url('/man-collaboration.png');
+        }
+      }
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        gap: 10px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        gap: 20px;
       }
     }
 
@@ -71,16 +92,16 @@
       justify-content: end;
       align-items: center;
       margin-bottom: 30px;
+      gap: 37.5px;
+      width: 100%;
+      height: 100%;
       .desktop2 {
-        height: 200px;
-        margin-bottom: 30px;
-        @media screen and (max-width: $desktop) and (min-width: $tablet) {
-          height: 160px;
-        }
+        width: 100%;
+        height: 100%;
+
         @media screen and (max-width: $tablet) {
-          width: 375px;
-          height: 150px;
-          margin-bottom: 30px;
+          height: auto;
+          content: url('/dog-collaboration.png');
         }
       }
     }
@@ -89,20 +110,25 @@
       flex-direction: column;
       justify-content: end;
       align-items: center;
+      gap: 39px;
+      width: 100%;
+      height: 100%;
       margin-bottom: 30px;
       @media screen and (max-width: $desktop) and (min-width: $tablet) {
         display: none;
       }
       .desktop3 {
-        width: 480px;
-        height: 230px;
-        margin-bottom: 58px;
+        width: 100%;
+        height: 100%;
 
         @media screen and (max-width: $tablet) {
-          width: 375px;
-          height: 150px;
-          margin-bottom: 30px;
+          height: auto;
+          content: url('/woman-collaboration.png');
         }
+      }
+
+      @media screen and (max-width: $tablet) {
+        gap: 20px;
       }
     }
   }
@@ -111,13 +137,16 @@
 
     @media screen and (max-width: $desktop) and (min-width: $tablet) {
       display: flex;
-      width: 750px;
+      width: 100%;
       flex-direction: column;
       justify-content: end;
       align-items: center;
+      gap: 10px;
+
       .tablet3 {
-        height: 200px;
+        height: auto;
         margin-top: 20px;
+        width: 100%;
         margin-bottom: 30px;
       }
 

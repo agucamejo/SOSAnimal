@@ -73,8 +73,8 @@ const Navbar = () => {
               </svg>
             </li>
           </NavLink>
-          <NavLink to="/colaborations" onClick={() => handleNavLinkClick('/colaborations')}>
-            <li className={`${location.pathname === '/colaborations' ? 'active' : ''}`}>
+          <NavLink to="/colaborations" onClick={() => handleNavLinkClick('/collaborations')}>
+            <li className={`${location.pathname === '/collaborations' ? 'active' : ''}`}>
               ¿Cómo colaborar?
               <svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311" stroke="#0B0A0A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
