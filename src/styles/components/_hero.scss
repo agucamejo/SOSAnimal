@@ -1,6 +1,9 @@
 .hero-section {
   display: flex;
   justify-content: center;
+  margin: 20px;
+  width: 900px;
+
   @media screen and (max-width: $desktop) and (min-width: $tablet) {
   }
   @media screen and (max-width: $tablet) {
