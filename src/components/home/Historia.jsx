@@ -360,8 +360,8 @@ function Historia() {
               {showHistoriaTitan && (
                 <div className="contentHistoriaTablet">
                   <p className="textCardTablet">
-                    Mucho gusto, mi nombre es Titán, en el 2021 me encontraron
-                    en el basurero de Fray Bentos, ya sin fuerzas, mi cuerpo
+                    Mucho gusto, mi nombre es Titán, me encontraron
+                    en el basurero de Fray Bentos en el 2021, ya sin fuerzas, mi cuerpo
                     estaba completamente quemado, sin pelos y sangrando, una
                     voluntaria me tuvo en transitorio y gracias a los cuidados
                     del grupo y veterinarios luego de muchos meses logré

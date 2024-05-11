@@ -15,7 +15,7 @@
 
     .titleHistoria {
       margin-bottom: 0.5em;
-      color: $base-black;
+      
 
       @media screen and (max-width: 425px) {
         font-size: 32px;
@@ -28,6 +28,10 @@
       color: $neutrals-900;
     }
   }
+
+  @media screen and (max-width: $desktop) {
+    margin: 0;
+  } 
 }
 
 .contentCardsHistoria {
@@ -484,6 +488,8 @@
       -ms-border-radius: $radius-m;
       -o-border-radius: $radius-m;
       border-radius: $radius-m;
+      display:flex;
+      align-items: center;
       -webkit-animation: expand-from-bottom-right 0.5s ease forwards;
       animation: expand-from-bottom-right 0.5s ease forwards;
       opacity: 0;
