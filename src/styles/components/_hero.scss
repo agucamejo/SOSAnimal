@@ -195,8 +195,8 @@
         position: relative;
         z-index: 1;
         margin-top: -110px;
-        
-
+        margin-bottom: -5px;
+      
         @media screen and (max-width: $desktop) and (min-width: $tablet) {
           height: 320px;
           width: 430px;

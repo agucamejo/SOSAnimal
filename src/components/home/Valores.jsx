@@ -12,7 +12,7 @@ const Valores = () => {
             <br />
             últimos 3 años.
           </p>
-          <img className= "img" src="/img-perro-big.png"></img>
+          <img className= "img" src="/img-perro-big.png" alt="Perro Retriever de Nueva Escocia"></img>
         </div>
 
         <div className="banners-row">

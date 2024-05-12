@@ -71,6 +71,8 @@
     flex-direction: column;
     width: 500px;
     align-items: center;
+
+
   }
 
   @media screen and (max-width: 425px) {
@@ -141,6 +143,9 @@
 
     @media screen and (max-width: 955px) {
       cursor: default;
+      &:hover {
+        flex: none;
+      }
     }
 
     @media screen and (max-width: 700px) {

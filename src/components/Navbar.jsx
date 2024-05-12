@@ -57,6 +57,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className='navbar'>
+        <h1 className='hidden'>SOS Animal Fray Bentos</h1>
         <Link to="/" onClick={() => handleNavLinkClick('/')}>
           <img
             src="/logo.svg"
