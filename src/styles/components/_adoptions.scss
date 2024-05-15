@@ -1,0 +1,390 @@
+$bg-form-input: #F6F6F6;
+
+.adoptions-container {
+    margin-top: 4em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        padding: 3em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 3em 9em;
+    }
+  
+    .contentTitles {
+      width: 366px;
+      text-align: center;
+  
+      @media screen and (max-width: $tablet) {
+        width: 290px;
+      }
+  
+      .titleHistoria {
+        margin-bottom: 0.5em;
+  
+        @media screen and (max-width: $tablet) {
+          font-size: 32px;
+          line-height: 33px;
+        }
+      }
+  
+      .subtitle {
+        margin-bottom: 2em;
+        color: $neutrals-900;
+      }
+    }
+
+    .container-form-law{
+        display: grid;
+
+        @media screen and (min-width: $desktop) {
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "container-law form";   
+              
+            max-width: 750px;
+
+            @media screen and (max-width: $tablet) {
+                max-width: 688px;
+            }
+
+
+
+        }
+
+        .container-law {
+            background-color: $secondary-200;
+            border-radius: $radius-ml2;
+            padding: $space-l;
+            position: relative;
+            overflow: hidden;
+    
+            @media screen and (min-width: $desktop){
+                padding: 28px;
+                display: grid;
+            }
+
+            @media screen and (min-width: $tablet){
+                box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.15);
+            }
+
+            .logo-law{
+                display: none;
+
+                @media screen and (min-width: $desktop){
+                    display: inline-block;
+                }
+            }
+            
+            p{
+                color: $neutrals-1000;
+                font-size: 20px;
+                font-weight: $semibold;
+                position: relative;
+                z-index: 1;
+                line-height: 28px;
+
+                @media screen and (min-width: $desktop){
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+
+                a{
+                    &:visited, &:active{
+                        color: $neutrals-1000
+                    }
+                }
+            }
+    
+            &:before, &::after{
+                content: "";
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+    
+            &:before {
+                background-image: url('fingerprint-adoption.svg');
+                opacity: 40%;
+                width: 228px;
+                height: 255px;
+
+                @media screen and (min-width: $desktop){
+                    top: -8.5em;
+                    right: -4rem;
+                }
+    
+                @media screen and (max-width: $desktop){
+                    top: -11em;
+                    right: -5rem;
+                }
+            }
+            
+            &:after {
+                background-image: url('./SOS-adoption.svg');
+                opacity: 40%;
+                width: 259px;
+                height: 94px;
+
+                @media screen and (min-width: $desktop){
+                    bottom: -1em;
+                    right: 0;
+                }
+    
+                @media screen and (max-width: $desktop){
+                    bottom: -1.2em;
+                    right: 0;
+                }
+            }
+        }
+    
+        .form{
+            width: 100%;
+            padding: 28px 25px;
+            display: grid;
+            background-color: #FFF;
+            border-radius: $radius-ml2;
+            z-index: 4;
+
+            h4{
+                font-size: 20px;
+            }
+    
+            @media screen and (min-width: $tablet){
+                border: 1px solid $secondary-300;
+                box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.15);
+            }
+    
+            p{
+                margin-bottom: 8px;
+                margin-top: 30px;
+            }
+    
+            input{
+                padding: $space-m;
+                border-radius: 20px;
+                border: none;
+                background-color: $bg-form-input;
+                width: 100%;
+    
+                &::placeholder{
+                    color: $neutrals-700;
+                }
+    
+                &:active, &:focus, &:focus-visible{
+                    outline: none;
+                }
+            }
+    
+            .btn-continue {
+                color: $neutrals-1000;
+                border-radius: $radius-round;
+                font-size: 16px;
+                border: none;
+                background-color: $secondary-400;
+                cursor: pointer;
+                overflow: hidden;
+                padding: 14px 24px;
+                font-weight: $bold;
+                justify-self: center;
+                margin-top: 35px;
+            
+                &:focus{
+                  background: $secondary-500;
+                }
+            
+                &:active{
+                  background: $secondary-700;
+                }
+            
+                &:disabled{
+                  background: $secondary-700;
+                  opacity: 50%;
+                }
+            
+                //DESKTOP
+                @media screen and (min-width: $desktop) {
+                    font-size: 18px;
+                    width: 177px; 
+                }
+            
+                //TABLET
+                @media screen and (max-width: $desktop) and (min-width: $tablet) {
+                    font-size: 18px; 
+                }
+            
+                //MOBILE
+                @media screen and (max-width: $tablet) {
+                    font-size: 16px;
+                }
+
+                @media screen and (max-width: 340px) {
+                    padding: 10px 15px 10px 10px;
+                    text-align: start;
+                }
+            }
+
+            .modal {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1000; 
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5); 
+                z-index: 999;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:10px;
+                overflow-y: scroll;
+                align-items: center;
+
+                @media screen and (min-width: $desktop) {
+                    padding: 3em 9em;
+                }
+                
+                @media screen and (max-width: $desktop) and (min-width: $tablet) {
+                    padding: 3em;
+                }
+
+                @media screen and (max-width: $tablet) {
+                    padding: 1em;
+                }
+
+                .title-modal{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .title-form-complete{
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                .modal-content {
+                  background-color: #FFF;
+                  border-radius: $radius-ml2;
+                  padding: 15px 24px 24px 24px;
+                  line-height: 19.36px;
+                  max-width: 750px;
+                  position: relative;
+    
+                  ul{
+                    padding-left: 30px;
+
+                    li{
+                        margin-top: 10px;
+                        p{
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                  }
+
+                  @media screen and (min-width: $desktop) {
+                    
+                    max-width: 750px;
+                  }
+
+                }   
+
+                .modal-complete {
+                    display: grid;
+                    justify-items: center;
+                }
+
+                .modal-close{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+
+                .modal-end{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    .btn-continue{
+                        margin-top: 0px;
+                    }
+
+                    .check-text{
+                        display:flex;
+                        align-items: center;
+                        width: max-content;
+
+                        input{
+                            width: auto;
+                        }
+
+                        input[type="checkbox"] {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            display: flex;
+                            align-content: center;
+                            justify-content: center;
+                            padding: 2px;
+                            margin: 10px;
+                            border: 2px solid $secondary-800;
+                            border-radius: 10px;
+                        }
+                        
+                        input[type="checkbox"]::before {
+                            content: "";
+                            width: 24px;
+                            height: 24px;
+                            clip-path: polygon(35.86% 77.34%, 13.42% 51.74%, 5.03% 59.1%, 35.86% 94.27%, 90.12% 24.47%, 81.91% 18.09%, 35.86% 77.34%);
+                            transform: scale(0);
+                            background-color: #F6F6F6;
+                        }
+
+                        input[type="checkbox"]:checked::before {
+                            transform: scale(1);
+                        }
+
+                        input[type="checkbox"]:checked{
+                            background-color: $secondary-800;
+                        }
+                          
+                        p{
+                            text-wrap: nowrap;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+
+                            @media screen and (max-width: 400px) {
+                                text-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+
+                .modal-complete-end{
+                    display: grid;
+                    justify-items: center;
+                    text-align: center;
+
+                    .btn-continue{
+                        margin-top: 16px;
+                    }
+
+                    p{
+                        margin: 0;
+                    }
+                }
+            }    
+        }
+    }
+} 

@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className='estructure-home'>
         <Hero />
         <Info />
         <Historia />
