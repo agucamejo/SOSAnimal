@@ -1,0 +1,135 @@
+$desktop-width-footer: 1024px;
+$tablet-width-footer: 688px;
+$tablet-height-footer: 254px;
+$mobile-width-footer: 359px;
+$mobile-height-footer: 255px;
+
+.footer {
+    width: $desktop-width-footer;
+    background-color: #221F1F;
+    color: #fff;
+    padding: 56px 60px;
+    font-family: 'Mountief', sans-serif;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-logo-redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 56px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            .logo-img {
+                width: 120px;
+                height: 120px;
+                margin-right: 10px;
+            }
+
+            .logo-text {
+                h1 {
+                    color: #00c853;
+                    margin: 0;
+                    font-size: 22px;
+                    line-height: 1.2;
+                }
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .redes {
+            text-align: left;
+        
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Alinea horizontalmente el texto y los iconos */
+                margin-bottom: 14px; /* Espacio entre el texto y los botones */
+                h2 {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    text-align: center; /* Alinea horizontalmente el texto */
+                }
+        
+                .social-icons {
+                    display: flex;
+                    justify-content: center; /* Alinea horizontalmente los iconos */
+                    a {
+                        color: #00c853;
+                        margin: 0 10px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        
+            .contact-buttons {
+                display: flex;
+                flex-direction: row;
+                margin-top: -20px;
+                align-items: center; 
+                gap: 14px; 
+        
+                .btn-contact {
+                    height: 40px;
+                    width: 40px;
+                    background-color: #2BAE30;
+                    color: #fff;
+                    border: none;
+                    border-radius: 36px;
+                }
+            }
+        }
+    }        
+
+    .navegacion-general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 56px;
+
+        a {
+            color: #00c853;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+    }
+
+    .ayuda {
+        margin-left: 20px;
+
+        h2 {
+            color: #00c853;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #aaa; /* Cambia a gris */
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+
+    .ubicacion-derecho {
+        text-align: center;
+
+        p {
+            margin: 5px 0;
+        }
+    }
+}
+
