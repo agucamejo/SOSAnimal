@@ -96,6 +96,8 @@ $bg-form-input: #F6F6F6;
                 }
 
                 a{
+                    color: $neutrals-1000;
+
                     &:visited, &:active{
                         color: $neutrals-1000
                     }
@@ -179,6 +181,44 @@ $bg-form-input: #F6F6F6;
     
                 &:active, &:focus, &:focus-visible{
                     outline: none;
+                }
+            }
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type=number] { 
+                -moz-appearance:textfield; 
+                appearance: textfield;
+            }
+
+            .container-phone{
+                position: relative;
+                width: 100%;
+
+                .span-phone{
+                    position: absolute;
+                    display: flex;
+                    align-items: center; 
+                    gap: 3px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 15px;
+                    color: $neutrals-700;
+                    border-right: 2px solid $neutrals-500;
+                    padding-right: 3px;
+
+                    img{
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+
+                .input-phone{
+                    padding-left: 85px;
                 }
             }
     
@@ -384,7 +424,12 @@ $bg-form-input: #F6F6F6;
                         margin: 0;
                     }
                 }
-            }    
+            }
+            
+            .error{
+                color: $error-200;
+                margin-top: 3px;
+            }
         }
     }
 } 
