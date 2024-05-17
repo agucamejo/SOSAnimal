@@ -23,13 +23,8 @@ $bg-form-input: #F6F6F6;
         width: 290px;
       }
   
-      .titleHistoria {
-        margin-bottom: 0.5em;
-  
-        @media screen and (max-width: $tablet) {
-          font-size: 32px;
-          line-height: 33px;
-        }
+      .container-subtitles{
+        margin-bottom: 0px;
       }
   
       .subtitle {
@@ -341,6 +336,7 @@ $bg-form-input: #F6F6F6;
                 .modal-complete {
                     display: grid;
                     justify-items: center;
+                    margin-top: 40px;
                 }
 
                 .modal-close{
@@ -404,7 +400,7 @@ $bg-form-input: #F6F6F6;
                             margin-top: 0px;
                             margin-bottom: 0px;
 
-                            @media screen and (max-width: 400px) {
+                            @media screen and (max-width: 500px) {
                                 text-wrap: wrap;
                             }
                         }
@@ -426,9 +422,14 @@ $bg-form-input: #F6F6F6;
                 }
             }
             
-            .error{
-                color: $error-200;
-                margin-top: 3px;
+            .edad-container{
+
+                .error{
+                    color: $error-200;
+                    margin-top: 3px;
+                    font-size: 14px;
+                    position: absolute;
+                }
             }
         }
     }

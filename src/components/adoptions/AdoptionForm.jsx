@@ -159,9 +159,11 @@ function Formulario() {
             <span className="span-phone"><img src="./uruguay-flag.png" alt="Bandera de Uruguay"/> +598</span>
             <input autoComplete="nope" className="input-phone" type="text" value={telephone} name="Telephone" onChange={handleTelephoneChange} required/>
           </div>
-          <p>Edad</p>
-          <input type="number" min="0" max="99" step="1" onKeyDown={numericOnly} value={age} name="Age" placeholder="Cuántos años tienes" onChange={handleAgeChange} required/>
-          {error && <p className="error">{error}</p>}
+          <div className='edad-container'>
+            <p>Edad</p>
+            <input type="number" min="0" max="99" step="1" onKeyDown={numericOnly} value={age} name="Age" placeholder="Cuántos años tienes" onChange={handleAgeChange} required/>
+            {error && <p className="error">{error}</p>}
+          </div>
           <p>Dirección</p>
           <input type="text" value={address} name="Address" placeholder="Tu dirección" autoComplete="nope" onChange={handleAddressChange} required />
           <button type="button" onClick={() => setModalVisible(true)} disabled={!isFormValid()} className='btn-continue'>Continuar</button>
@@ -200,7 +202,7 @@ function Formulario() {
               <div className="modal-content modal-complete">
                 <img src='./close-modalForm.svg' className="modal-close" onClick={closeModalAndResetForm} alt="close modal"/>
                 <p className='title-form-complete'>¡Formulario completado!</p>
-                <Player autoplay src="./dogAnimations.json" background="transparent" speed="0.6" loop></Player>
+                <Player autoplay src="./dogAnimations.json" background="transparent" speed="0.6" ></Player>
                 <div className='modal-complete-end'>
                   <p>Un integrante del grupo se pondrá en contacto para seguir con la adopción</p>
                   <button type="button" className='btn-continue' onClick={closeModalAndResetForm}>Listo</button>
