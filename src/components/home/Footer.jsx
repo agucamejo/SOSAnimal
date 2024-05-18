@@ -22,24 +22,47 @@ const Footer = () => {
               <div className="contact-info">
                 <h2>Sigamos en contacto</h2>
                 <div className="social-icons">
-                  <button className="btn-contact">
+                  <a
+                    href="mailto:animalsos2020@gmail.com"
+                    className="btn-contact"
+                  >
                     <img
                       src="images/mail-footer.png"
                       alt="Correo electrónico"
                     />
-                  </button>
-                  <button className="btn-contact">
+                  </a>
+                  <a
+                    href="https://wa.me/59892336700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-contact"
+                  >
                     <img src="images/whatsapp-footer.png" alt="Whatsapp" />
-                  </button>
-                  <button className="btn-contact">
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@sosanimal2438"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-contact"
+                  >
                     <img src="images/youtube-footer.png" alt="YouTube" />
-                  </button>
-                  <button className="btn-contact">
+                  </a>
+                  <a
+                    href="https://www.facebook.com/SOSAnimalFrayBentos/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-contact"
+                  >
                     <img src="images/facebook-footer.png" alt="Facebook" />
-                  </button>
-                  <button className="btn-contact">
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sos_animal_2020/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-contact"
+                  >
                     <img src="images/instagram-footer.png" alt="Instagram" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -88,7 +111,14 @@ const Footer = () => {
       <div className="footer-bottom-line">
         <p>2023 @ SOS Animal. All rights reserved</p>
         <p>
-          Mountiel font designed by <span className="freepik">FREEPIK</span>
+          Mountiel font designed by{" "}
+          <a
+            href="https://www.freepik.com"
+            className="freepik"
+            style={{ color: "$secondary-700" }}
+          >
+            FREEPIK
+          </a>
         </p>
       </div>
     </footer>
