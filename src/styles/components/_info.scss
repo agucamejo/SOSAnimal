@@ -23,11 +23,6 @@
   align-items: end;
 
   @media screen and (max-width: 3000px) {
-    // background: url('/infoImg/imgSolaFondo.png'),
-    //   linear-gradient(#a7cf48, #48cf8e);
-    // background-repeat: no-repeat;
-    // background-position: 50% 100%;
-    // background-size: 1400px;
     background-position: 50% 100%;
     background-size: 100%;
     max-width: 1400px;
@@ -55,9 +50,6 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
-    // background-size: 100%;
-    // background-size: cover;
-    // width: 800px;
   }
 
   @media screen and (max-width: 876px) {
@@ -65,8 +57,6 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
-    // background-size: 100%;
-    // width: 700px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -74,8 +64,6 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
-    // background-size: 100%;
-    // background-size: cover;
   }
 
   @media screen and (max-width: 745px) {
@@ -83,9 +71,6 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 50% 12%;
-    // background-size: 100%;
-    // background-size: cover;
-    // width: 600px;
   }
 
   @media screen and (max-width: 740px) {
@@ -93,9 +78,6 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 20%;
-    // background-size: 100%;
-    // background-size: cover;
-    // width: 600px;
   }
 
   @media screen and (max-width: 425px) {
@@ -103,39 +85,7 @@
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 50% 25%;
-    // background-size: 100%;
-    // background-size: cover;
-    // width: 500px;
   }
-
-  // .imgFondo {
-  //   position: absolute;
-  //   width: 64.4%;
-  //   bottom: 0;
-  //   z-index: 10;
-
-  //   @media screen and (max-width: $max) {
-  //     left: 19%;
-  //     width: 70%;
-  //   }
-
-  //   @media screen and (max-width: $desktop) {
-  //     left: 19%;
-  //     width: 75%;
-  //   }
-
-  //   @media screen and (max-width: $tablet) {
-  //     top: 8em;
-  //     left: 18em;
-  //     width: 55%;
-  //   }
-
-  //   @media screen and (max-width: 425px) {
-  //     top: 12em;
-  //     left: 1em;
-  //     width: 90%;
-  //   }
-  // }
 
   .btn {
     background-color: #ffffff1f;
@@ -169,10 +119,8 @@
 .contentTitle {
   width: 100%;
   margin-bottom: 124px;
-  // background-color: #a9c26f;
 
   .contentTitleTexts {
-    // background-color: #5b5d54;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -190,7 +138,7 @@
     }
 
     .title {
-      color: $base-white;
+      color: $secondary-1000;
       margin: 0.5em 0;
       width: 500px;
 
@@ -243,7 +191,7 @@
     }
 
     .line {
-      background-color: $base-white;
+      background-color: $secondary-1000;
       border: none;
       height: 5px;
       width: 70px;

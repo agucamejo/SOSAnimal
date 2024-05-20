@@ -1,0 +1,602 @@
+.contentColab {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.colaborations {
+  padding: 4em 3.75em 0 3.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: $desktop) {
+    padding: 1.5em 3em 0 3em;
+  }
+
+  .contentTitlesColab {
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: $desktop) {
+      width: 32em;
+      padding: 1.5em 2em 0 2em;
+    }
+
+    .container-subtitles {
+      margin-bottom: 0;
+    }
+
+    .titleColab {
+      text-align: center;
+      margin-top: -0.8em;
+      font-size: 48px;
+      line-height: 52px;
+      font-weight: $bold;
+    }
+  }
+}
+
+.btnAyuda {
+  border: 1.5px solid $secondary-800;
+  background: none;
+  color: $label-btn-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 16px;
+  font-weight: $extrabold;
+  cursor: pointer;
+  border-radius: $radius-ml;
+  -webkit-border-radius: $radius-ml;
+  -moz-border-radius: $radius-ml;
+  -ms-border-radius: $radius-ml;
+  -o-border-radius: $radius-ml;
+  padding: 6px 12px;
+
+  .enlaceAyuda {
+    text-decoration: none;
+    color: $base-black;
+  }
+}
+
+.btnAyuda:hover {
+  background-color: $secondary-200;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+/*SOCIO*/
+
+.containerSocio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: $desktop) {
+    width: 85vw;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    min-height: 40em;
+  }
+}
+
+.containerTextSocio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625em;
+  height: 27.4em;
+  width: 50%;
+  padding: 58px 0 58px 58px;
+
+  @media screen and (max-width: $desktop) {
+    padding: 46px 0 46px 36px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    height: 55%;
+    width: 100%;
+  }
+
+  .titleSocio {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: $extrabold;
+    color: $base-black;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2.5em;
+      line-height: 1.1em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 2em;
+      line-height: 2.1em;
+    }
+  }
+
+  .textSocio {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: $regular;
+    color: #0f0e0e;
+    width: 20em;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 1.25em;
+      line-height: 1.3em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+  }
+
+  .textSocioVerde {
+    font-size: 2.1em;
+    line-height: 1.1em;
+    font-size: 2.5em;
+    color: $secondary-800;
+    font-weight: bold;
+    width: 12em;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.7em;
+      line-height: 1.1em;
+    }
+  }
+
+  .btnSocio {
+    width: 9.5em;
+  }
+}
+
+.containerGif {
+  .animation {
+    position: absolute;
+    top: -3em;
+    right: -6em;
+    height: 350px;
+    width: 350px;
+
+    @media screen and (max-width: $desktop) {
+      top: 3em;
+      right: -3em;
+      height: 250px;
+      width: 250px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      top: 19em;
+      right: -1.5em;
+      height: 200px;
+      width: 200px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      top: 21em;
+      right: -3em;
+    }
+  }
+
+  .imgSocio {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 26em;
+
+    @media screen and (max-width: $desktop) {
+      width: 22em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 18em;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 16em;
+    }
+  }
+}
+
+/*VOLUNTARIO*/
+
+.containerVoluntario {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#a7cf48, #48cf8e);
+  border-radius: $radius-ml2;
+  -webkit-border-radius: $radius-ml2;
+  -moz-border-radius: $radius-ml2;
+  -ms-border-radius: $radius-ml2;
+  -o-border-radius: $radius-ml2;
+
+  @media screen and (max-width: $desktop) {
+    width: 85vw;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+}
+
+.containerImgVoluntario {
+  @media screen and (max-width: $tablet) {
+    align-self: flex-end;
+    margin: 0 2em -3em 0;
+  }
+
+  .imgVoluntario {
+    width: 30em;
+
+    @media screen and (max-width: $desktop) {
+      width: 20em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 15em;
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.containerTextVoluntario {
+  color: $secondary-1000;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 26px;
+  margin: 58px 58px 58px 0;
+  max-width: 482px;
+
+  @media screen and (max-width: $tablet) {
+    text-align: left;
+    align-items: flex-start;
+    margin: 2em 0 0 1em;
+  }
+
+  .titleVoluntario {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: $extrabold;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2.5em;
+      line-height: 1.1em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 2em;
+      line-height: 2.1em;
+    }
+  }
+
+  .textVoluntario {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: $regular;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 1.25em;
+      line-height: 1.3em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+  }
+
+  .textVoluntarioVerde {
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: $regular;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.7em;
+      line-height: 1.1em;
+    }
+  }
+
+  .btnVoluntario {
+    font-size: 18px;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: -3em;
+    }
+  }
+}
+
+/*DONACIONES*/
+
+.containerDonaciones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: $desktop) {
+    width: 85vw;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    height: 37em;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 42em;
+  }
+}
+
+.containerTextDonaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin: 58px 0 58px 58px;
+  max-width: 482px;
+
+  @media screen and (max-width: $desktop) {
+    width: 387px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin: 1em 0 0 1em;
+    gap: 1em;
+    width: 70vw;
+  }
+
+  .titleDonaciones {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: $extrabold;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2.5em;
+      line-height: 1.1em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 2em;
+      line-height: 2.1em;
+    }
+  }
+
+  .textDonaciones {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: $regular;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 1.25em;
+      line-height: 1.3em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+  }
+
+  .textDonacionesVerde {
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: $regular;
+    color: $secondary-800;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.7em;
+      line-height: 1.1em;
+    }
+  }
+
+  .containerBtnsDonaciones {
+    display: flex;
+    gap: 2em;
+
+    @media screen and (max-width: $desktop) {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btnDonaciones {
+      width: 178px;
+      height: 47px;
+    }
+
+    .btnDonacionesSinIcono {
+      width: 192px;
+      height: 47px;
+    }
+  }
+}
+
+.containerImgDonaciones {
+  .imgDonaciones {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (max-width: $desktop) {
+      width: 18em;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 15em;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+/*MODAL*/
+
+.modal-overlay {
+  position: absolute;
+  top: 2.6em;
+  left: -300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -ms-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+}
+
+.modal-overlay.open {
+  left: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+.containerModalDonaciones {
+  background-color: $primary-100;
+  width: 32em;
+  height: 18em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  z-index: 1000;
+  animation: slideIn 0.3s forwards;
+
+  @media screen and (max-width: $tablet) {
+    width: 23em;
+    height: 15em;
+    gap: 1.2em;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 85vw;
+    gap: 1em;
+  }
+
+  .contentCloseModal {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background: linear-gradient(#a7cf48, #48cf8e);
+
+    .close {
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+
+  .animationChancho {
+    width: 15em;
+    height: 15em;
+
+    @media screen and (max-width: $tablet) {
+      width: 10em;
+      height: 10em;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 5em;
+      height: 5em;
+    }
+  }
+
+  .contentTextModal {
+    position: relative;
+
+    .textModal {
+      font-weight: $bold;
+      font-size: 1.1em;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 0.9em;
+      }
+
+      .copy {
+        font-size: 1.5em;
+        color: $neutrals-500;
+        cursor: pointer;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .textModal:nth-child(2) {
+      margin-top: 0.5em;
+
+      @media screen and (max-width: $tablet) {
+        margin-top: 0.2em;
+      }
+    }
+  }
+}
+
+.copyConfirmation {
+  color: $secondary-800;
+  font-size: 0.9em;
+  position: absolute;
+  right: 0;
+  bottom: -3em;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 0.8em;
+  }
+}
