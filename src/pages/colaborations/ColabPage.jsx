@@ -4,7 +4,7 @@ const Collaborations = () => {
     return ( 
        <div>
            <Navbar />
-           <h2>Colaboraciones</h2>
+           
        </div>
     );
 }

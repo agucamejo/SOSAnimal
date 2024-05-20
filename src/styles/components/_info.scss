@@ -293,6 +293,10 @@
     margin-top: 6em;
   }
 
+  @media screen and (max-width: 425px) {
+    margin: 7em 0;
+  }
+
   .card {
     background-color: $base-white;
     width: 285px;
@@ -305,6 +309,10 @@
     -ms-border-radius: $radius-m;
     -o-border-radius: $radius-m;
     border-radius: $radius-m;
+
+    @media screen and (max-width: 1200px) {
+      min-height: 120px;
+    }
 
     @media screen and (max-width: 1200px) {
       min-height: 120px;

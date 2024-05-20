@@ -159,6 +159,7 @@ function Historia() {
     setShowHistoriaRamona(false)
   }
 
+
   return (
     <section className="contentHistoria">
       <article className="contentTitles">
@@ -179,6 +180,7 @@ function Historia() {
           >
             <h3 className="titleCard">Marea</h3>
             <button className="btn">9 años</button>
+            <img src="./historiaImg/Marea.png" alt="" className="imgMax" />
             <img src="./historiaImg/Marea.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
@@ -229,9 +231,11 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Salvador')}
             onMouseLeave={() => handleMouseLeave('Salvador')}
+            
           >
             <h3 className="titleCard">Salvador</h3>
             <button className="btn">3 años</button>
+            <img src="./historiaImg/Salvador.png" alt="" className="imgMin" />
             <img src="./historiaImg/Salvador.png" alt="" className="imgMin" />
             <article className="tablet">
               <button
@@ -295,9 +299,11 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Chabela')}
             onMouseLeave={() => handleMouseLeave('Chabela')}
+            
           >
             <h3 className="titleCard">Chabela</h3>
             <button className="btn">13 años</button>
+            <img src="./historiaImg/Chabela.png" alt="" className="imgMax" />
             <img src="./historiaImg/Chabela.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
@@ -346,9 +352,12 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Titan')}
             onMouseLeave={() => handleMouseLeave('Titan')}
+            
           >
             <h3 className="titleCard">Titán</h3>
+            <h3 className="titleCard">Titán</h3>
             <button className="btn">3 años</button>
+            <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
             <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
             <article className="tablet">
               <button
@@ -400,9 +409,11 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Beethoven')}
             onMouseLeave={() => handleMouseLeave('Beethoven')}
+            
           >
             <h3 className="titleCard">Beethoven</h3>
             <button className="btn">4 años</button>
+            <img src="./historiaImg/Beethoven.png" alt="" className="imgMax" />
             <img src="./historiaImg/Beethoven.png" alt="" className="imgMax" />
             <article className="tablet">
               <button
@@ -508,4 +519,4 @@ function Historia() {
   )
 }
 
-export default Historia
+export default Historia;
