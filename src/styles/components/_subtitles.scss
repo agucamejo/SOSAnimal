@@ -10,6 +10,14 @@
   h1{
     color: $base-black;
     letter-spacing: -2px;
+    font-size: 46px;
+    @media screen and (max-width: $desktop) and (min-width: $tablet){
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $tablet){
+      font-size: 32px;
+    }
   }
 
   h2{
