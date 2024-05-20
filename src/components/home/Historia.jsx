@@ -355,7 +355,6 @@ function Historia() {
             
           >
             <h3 className="titleCard">Titán</h3>
-            <h3 className="titleCard">Titán</h3>
             <button className="btn">3 años</button>
             <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
             <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
