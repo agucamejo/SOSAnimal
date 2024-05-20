@@ -11,6 +11,8 @@
     color: $base-black;
     letter-spacing: -2px;
     font-size: 46px;
+    font-weight: 700;
+
     @media screen and (max-width: $desktop) and (min-width: $tablet){
       font-size: 40px;
     }
