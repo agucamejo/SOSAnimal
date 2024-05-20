@@ -173,9 +173,22 @@ $bg-form-input: #F6F6F6;
                 &::placeholder{
                     color: $neutrals-700;
                 }
-    
+                
+                &:hover{
+                    outline: 1px solid $neutrals-600;
+                    cursor: pointer;
+                }
+
                 &:active, &:focus, &:focus-visible{
                     outline: none;
+                }
+
+                &:active{
+                    outline: 1px solid $secondary-800;
+                }
+
+                &:focus{
+                    outline: 2px solid $secondary-800;
                 }
             }
 

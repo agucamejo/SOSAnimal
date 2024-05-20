@@ -8,7 +8,7 @@ function Info() {
           <div className="contentTitleTexts">
             <hr className="line top" />
             <h2 className="title">
-              En SOS Fray Bentos no somos una organización, somos un grupo de
+              En SOS Fray Bentos, somos un grupo de
               personas que se dedica a:
             </h2>
             <hr className="line" />

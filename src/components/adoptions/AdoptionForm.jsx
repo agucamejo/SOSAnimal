@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import Subtitles from '../Subtitles'
+import SectionTitle from '../SectionTitle'
 import { useState, useEffect } from 'react';
 
 function Formulario() {
@@ -138,7 +138,7 @@ function Formulario() {
   return (
     <div className='adoptions-container'>
       <div className="contentTitles">
-        <Subtitles text="Adopción" />
+        <SectionTitle text="Adopción" />
         <p className="subtitle">
           Gracias por considerar darle un hogar a una mascota necesitada. 
           Si aún no sabes a quién adoptar visita nuestro Instagram.
@@ -202,7 +202,7 @@ function Formulario() {
               <div className="modal-content modal-complete">
                 <img src='./close-modalForm.svg' className="modal-close" onClick={closeModalAndResetForm} alt="close modal"/>
                 <p className='title-form-complete'>¡Formulario completado!</p>
-                <Player autoplay src="./dogAnimations.json" background="transparent" speed="0.6" ></Player>
+                <Player autoplay src="./dogAnimations.json" background="transparent" speed="0.6" keepLastFrame={true}></Player>
                 <div className='modal-complete-end'>
                   <p>Un integrante del grupo se pondrá en contacto para seguir con la adopción</p>
                   <button type="button" className='btn-continue' onClick={closeModalAndResetForm}>Listo</button>

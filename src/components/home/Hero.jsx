@@ -15,13 +15,14 @@ const Hero = () => {
           alt="Icono de gato y perro"
           className="icon-hero"
         />
-        <h2>
-          <span className="new-line">Donde la</span>{' '}
-          <span className="new-line">empatía animal</span>{' '}
+        <h1>
+          <span className="new-line">SOS Animal</span>{' '}
+          <span className="new-line">Fray Bentos,</span>{' '}
+          <span className="new-line">donde la empatía</span>{' '}
           <span className="new-line">se fortalece</span>
-        </h2>
+        </h1>
         <p>
-          En SOS Fray Bentos, invertimos cada recurso en el bienestar animal.
+          Invertimos cada recurso en el bienestar animal.
           Unite a nuestra causa y hacé posible más acciones solidarias.
         </p>
         <ButtonPrimary text="Donaciones" />
