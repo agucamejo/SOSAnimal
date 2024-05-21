@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 function Modal({ isOpen, onClose }) {
   const [copied, setCopied] = useState(false)
+  const [iconColor, setIconColor] = useState('#908b8b')
 
   const handleCopy = () => {
     const accountNumber = '6145664'
@@ -12,7 +13,11 @@ function Modal({ isOpen, onClose }) {
       .writeText(accountNumber)
       .then(() => {
         setCopied(true)
-        setTimeout(() => setCopied(false), 2000) // Ocultar el mensaje después de 2 segundos
+        setIconColor('#238c26')
+        setTimeout(() => {
+          setCopied(false)
+          setIconColor('black')
+        }, 2000)
       })
       .catch((err) => {
         console.error('Error al copiar al portapapeles:', err)
@@ -33,17 +38,21 @@ function Modal({ isOpen, onClose }) {
         />
 
         <section className="contentTextModal">
-          <p className="textModal">Titular: Fiorella Batista</p>
-          <p className="textModal">Banco: Midinero</p>
           <p className="textModal">
-            N° de cuenta:6145664{' '}
-            <IoMdCopy className="copy" onClick={handleCopy} />
+            <span className="spanModal">Titular:</span> Fiorella Batista
           </p>
-          {copied && (
-            <p className="copyConfirmation">
-              Número de cuenta copiado al portapapeles
-            </p>
-          )}
+          <p className="textModal">
+            <span className="spanModal">Banco:</span> Midinero
+          </p>
+          <p className="textModal">
+            <span className="spanModal">N° de cuenta:</span> 6145664
+            <IoMdCopy
+              className="copy"
+              onClick={handleCopy}
+              style={{ color: iconColor }}
+            />
+          </p>
+          {copied && <p className="copyConfirmation">Copiado</p>}
         </section>
       </section>
     </section>
