@@ -107,7 +107,7 @@ $bg-form-input: #F6F6F6;
             }
     
             &:before {
-                background-image: url('fingerprint-adoption.svg');
+                background-image: url('./fingerprint-adoption.svg');
                 opacity: 40%;
                 width: 228px;
                 height: 255px;
@@ -151,6 +151,7 @@ $bg-form-input: #F6F6F6;
 
             h4{
                 font-size: 20px;
+                color: $base-black;
             }
     
             @media screen and (min-width: $tablet){
@@ -161,6 +162,7 @@ $bg-form-input: #F6F6F6;
             p{
                 margin-bottom: 8px;
                 margin-top: 30px;
+                color: $neutrals-1000;
             }
     
             input{
@@ -169,6 +171,7 @@ $bg-form-input: #F6F6F6;
                 border: none;
                 background-color: $bg-form-input;
                 width: 100%;
+                font-size: 16px;
     
                 &::placeholder{
                     color: $neutrals-700;
@@ -310,6 +313,7 @@ $bg-form-input: #F6F6F6;
                 .title-modal{
                     font-size: 18px;
                     font-weight: 700;
+                    color: $neutrals-1000;
                 }
 
                 .title-form-complete{
@@ -325,7 +329,19 @@ $bg-form-input: #F6F6F6;
                   line-height: 19.36px;
                   max-width: 750px;
                   position: relative;
-    
+
+                  @media screen and (max-width: 500px) {
+                    margin-top: 5em;
+                  }
+
+                  @media screen and (max-width: 370px) {
+                    margin-top: 8em;
+                  }
+
+                  @media screen and (max-width: 325px) {
+                    margin-top: 22em;
+                  }
+                  
                   ul{
                     padding-left: 30px;
 
@@ -334,13 +350,13 @@ $bg-form-input: #F6F6F6;
                         p{
                             margin-top: 0px;
                             margin-bottom: 0px;
+                            color: $neutrals-900;
                         }
                     }
 
                   }
 
                   @media screen and (min-width: $desktop) {
-                    
                     max-width: 750px;
                   }
 
@@ -376,6 +392,7 @@ $bg-form-input: #F6F6F6;
 
                         input{
                             width: auto;
+                            height: auto;
                         }
 
                         input[type="checkbox"] {
@@ -393,19 +410,28 @@ $bg-form-input: #F6F6F6;
                         
                         input[type="checkbox"]::before {
                             content: "";
+                            display: block;
                             width: 24px;
                             height: 24px;
                             clip-path: polygon(35.86% 77.34%, 13.42% 51.74%, 5.03% 59.1%, 35.86% 94.27%, 90.12% 24.47%, 81.91% 18.09%, 35.86% 77.34%);
+                            -webkit-transform: scale(0);
+                            -moz-transform: scale(0);
                             transform: scale(0);
                             background-color: #F6F6F6;
                         }
 
                         input[type="checkbox"]:checked::before {
+                            -webkit-transform: scale(1);
+                            -moz-transform: scale(1);
                             transform: scale(1);
                         }
 
                         input[type="checkbox"]:checked{
                             background-color: $secondary-800;
+                        }
+
+                        input[type="checkbox"]:hover{
+                            outline: none;
                         }
                           
                         p{
@@ -413,8 +439,9 @@ $bg-form-input: #F6F6F6;
                             margin-top: 0px;
                             margin-bottom: 0px;
 
-                            @media screen and (max-width: 500px) {
+                            @media screen and (max-width: 400px) {
                                 text-wrap: wrap;
+                                width: 100px;
                             }
                         }
                     }

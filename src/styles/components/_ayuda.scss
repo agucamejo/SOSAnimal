@@ -50,16 +50,19 @@
   font-size: 16px;
   font-weight: $extrabold;
   cursor: pointer;
-  border-radius: $radius-ml;
   -webkit-border-radius: $radius-ml;
   -moz-border-radius: $radius-ml;
   -ms-border-radius: $radius-ml;
   -o-border-radius: $radius-ml;
   padding: 6px 12px;
+  border-radius: $radius-ml;
 
   .enlaceAyuda {
     text-decoration: none;
     color: $base-black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
 
