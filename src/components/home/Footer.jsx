@@ -11,11 +11,11 @@ const Footer = () => {
                 className="logo-img"
               />
               <div className="logo-text">
-                <h1>
+                <h4>
                   SOS Animal
                   <br />
                   Fray Bentos
-                </h1>
+                </h4>
               </div>
             </div>
             <div className="redes">
@@ -69,7 +69,9 @@ const Footer = () => {
           </div>
           <div className="contenedor-info-navegacion">
             <div className="navegacion-CTA">
-              <p>Porque cada vida importa, luchamos por ellos</p>
+              <p>
+                Porque cada vida importa, luchamos por ellos
+              </p>
               <button className="btn-primary btn-text">Adopciones</button>
               <button className="btn-secondary">Donaciones</button>
             </div>

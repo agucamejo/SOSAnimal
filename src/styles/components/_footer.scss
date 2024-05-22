@@ -11,7 +11,7 @@ $mobile-height-footer: 255px;
   background-color: #221F1F;
   color: #fff;
   padding: 56px 60px;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   margin: 0 auto;
@@ -47,8 +47,8 @@ $mobile-height-footer: 255px;
       }
 
       .logo-text {
-        h1 {
-          color: $secondary-700;
+        h4 {
+          color: $secondary-600;
           margin: 0;
           font-size: 22px;
           line-height: 1.2;
@@ -81,7 +81,7 @@ $mobile-height-footer: 255px;
             align-items: center;
             height: 40px;
             width: 40px;
-            background-color: $secondary-700;
+            background-color: $secondary-600;
             color: #fff;
             border: none;
             border-radius: 36px;
@@ -93,7 +93,7 @@ $mobile-height-footer: 255px;
             }
           }
 
-          .btn-contact:hover{
+          .btn-contact:hover {
             background-color: $secondary-300;
           }
         }
@@ -108,69 +108,74 @@ $mobile-height-footer: 255px;
     margin-bottom: 56px;
 
     .navegacion-CTA {
+      width: 254px;
+      height: 182px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
-
+    
       p {
         margin-bottom: 20px;
       }
-
+    
       .btn-primary {
         width: 140px;
         height: 52px;
         margin: 10px 0;
-        color: $secondary-700;
+        color: $secondary-600;
       }
-
+    
       .btn-secondary {
         width: 140px;
         height: 52px;
         margin: 10px 0;
-        background-color: $secondary-700;
+        background-color: $secondary-600;
       }
-
-      .btn-contact,.btn-secondary:hover{
+    
+      .btn-contact, .btn-secondary:hover {
         background-color: $secondary-300;
       }
     }
-    
-
+  
     .navegacion-enlaces {
+      width: 237px;
+      height: 186px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      margin-right: 70px;
-
+      align-items: center;
+      justify-content: center;
+    
       a {
-        color: $secondary-700;
+        color: $secondary-600;
         text-decoration: none;
         margin: 5px 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
         max-width: 200px;
-
+    
         .arrow {
           margin-left: 10px;
           flex-shrink: 0;
         }
       }
-
-      a:hover{
+    
+      a:hover {
         color: $secondary-300;
       }
     }
-
+    
     .navegacion-ayuda {
+      width: 232px;
+      height: 122px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-right: 60px;
+      margin-right: 0px;
 
       a {
-        color: $neutrals-500; // Actualización del color
+        color: $neutrals-600;
         text-decoration: none;
         margin-bottom: 5px;
         display: block;
@@ -187,15 +192,16 @@ $mobile-height-footer: 255px;
 
     .perro-mini {
       margin-top: 10px;
+      color:$neutrals-500;
     }
   }
 
   .footer-bottom-line {
-    width: calc(100% - 120px);
+    width: calc(100%);
     border-top: 1px solid $neutrals-500;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,11 +212,62 @@ $mobile-height-footer: 255px;
     }
 
     .freepik {
-      color: $secondary-700;
+      color: $secondary-600;
       text-decoration: none;
     }
+
     .freepik:hover {
       color: $secondary-300;
     }
   }
+
+  @media (max-width: $tablet-width-footer) {
+    .contenedor-info-navegacion {
+      flex-direction: column;
+  
+      .contenedor-logo-redes {
+        order: 1;
+      }
+  
+      .redes {
+        order: 3;
+      }
+  
+      .navegacion-CTA {
+        width: 100%;
+        height: 43px;
+        flex-direction: row;
+        align-items: center;
+        order: 2;
+  
+        p {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+  
+        .btn-primary, .btn-secondary {
+          width: 122px;
+          height: 43px;
+          margin: 2px;
+        }
+      }
+  
+      .navegacion-enlaces {
+        order: 4;
+      }
+  
+      .navegacion-ayuda {
+        order: 5;
+      }
+  
+      .ubicacion-derecho {
+        order: 6;
+      }
+  
+      .footer-bottom-line {
+        order: 7;
+      }
+    }
+  }
+  
 }
