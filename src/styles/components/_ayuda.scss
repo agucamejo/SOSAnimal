@@ -58,12 +58,20 @@
   font-size: 16px;
   font-weight: $extrabold;
   cursor: pointer;
-  border-radius: $radius-ml;
   -webkit-border-radius: $radius-ml;
   -moz-border-radius: $radius-ml;
   -ms-border-radius: $radius-ml;
   -o-border-radius: $radius-ml;
+  border-radius: $radius-ml;
   padding: 6px 12px;
+
+  .enlaceAyuda {
+    text-decoration: none;
+    color: $base-black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 .btnAyuda:hover {
@@ -488,18 +496,18 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -510,11 +518,11 @@
   display: flex;
   align-items: center;
   gap: 3em;
-  border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+  border-radius: 24px;
   z-index: 1000;
   animation: slideIn 0.3s forwards;
 
@@ -532,11 +540,11 @@
   .contentCloseModal {
     width: 2em;
     height: 2em;
-    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
