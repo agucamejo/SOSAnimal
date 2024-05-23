@@ -5,6 +5,7 @@ import Collaborations from '../../components/home/Collaborations';
 import Info from '../../components/home/Info';
 import Historia from '../../components/home/Historia';
 import Valores from '../../components/home/Valores';
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Valores />
         <Testimonials />
       </div>
+      <Footer />
     </div>
   );
 };

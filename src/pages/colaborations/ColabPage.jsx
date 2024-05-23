@@ -1,8 +1,9 @@
-import Navbar from '../../components/Navbar'
-import Socio from '../../components/collaborations/Socio'
-import Voluntario from '../../components/collaborations/Voluntario'
-import Donaciones from '../../components/collaborations/Donaciones'
-import Subtitles from '../../components/Subtitles'
+import Navbar from '../../components/Navbar';
+import Footer from "../../components/Footer";
+import Socio from '../../components/collaborations/Socio';
+import Voluntario from '../../components/collaborations/Voluntario';
+import Donaciones from '../../components/collaborations/Donaciones';
+import Subtitles from '../../components/Subtitles';
 
 const Collaborations = () => {
   return (
@@ -19,6 +20,7 @@ const Collaborations = () => {
           <Donaciones />
         </section>
       </div>
+      <Footer />
     </div>
   )
 }

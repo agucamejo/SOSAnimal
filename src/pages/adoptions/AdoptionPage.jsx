@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import Form from "../../components/adoptions/AdoptionForm";
 
 
@@ -7,6 +8,7 @@ const Adoptions = () => {
        <div>
            <Navbar />
            <Form />
+           <Footer />
        </div>
     );
 }
