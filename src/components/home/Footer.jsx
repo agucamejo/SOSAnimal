@@ -67,39 +67,41 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="contenedor-info-navegacion">
-            <div className="navegacion-CTA">
-              <p>
-                Porque cada vida importa, luchamos por ellos
-              </p>
-              <button className="btn-primary btn-text">Adopciones</button>
-              <button className="btn-secondary">Donaciones</button>
-            </div>
-            <div className="navegacion-enlaces">
-              <a href="#">
-                Inicio <span className="arrow">↗</span>
-              </a>
-              <a href="#">
-                ¿Cómo colaborar? <span className="arrow">↗</span>
-              </a>
-              <a href="#">
-                Información útil <span className="arrow">↗</span>
-              </a>
-              <a href="#">
-                Sobre nosotros <span className="arrow">↗</span>
-              </a>
-              <a href="#">
-                Adopciones <span className="arrow">↗</span>
-              </a>
-            </div>
-            <div className="navegacion-ayuda">
-              <a>AYUDA</a>
+        </div>
+        <div className="navegacion-general">
+          <div className="navegacion-CTA">
+            <p>Porque cada vida importa, luchamos por ellos</p>
+            <button className="btn-primary btn-text">Adopciones</button>
+            <button className="btn-secondary">Donaciones</button>
+          </div>
+          <div className="navegacion-enlaces">
+            <a href="#">
+              Inicio <span className="arrow">↗</span>
+            </a>
+            <a href="#">
+              ¿Cómo colaborar? <span className="arrow">↗</span>
+            </a>
+            <a href="#">
+              Información útil <span className="arrow">↗</span>
+            </a>
+            <a href="#">
+              Sobre nosotros <span className="arrow">↗</span>
+            </a>
+            <a href="#">
+              Adopciones <span className="arrow">↗</span>
+            </a>
+          </div>
+          <div className="navegacion-ayuda">
+            <a>AYUDA</a>
+            <div className="enlaces-ayuda">
               <a href="#">Preguntas frecuentes</a>
               <a href="#">Números de emergencia</a>
             </div>
           </div>
         </div>
-        <div className="ubicacion-derecho">
+      </div>
+      <div className="ubicacion-derechos">
+        <div className="ubicacion">
           <p>Fray Bentos, Río Negro, Uruguay</p>
           <p>
             <img
@@ -109,19 +111,21 @@ const Footer = () => {
             />
           </p>
         </div>
-      </div>
-      <div className="footer-bottom-line">
-        <p>2023 @ SOS Animal. All rights reserved</p>
-        <p>
-          Mountiel font designed by{" "}
-          <a
-            href="https://www.freepik.com"
-            className="freepik"
-            style={{ color: "$secondary-700" }}
-          >
-            FREEPIK
-          </a>
-        </p>
+        <div className="derechos">
+          <p>2023 @ SOS Animal. All rights reserved</p>
+          <div className="creditos">
+          <p>
+            Mountiel font designed by{" "}
+            <a
+              href="https://www.freepik.com"
+              className="freepik"
+              style={{ color: "$secondary-700" }}
+            >
+              FREEPIK
+            </a>
+          </p>
+        </div>
+        </div>
       </div>
     </footer>
   );
