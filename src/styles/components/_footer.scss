@@ -167,11 +167,13 @@ $tablet-width-footer: 768px;
         color: $secondary-600;
         text-align: center;
         gap: 10px;
+        text-decoration: none;
       }
 
       .btn-secondary {
         width: 140px;
         height: 52px;
+        text-decoration: none;
         background-color: $secondary-600;
         text-align: center;
         gap: 10px;
@@ -294,11 +296,7 @@ $tablet-width-footer: 768px;
     }
   }
 
-  @media screen and (max-width: 325px) {
-    .social-icons{
-      gap: 10px;
-    } 
-  }
+  
 
   @media (max-width: $tablet-width-footer) {
     .footer-inner {
@@ -308,6 +306,13 @@ $tablet-width-footer: 768px;
         gap: 0;
         flex-direction: column;
 
+        .redes{
+          @media screen and (max-width: 325px) {
+            .social-icons{
+              gap: 5px;
+            } 
+          }
+        }
         
       }
 

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
       <footer className="footer">
@@ -71,31 +73,31 @@ const Footer = () => {
           <div className="navegacion-general">
             <div className="navegacion-CTA">
               <p>Porque cada vida importa, luchamos por ellos</p>
-              <button className="btn-primary btn-text">Adopciones</button>
-              <button className="btn-secondary">Donaciones</button>
+              <Link to="/adoptions" className="btn-primary btn-text">Adopciones</Link>
+              <Link to="/collaborations" className="btn-secondary">Donaciones</Link>
             </div>
             <div className="navegacion-enlaces">
-              <a href="#">
+              <Link to="/">
                 Inicio <span className="arrow">↗</span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/collaborations">
                 ¿Cómo colaborar? <span className="arrow">↗</span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/contact">
                 Información útil <span className="arrow">↗</span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/about">
                 Sobre nosotros <span className="arrow">↗</span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/adoptions">
                 Adopciones <span className="arrow">↗</span>
-              </a>
+              </Link>
             </div>
             <div className="navegacion-ayuda">
               <a>AYUDA</a>
               <div className="enlaces-ayuda">
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Números de emergencia</a>
+                <Link to="/contact">Preguntas frecuentes</Link>
+                <Link to="/contact">Números de emergencia</Link>
               </div>
             </div>
           </div>
