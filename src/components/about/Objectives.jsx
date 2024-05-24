@@ -24,7 +24,7 @@ const Objectives = () => {
                     <p>Penalizar situaciones de maltrato y, en casos graves, prohibir la tenencia de animales</p>
                 </div>
             </div>
-            <img src="./SiluetaObjetives.png" alt="Silueta de mujer con un gato" title="Silueta de mujer con un gato"/>
+            <img className="img-mujer" src="./SiluetaObjetives.png" alt="Silueta de mujer con un gato" title="Silueta de mujer con un gato"/>
        </div>
     );
 }

@@ -8,7 +8,7 @@
         margin: 9em 3.75em 5em 3.75em;
         max-width: 1200px;
         
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 830px) {
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr; 
             gap: 0px 0px; 
@@ -17,7 +17,7 @@
             gap: 30px;
         }
 
-        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        @media screen and (min-width: $tablet) and (max-width: 830px) {
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr; 
             gap: 0px 0px; 
@@ -393,6 +393,10 @@
                     width: 100%;
                 }
             }
+        }
+
+        .img-mujer{
+            width: 100%;
         }
     }
 
