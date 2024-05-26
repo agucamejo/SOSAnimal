@@ -158,6 +158,10 @@ $tablet-width-footer: 768px;
         height: auto;
       }
 
+      @media screen and (max-width: 902px) {
+        height: auto;
+      }
+
       p {
         font-size: 20px;
         text-align: left;
@@ -324,23 +328,22 @@ $tablet-width-footer: 768px;
     .footer-inner {
       flex-direction: column;
 
-      .contenedor-logo-redes {
+      .contenedor-logo-redes{
         gap: 0;
         flex-direction: column;
 
-        .redes {
+        .redes{
           @media screen and (max-width: 325px) {
-            .social-icons {
+            .social-icons{
               gap: 5px;
-            }
+            } 
           }
         }
-
       }
 
-      .navegacion-general {
+      .navegacion-general{
         flex-direction: column;
-        gap: 40px;
+        gap:40px;
       }
 
       .navegacion-CTA {
@@ -382,5 +385,4 @@ $tablet-width-footer: 768px;
       }
     }
   }
-
 }
