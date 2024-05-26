@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="navegacion-general">
             <div className="navegacion-CTA">
               <p>Porque cada vida importa, luchamos por ellos</p>
-              <Link to="/adoptions" className="btn-primary btn-text">Adopciones</Link>
+              <Link to="/adoptions" className="btn-primary">Adopciones</Link>
               <Link to="/collaborations" className="btn-secondary">Donaciones</Link>
             </div>
             <div className="navegacion-enlaces">
@@ -98,6 +98,7 @@ const Footer = () => {
               <div className="enlaces-ayuda">
                 <Link to="/contact">Preguntas frecuentes</Link>
                 <Link to="/contact">Números de emergencia</Link>
+                <Link to="/contact">Charlas educativas</Link>
               </div>
             </div>
           </div>

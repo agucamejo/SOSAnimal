@@ -60,10 +60,14 @@ $tablet-width-footer: 768px;
 
         h4 {
           font-size: 22px;
-          color: $secondary-600;
+          color: $secondary-700;
           line-height: 1.2;
           text-align: center;
           margin: 0;
+
+          &:hover {
+            color: $neutrals-100;
+          }
         }
       }
     }
@@ -108,7 +112,7 @@ $tablet-width-footer: 768px;
             justify-content: center;
             height: 40px;
             width: 40px;
-            background-color: $secondary-600;
+            background-color: $secondary-700;
             color: #fff;
             border: none;
             border-radius: 36px;
@@ -118,6 +122,10 @@ $tablet-width-footer: 768px;
             img {
               display: block;
               margin: auto;
+            }
+
+            &:hover {
+              background-color: $neutrals-100;
             }
           }
 
@@ -145,7 +153,6 @@ $tablet-width-footer: 768px;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 20px;
 
       @media screen and (max-width: 902px) {
         height: auto;
@@ -155,6 +162,8 @@ $tablet-width-footer: 768px;
         font-size: 20px;
         text-align: left;
         margin-bottom: 10px;
+        line-height: 24px;
+        color: $base-white;
       }
 
       .btn-primary {
@@ -164,7 +173,7 @@ $tablet-width-footer: 768px;
         justify-content: center;
         width: 140px;
         height: 52px;
-        color: $secondary-600;
+        color: $secondary-700;
         text-align: center;
         gap: 10px;
         text-decoration: none;
@@ -174,9 +183,14 @@ $tablet-width-footer: 768px;
         width: 140px;
         height: 52px;
         text-decoration: none;
-        background-color: $secondary-600;
+        background-color: $secondary-700;
         text-align: center;
         gap: 10px;
+        font-weight: 800;
+
+        &:hover {
+          background-color: $neutrals-100;
+        }
       }
 
       .btn-secondary:hover {
@@ -193,6 +207,7 @@ $tablet-width-footer: 768px;
       align-items: flex-start;
       justify-content: flex-start;
       gap: 14px;
+      font-size: 22px;
 
       a {
         width: 335px;
@@ -200,11 +215,15 @@ $tablet-width-footer: 768px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 48px;
-        color: $secondary-600;
+        gap: 14px;
+        color: $secondary-700;
         text-decoration: none;
         max-width: 100%;
-        size: 22px;
+        font-weight: 700;
+
+        &:hover {
+          color: $neutrals-100;
+        }
       }
 
       a:hover {
@@ -224,6 +243,7 @@ $tablet-width-footer: 768px;
       align-items: flex-start;
       justify-content: center;
       gap: 14px;
+      font-size: 20px;
 
       .enlaces-ayuda {
         display: flex;
@@ -237,6 +257,10 @@ $tablet-width-footer: 768px;
         color: $neutrals-600;
         text-decoration: none;
         display: block;
+
+        &:hover {
+          color: $neutrals-100;
+        }
       }
     }
   }
@@ -285,7 +309,7 @@ $tablet-width-footer: 768px;
         color: $neutrals-500;
 
         .freepik {
-          color: $secondary-600;
+          color: $secondary-700;
           text-decoration: none;
         }
 
@@ -296,29 +320,27 @@ $tablet-width-footer: 768px;
     }
   }
 
-  
-
   @media (max-width: $tablet-width-footer) {
     .footer-inner {
       flex-direction: column;
 
-      .contenedor-logo-redes{
+      .contenedor-logo-redes {
         gap: 0;
         flex-direction: column;
 
-        .redes{
+        .redes {
           @media screen and (max-width: 325px) {
-            .social-icons{
+            .social-icons {
               gap: 5px;
-            } 
+            }
           }
         }
-        
+
       }
 
-      .navegacion-general{
+      .navegacion-general {
         flex-direction: column;
-        gap:40px;
+        gap: 40px;
       }
 
       .navegacion-CTA {
