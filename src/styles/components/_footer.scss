@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 $desktop-width-footer: 1024px;
-$tablet-width-footer: 688px;
-$tablet-height-footer: 254px;
-$mobile-width-footer: 359px;
-$mobile-height-footer: 255px;
+$tablet-width-footer: 768px;
 
 .footer {
   width: 100%;
@@ -150,6 +147,10 @@ $mobile-height-footer: 255px;
       justify-content: space-between;
       gap: 20px;
 
+      @media screen and (max-width: 902px) {
+        height: auto;
+      }
+
       p {
         font-size: 20px;
         text-align: left;
@@ -166,11 +167,13 @@ $mobile-height-footer: 255px;
         color: $secondary-600;
         text-align: center;
         gap: 10px;
+        text-decoration: none;
       }
 
       .btn-secondary {
         width: 140px;
         height: 52px;
+        text-decoration: none;
         background-color: $secondary-600;
         text-align: center;
         gap: 10px;
@@ -293,16 +296,35 @@ $mobile-height-footer: 255px;
     }
   }
 
+  
 
   @media (max-width: $tablet-width-footer) {
-    .contenedor-info-navegacion {
+    .footer-inner {
       flex-direction: column;
+
+      .contenedor-logo-redes{
+        gap: 0;
+        flex-direction: column;
+
+        .redes{
+          @media screen and (max-width: 325px) {
+            .social-icons{
+              gap: 5px;
+            } 
+          }
+        }
+        
+      }
+
+      .navegacion-general{
+        flex-direction: column;
+        gap:40px;
+      }
 
       .navegacion-CTA {
         width: 100%;
-        height: 43px;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         order: 2;
 
         p {
@@ -312,7 +334,6 @@ $mobile-height-footer: 255px;
 
         .btn-primary,
         .btn-secondary {
-          width: 122px;
           height: 43px;
           margin: 2px;
         }

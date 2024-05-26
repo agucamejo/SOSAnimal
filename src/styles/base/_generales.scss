@@ -8,11 +8,16 @@
   font-family: 'Lato', sans-serif;
 }
 
-body{
+body {
   background-color: $base-white;
 }
 
 @font-face {
   font-family: 'mountriel-regular';
   src: url('/fonts/mountriel-regular-serif-400.otf') format('opentype');
+}
+
+.estructure-home{
+  display: flex;
+  flex-direction: column;
 }

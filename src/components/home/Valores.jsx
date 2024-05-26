@@ -1,6 +1,6 @@
 const Valores = () => {
   return (
-    <div className="container">
+    <div className="container-valores">
       <div className="valores">
         <div className="banner banner-1">
           <h2 className="h2-left">+400</h2>

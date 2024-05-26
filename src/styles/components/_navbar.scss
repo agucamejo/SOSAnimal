@@ -16,11 +16,7 @@ header{
     right: 0;
     z-index: 50;
 
-    .hidden{
-      display: none;
-    }
-
-    .container-tablet{
+    .container-tablet {
       display: none;
     }
 
@@ -30,8 +26,8 @@ header{
       gap: 12px;
       align-items: center;
 
-      .arrow-icon{
-          display: none;
+      .arrow-icon {
+        display: none;
       }
 
       a {
@@ -62,16 +58,15 @@ header{
       display: none;
     }
 
-    .btn-adoptions-tablet{
+    .btn-adoptions-tablet {
       display: none;
     }
 
     @media screen and (max-width: $desktop) and (min-width: $tablet) {
       padding: 8px 40px;
       align-items: baseline;
-      
 
-      .container-tablet{
+      .container-tablet {
         display: inline-block;
         position: relative;
         z-index: 51;
@@ -81,7 +76,7 @@ header{
         display: none;
       }
 
-      .btn-adoptions-tablet{
+      .btn-adoptions-tablet {
         display: inline-block;
         margin-right: 24px;
       }
@@ -125,7 +120,7 @@ header{
           align-items: center;
         }
 
-        .arrow-icon{
+        .arrow-icon {
           display: flex;
         }
       }
@@ -143,17 +138,17 @@ header{
     @media screen and (max-width: 767.98px) {
       padding: 8px 15px;
 
-      .container-tablet{
-          display: inline-block;
-          z-index: 51;
+      .container-tablet {
+        display: inline-block;
+        z-index: 51;
       }
 
       .navbar-links {
         display: none;
       }
 
-      .btn-adoptions-tablet{
-          display: none;
+      .btn-adoptions-tablet {
+        display: none;
       }
 
       .hamburger {
@@ -191,4 +186,3 @@ header{
     }
   }
 }
-

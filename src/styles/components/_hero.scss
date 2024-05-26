@@ -94,21 +94,24 @@
         margin-left: 2px;
       }
     }
-    h2 {
-      width: 349px;
+    h1 {
+      width: 355px;
 
       @media screen and (max-width: $desktop) and (min-width: $tablet) {
-        width: 400px;
+        width: 410px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 430px;
       }
 
       .new-line {
         display: block;
         font-family: 'mountriel-regular';
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-        margin-bottom: 6px;        
-        letter-spacing: 2px;
-        font-size: 48px;
+        -webkit-text-stroke-color: black;        
+        letter-spacing: -1px;
+        font-size: 46px;
         font-weight: 800;
 
         @media screen and (max-width: $desktop) and (min-width: $tablet) {

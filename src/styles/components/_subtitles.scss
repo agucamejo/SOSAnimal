@@ -7,6 +7,21 @@
   height: 100px;
   margin: 0 auto;
 
+  h1{
+    color: $base-black;
+    letter-spacing: -1px;
+    font-size: 46px;
+    font-weight: 700;    
+
+    @media screen and (max-width: $desktop) and (min-width: $tablet){
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $tablet){
+      font-size: 32px;
+    }
+  }
+
   h2{
     color: $base-black;
     letter-spacing: -2px;

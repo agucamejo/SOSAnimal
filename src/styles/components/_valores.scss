@@ -22,6 +22,13 @@ $tablet-height-banner3: 127px;
 $mobile-width-banner3: 359px;
 $mobile-height-banner3: 127px;
 
+.container-valores {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .valores {
     display: flex;
     flex-direction: row;
@@ -331,13 +338,13 @@ $mobile-height-banner3: 127px;
 }
 
 @media screen and (max-width: 717px) {
-    .container{
+    .container-valores{
         width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) and (min-width: 718px) {
-    .container{
+    .container-valores{
         margin-left:25px
     }
 }
