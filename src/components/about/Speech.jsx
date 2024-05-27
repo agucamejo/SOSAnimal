@@ -1,6 +1,6 @@
 const Speech = () => {
     return ( 
-       <div className="speech-container">
+       <div id="charlas" className="speech-container">
             <h2>¿Querés difundir los ideales del cuidado animal?</h2>
             <p>Invitanos a tu barrio o institución para hablar sobre el cuidado animal y la sobrepoblación.</p>
             <a

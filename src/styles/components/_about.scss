@@ -254,6 +254,10 @@
         gap:24px;
         margin: 5em;
 
+        @media screen and (min-width: $desktop){
+            margin: 5em 9em 5em 9em;
+        }
+
         @media screen and (max-width: $tablet) {
             justify-items: start;
             padding: 30px;
@@ -263,7 +267,6 @@
                 margin: 1em;
             }
         }
-        
 
         h2{
             width: 80%;

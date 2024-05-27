@@ -1,9 +1,42 @@
 import ButtonPrimary from '../ButtonPrimary';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const iconCatDog = './icons/Cat&Dog.svg';
   const imgDogHero = './images/dog-hero.png';
   const imgSosHero = './images/sos-hero.png';
+  
+  useEffect(() => {
+    const handleClick = (event) => {
+      event.preventDefault(); // Previene la acción por defecto del enlace
+      navigate('/collaborations');
+
+      setTimeout(() => {
+        const targetElement = document.getElementById('donaciones');
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.error(`El elemento 'donaciones' no fue encontrado en el DOM.`);
+        }
+      }, 0);
+    };
+
+    const linkRouterElementDonaciones = document.getElementById('linkRouterDonaciones');
+
+    if (linkRouterElementDonaciones) {
+      linkRouterElementDonaciones.addEventListener('click', handleClick);
+    }
+
+    return () => {
+      if (linkRouterElementDonaciones) {
+        linkRouterElementDonaciones.removeEventListener('click', handleClick);
+      }
+    };
+  }, [navigate]);
+  
   return (
     <div className="hero-section">
       <div className="hero-sos1">
@@ -25,7 +58,7 @@ const Hero = () => {
           Invertimos cada recurso en el bienestar animal.
           Unite a nuestra causa y hacé posible más acciones solidarias.
         </p>
-        <ButtonPrimary text="Donaciones" />
+        <Link to="/collaborations" id="linkRouterDonaciones"><ButtonPrimary text="Donaciones"/></Link>
       </div>
 
       <div className="sos-dog">

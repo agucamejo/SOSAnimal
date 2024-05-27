@@ -122,6 +122,12 @@ header{
 
         .arrow-icon {
           display: flex;
+
+          &:hover{
+            path{
+              stroke-width: 2
+            }
+          }
         }
       }
 

@@ -1,6 +1,13 @@
 import ButtonLink from '../ButtonLink'
+import { useNavigate } from 'react-router-dom';
 
 function Info() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/about');
+  };
+
   return (
     <div className="info">
       <section className="contentInfo">
@@ -14,11 +21,6 @@ function Info() {
             <hr className="line" />
           </div>
         </article>
-        {/* <img
-        src="./infoImg/fondo.svg"
-        alt="Hombre dandole un beso a su perro en brazos"
-        className="imgFondo"
-      /> */}
         <article className="contentCards">
           <section className="card">
             <img
@@ -64,7 +66,7 @@ function Info() {
             </p>
           </section>
         </article>
-        <ButtonLink text="Leer más" className="btn" />
+        <ButtonLink text="Leer más" className="btn" onClick={handleClick}/>
       </section>
     </div>
   )

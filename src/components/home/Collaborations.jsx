@@ -1,5 +1,6 @@
 import ButtonCollaboration from '../ButtonCollaboration';
 import Subtitles from '../Subtitles';
+
 const Collaborations = () => {
   const imgManCollaboration = './images/desktop1.svg';
   const imgDogCollaboration = './images/desktop2.svg';

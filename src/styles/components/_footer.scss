@@ -64,10 +64,6 @@ $tablet-width-footer: 768px;
           line-height: 1.2;
           text-align: center;
           margin: 0;
-
-          &:hover {
-            color: $neutrals-100;
-          }
         }
       }
     }
@@ -97,6 +93,7 @@ $tablet-width-footer: 768px;
           font-size: 20px;
           text-align: center;
           margin-bottom: 10px;
+          color: $base-white;
         }
 
         .social-icons {
@@ -154,12 +151,9 @@ $tablet-width-footer: 768px;
       align-items: flex-start;
       justify-content: space-between;
 
-      @media screen and (max-width: 902px) {
+      @media screen and (max-width: 902px){
         height: auto;
-      }
-
-      @media screen and (max-width: 902px) {
-        height: auto;
+        gap: 10px;
       }
 
       p {
@@ -181,6 +175,12 @@ $tablet-width-footer: 768px;
         text-align: center;
         gap: 10px;
         text-decoration: none;
+
+        &:hover {
+          background-color: transparent;
+          color: $secondary-300;
+          border: 2px solid $secondary-300;
+        }
       }
 
       .btn-secondary {
@@ -193,13 +193,13 @@ $tablet-width-footer: 768px;
         font-weight: 800;
 
         &:hover {
-          background-color: $neutrals-100;
+          background-color: $secondary-300;
         }
       }
+    }
 
-      .btn-secondary:hover {
-        background-color: $secondary-300;
-      }
+    .redes-mobile{
+      display: none;
     }
 
     .navegacion-enlaces {
@@ -226,17 +226,19 @@ $tablet-width-footer: 768px;
         font-weight: 700;
 
         &:hover {
-          color: $neutrals-100;
+          color: $secondary-300;
+
+          .icon{
+            g{
+              path{
+                stroke: $secondary-300;
+              }
+            } 
+          }
         }
+        
       }
 
-      a:hover {
-        color: $secondary-300;
-      }
-
-      .arrow {
-        flex-shrink: 0;
-      }
     }
 
     .navegacion-ayuda {
@@ -266,6 +268,13 @@ $tablet-width-footer: 768px;
           color: $neutrals-100;
         }
       }
+
+      p{
+        color: $neutrals-600;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+      }
     }
   }
 
@@ -283,6 +292,7 @@ $tablet-width-footer: 768px;
       align-items: center;
       justify-content: flex-start;
       gap: 20px;
+      color: $base-white;
 
       .perro-mini {
         color: $neutrals-500;
@@ -291,7 +301,7 @@ $tablet-width-footer: 768px;
 
     .derechos {
       width: calc(100%);
-      border-top: 1px solid $neutrals-500;
+      border-top: 1px solid $neutrals-600;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -300,7 +310,7 @@ $tablet-width-footer: 768px;
 
       p {
         margin: 5px 0;
-        color: $neutrals-500;
+        color: $neutrals-600;
       }
 
       .creditos {
@@ -310,7 +320,7 @@ $tablet-width-footer: 768px;
         flex-direction: horizontal;
         align-items: middle;
         justify-content: center;
-        color: $neutrals-500;
+        color: $neutrals-600;
 
         .freepik {
           color: $secondary-700;
@@ -325,25 +335,94 @@ $tablet-width-footer: 768px;
   }
 
   @media (max-width: $tablet-width-footer) {
+    padding: $space-xl $space-ml $space-xl $space-ml;
+
+
     .footer-inner {
       flex-direction: column;
+
+      .redes-mobile{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 10px;
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 10px;
+          color: $base-white;
+        }
+
+        .social-icons {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 20px;
+
+          .btn-contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            background-color: $secondary-700;
+            color: #fff;
+            border: none;
+            border-radius: 36px;
+
+            margin-bottom: 10px;
+
+            img {
+              display: block;
+              margin: auto;
+            }
+
+            &:hover {
+              background-color: $neutrals-100;
+            }
+          }
+
+          .btn-contact:hover {
+            background-color: $secondary-300;
+          }
+        }
+      
+        @media screen and (max-width: 325px) {
+          .social-icons{
+            gap: 15px;
+          } 
+        }
+      }
+    }
 
       .contenedor-logo-redes{
         gap: 0;
         flex-direction: column;
+        align-items: flex-start;
 
         .redes{
-          @media screen and (max-width: 325px) {
-            .social-icons{
-              gap: 5px;
-            } 
-          }
+          display: none;
         }
       }
 
       .navegacion-general{
         flex-direction: column;
-        gap:40px;
+        gap: $space-2xl;
+        align-items: stretch;
       }
 
       .navegacion-CTA {
@@ -351,9 +430,10 @@ $tablet-width-footer: 768px;
         flex-direction: column;
         align-items: flex-start;
         order: 2;
+        gap: 10px;
 
         p {
-          margin-bottom: 0;
+          margin-bottom: 20px;
           margin-right: 10px;
         }
 
@@ -366,13 +446,19 @@ $tablet-width-footer: 768px;
 
       .navegacion-enlaces {
         order: 3;
+        width: 100%;
+        max-width: none;
+
+        a{
+          width: 100%;
+        }
       }
 
       .navegacion-ayuda {
         order: 4;
       }
 
-      .redes {
+      .redes-mobile {
         order: 5;
       }
 
@@ -384,5 +470,18 @@ $tablet-width-footer: 768px;
         order: 7;
       }
     }
+    .ubicacion-derechos{
+      .derechos{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        p{
+          text-align: center;
+        }
+      }
+    }
   }
 }
+
