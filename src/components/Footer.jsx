@@ -77,22 +77,97 @@ const Footer = () => {
               <Link to="/collaborations" className="btn-secondary">Donaciones</Link>
             </div>
             <div className="navegacion-enlaces">
-              <Link to="/">
-                Inicio <span className="arrow">↗</span>
-              </Link>
-              <Link to="/collaborations">
-                ¿Cómo colaborar? <span className="arrow">↗</span>
-              </Link>
-              <Link to="/contact">
-                Información útil <span className="arrow">↗</span>
-              </Link>
-              <Link to="/about">
-                Sobre nosotros <span className="arrow">↗</span>
-              </Link>
-              <Link to="/adoptions">
-                Adopciones <span className="arrow">↗</span>
-              </Link>
-            </div>
+            <Link to="/">
+              Inicio
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link to="/collaborations">
+              ¿Cómo colaborar?
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link to="/contact">
+              Información útil
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link to="/about">
+              Sobre nosotros
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link to="/adoptions">
+              Adopciones
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
             <div className="navegacion-ayuda">
               <a>AYUDA</a>
               <div className="enlaces-ayuda">
