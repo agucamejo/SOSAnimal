@@ -2,6 +2,7 @@
 
 $desktop-width-footer: 1024px;
 $tablet-width-footer: 768px;
+$mobile-width-footer: 375px;
 
 .footer {
   width: 100%;
@@ -64,10 +65,6 @@ $tablet-width-footer: 768px;
           line-height: 1.2;
           text-align: center;
           margin: 0;
-
-          &:hover {
-            color: $neutrals-100;
-          }
         }
       }
     }
@@ -135,6 +132,12 @@ $tablet-width-footer: 768px;
         }
       }
     }
+
+    @media (max-width: $mobile-width-footer){
+      .redes{
+        order: 7;
+      }
+    }
   }
 
   .navegacion-general {
@@ -179,6 +182,12 @@ $tablet-width-footer: 768px;
         text-decoration: none;
       }
 
+      .btn-primary:hover {
+        border-color: #9ae69c;
+        color: #9ae69c;
+        background-color: transparent;
+      }
+
       .btn-secondary {
         width: 140px;
         height: 52px;
@@ -187,10 +196,6 @@ $tablet-width-footer: 768px;
         text-align: center;
         gap: 10px;
         font-weight: 800;
-
-        &:hover {
-          background-color: $neutrals-100;
-        }
       }
 
       .btn-secondary:hover {
@@ -223,7 +228,7 @@ $tablet-width-footer: 768px;
 
         &:hover {
           color: $secondary-300;
-      
+
           .arrow {
             stroke: $secondary-300;
           }
@@ -237,7 +242,7 @@ $tablet-width-footer: 768px;
       .arrow {
         stroke: $secondary-700;
         transition: stroke 0.3s;
-      
+
         &:hover {
           stroke: $secondary-300;
         }
@@ -269,6 +274,12 @@ $tablet-width-footer: 768px;
 
         &:hover {
           color: $neutrals-100;
+        }
+      }
+
+      .no-hover {
+        &:hover {
+          color: $neutrals-600;
         }
       }
     }
@@ -326,6 +337,14 @@ $tablet-width-footer: 768px;
           color: $secondary-300;
         }
       }
+      
+    }
+    @media (max-width: $mobile-width-footer){
+      .derechos{
+        width: 335px;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
@@ -344,7 +363,6 @@ $tablet-width-footer: 768px;
             }
           }
         }
-
       }
 
       .navegacion-general {
@@ -392,4 +410,36 @@ $tablet-width-footer: 768px;
     }
   }
 
+  @media (max-width: $mobile-width-footer) {
+    .footer-inner {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 56px;
+      width: fixed;
+      height: auto;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .navegacion-CTA {
+      width: 335px;
+      max-width: 420px;
+      gap: 20px;
+  
+      p {
+        margin-bottom: 20px;
+      }
+  
+      .btn-primary {
+        gap: 0px;
+      }
+    }
+  }
+  
 }
