@@ -1,23 +1,8 @@
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
-  const navigate = useNavigate();
   const location = useLocation();
-
-  const handleClick = (e, path, targetId) => {
-    e.preventDefault();
-    navigate(path);
-
-    setTimeout(() => {
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        console.error(`El elemento '${targetId}' no fue encontrado en el DOM.`);
-      }
-    }, 0);
-  };
 
   const handleNavLinkClick = (destination) => (e) => {
     if (location.pathname === destination) {
@@ -29,44 +14,11 @@ const Footer = () => {
     }
   };
 
-  useEffect(() => {
-    const linkRouterElementCharlas = document.getElementById('linkRouterCharlas');
-    const linkRouterElementPreguntas = document.getElementById('linkRouterPreguntas');
-    const linkRouterElementEmergencia = document.getElementById('linkRouterEmergencia');
-
-    const handleSpecialLinkClick = (e, path, targetId) =>
-      handleClick(e, path, targetId);
-
-    if (linkRouterElementCharlas) {
-      linkRouterElementCharlas.addEventListener('click', (e) =>
-        handleSpecialLinkClick(e, '/about', 'charlas')
-      );
-    }
-
-    if (linkRouterElementPreguntas) {
-      linkRouterElementPreguntas.addEventListener('click', (e) =>
-        handleSpecialLinkClick(e, '/contact', 'preguntasFrecuentes')
-      );
-    }
-
-    if (linkRouterElementEmergencia) {
-      linkRouterElementEmergencia.addEventListener('click', (e) =>
-        handleSpecialLinkClick(e, '/contact', 'numerosEmergencia')
-      );
-    }
-
-    return () => {
-      if (linkRouterElementCharlas) {
-        linkRouterElementCharlas.removeEventListener('click', handleSpecialLinkClick);
-      }
-      if (linkRouterElementPreguntas) {
-        linkRouterElementPreguntas.removeEventListener('click', handleSpecialLinkClick);
-      }
-      if (linkRouterElementEmergencia) {
-        linkRouterElementEmergencia.removeEventListener('click', handleSpecialLinkClick);
-      }
-    };
-  }, [navigate]);
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
     
   return (
     <footer className="footer">
@@ -141,7 +93,7 @@ const Footer = () => {
             <div className="navegacion-CTA">
               <p>Porque cada vida importa, luchamos por ellos</p>
               <Link to="/adoptions" className="btn-primary">Adopciones</Link>
-              <Link to="/collaborations" className="btn-secondary">Donaciones</Link>
+              <Link to="/collaborations#donaciones" className="btn-secondary" scroll={el => scrollWithOffset(el)}>Donaciones</Link>
             </div>
             <div className="navegacion-enlaces">
               <Link to="/" onClick={handleNavLinkClick('/')}>
@@ -213,9 +165,9 @@ const Footer = () => {
             <div className="navegacion-ayuda">
               <p>AYUDA</p>
               <div className="enlaces-ayuda">
-                <Link to="/contact">Preguntas frecuentes</Link>
-                <Link to="/contact" >Números de emergencia</Link>
-                <Link to="/about" id='linkRouterCharlas'>Charlas educativas</Link>
+                <Link to="/contact#faq" scroll={el => scrollWithOffset(el)}>Preguntas frecuentes</Link>
+                <Link to="/contact#emergencias" scroll={el => scrollWithOffset(el)}>Números de emergencia</Link>
+                <Link to="/about#charlas" scroll={el => scrollWithOffset(el)}>Charlas educativas</Link>
               </div>
             </div>
             <div className="redes-mobile">

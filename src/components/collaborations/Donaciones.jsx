@@ -13,7 +13,7 @@ function Donaciones() {
   }
 
   return (
-    <section className="containerDonaciones">
+    <section className="containerDonaciones" id="donaciones">
       <Modal isOpen={isModalOpen} onClose={closeModal} />
       <section className="containerTextDonaciones">
         <h2 className="titleDonaciones">Donaciones</h2>

@@ -1,6 +1,6 @@
 function Voluntario() {
   return (
-    <div className="containerVoluntario">
+    <div className="containerVoluntario" id="voluntarios">
       <section className="containerImgVoluntario">
         <img
           src="/colaboracionImg/perroBlanco&Negro.png"

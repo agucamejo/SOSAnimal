@@ -2,7 +2,7 @@ import { Player } from '@lottiefiles/react-lottie-player'
 
 function Socio() {
   return (
-    <div className="containerSocio">
+    <div className="containerSocio" id="socios">
       <section className="containerTextSocio">
         <h2 className="titleSocio">Hacete socio</h2>
         <p className="textSocio">

@@ -13,7 +13,7 @@ const Subtitles = ({ text }) => {
 }
 
 Subtitles.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };
 
 export default Subtitles;
