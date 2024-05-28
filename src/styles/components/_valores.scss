@@ -141,22 +141,33 @@ $mobile-height-banner3: 127px;
                 left: 20px;
                 transform: translateY(-50%);
                 font-family: Inter;
+
+                @media screen and (max-width: 325px){
+                    font-size: 90px;
+                }
             }
 
             .p-right {
                 font-size: 24px;
                 color: #ffffff;
                 position: absolute;
-                top: 70%;
+                top: 75%;
                 right: 42%;
                 transform: translateY(-50%);
                 white-space: pre-wrap;
                 line-height: 1.1;
                 font-family: Inter;
+
+                @media screen and (max-width: 380px){
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 325px){
+                    font-size: 18px;
+                }
             }
 
             .img{
-
                 position:absolute;
                 z-index: 3;
                 left: 50%;
@@ -164,6 +175,15 @@ $mobile-height-banner3: 127px;
                 width: 180px;
                 border-radius: $radius-lg;
                 content: url('/img-perro-big-mobile.png');
+
+                @media screen and (max-width: 380px){
+                   left: 44%;
+                }
+
+                @media screen and (max-width: 325px){
+                    left: 50%;
+                    width: 140px;
+                }
             }
 
         }
@@ -176,12 +196,14 @@ $mobile-height-banner3: 127px;
 
         @media screen and (max-width: $desktop) {
             display: flex;
-
         }
 
         @media screen and (max-width: $tablet) {
             display: block;
+        }
 
+        @media screen and (max-width: 380px){
+            width: 100%;
         }
 
     }
@@ -247,6 +269,14 @@ $mobile-height-banner3: 127px;
                 white-space: pre-wrap;
                 line-height: 1.3;
                 font-family: Inter;
+
+                @media screen and (max-width: 380px){
+                    font-size: 17px;
+                }
+
+                @media screen and (max-width: 325px){
+                    font-size: 15px;
+                }
             }
 
         }
@@ -257,8 +287,16 @@ $mobile-height-banner3: 127px;
             margin-top: 30px;
         }
 
+        @media screen and (max-width: 380px){
+            width: 100%;
+        }
+
         .p-left {
             left: 5%;
+        }
+
+        @media screen and (max-width: 365px){
+            background-position-y: 20px;
         }
     }
 
@@ -331,8 +369,15 @@ $mobile-height-banner3: 127px;
         @media screen and (max-width: $tablet) {
             height: $mobile-height-banner3;
             width: $mobile-width-banner3;
-
             margin-top: 50px;
+        }
+
+        @media screen and (max-width: 380px){
+            width: 100%;
+        }
+
+        @media screen and (max-width: 365px){
+            background-position-y: 20px;
         }
     }
 }

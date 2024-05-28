@@ -390,20 +390,12 @@ $tablet-width-footer: 768px;
               display: block;
               margin: auto;
             }
-
-            &:hover {
-              background-color: $neutrals-100;
-            }
-          }
-
-          .btn-contact:hover {
-            background-color: $secondary-300;
           }
         }
       
         @media screen and (max-width: 325px) {
           .social-icons{
-            gap: 15px;
+            gap: 10px;
           } 
         }
       }
@@ -442,6 +434,15 @@ $tablet-width-footer: 768px;
           height: 43px;
           margin: 2px;
         }
+
+        .btn-primary:hover{
+          color: $secondary-700;
+          border: 2px solid $secondary-800;
+        }
+
+        .btn-secondary:hover {
+          background-color: $secondary-700;
+        }
       }
 
       .navegacion-enlaces {
@@ -451,11 +452,27 @@ $tablet-width-footer: 768px;
 
         a{
           width: 100%;
+
+          &:hover{
+            color: $secondary-700;
+
+            .icon{
+              g{
+                path{
+                  stroke: $secondary-700;
+                }
+              } 
+            }
+          }
         }
       }
 
       .navegacion-ayuda {
         order: 4;
+
+        a:hover{
+          color: $neutrals-600;
+        }
       }
 
       .redes-mobile {

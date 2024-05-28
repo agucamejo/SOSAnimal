@@ -27,14 +27,12 @@ function Donaciones() {
             Hacé una donación
           </button>
           <a
-            className="enlaceAyuda"
+            className="enlaceAyuda btnAyuda btnDonacionesSinIcono"
             target="_blank"
             href="https://api.whatsapp.com/send?phone=+59892336700&text=%C2%A1Hola%20SOS!%20%F0%9F%91%8B%20%F0%9F%90%B6%20Quiero%20donar%20suministros,%20%C2%BFme%20podr%C3%A1n%20enviar%20informaci%C3%B3n?%20%20%C2%A1Muchas%20gracias!%F0%9F%98%BD"
           >
-            <button className="btnAyuda btnDonacionesSinIcono">
-              Doná suministros
-              <img src="/colaboracionImg/whapp.svg" alt="Whatsapp Icon" />
-            </button>
+            Doná suministros
+            <img src="/colaboracionImg/whapp.svg" alt="Whatsapp Icon" />
           </a>
         </div>
       </section>

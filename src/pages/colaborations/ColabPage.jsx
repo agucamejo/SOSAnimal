@@ -12,8 +12,7 @@ const Collaborations = () => {
       <div className="contentColab">
         <section className="colaborations">
           <section className="contentTitlesColab">
-            <Subtitles />
-            <h1 className="titleColab">Cómo podés ayudar a los animales</h1>
+            <Subtitles text='Cómo podés ayudar a los animales'/>
           </section>
           <Socio />
           <Voluntario />
