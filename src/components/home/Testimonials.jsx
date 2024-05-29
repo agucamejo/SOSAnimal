@@ -43,8 +43,8 @@ const Testimonials = () => {
             onMouseLeave={handleMouseLeave}
           >
             <img className="card-img" src={testimonial.image} alt="Imagen de testimonio" />
-            <h4>{testimonial.name}</h4>
-            <p>{testimonial.testimonial}</p>
+            <p className='name'>{testimonial.name}</p>
+            <p className='testimony'>{testimonial.testimonial}</p>
           </div>
         ))}
       </div>

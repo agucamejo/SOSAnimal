@@ -180,6 +180,10 @@ $mobile-height-banner3: 127px;
                    left: 45.8%;
                 }
 
+                @media screen and (max-width: 360px){
+                    left: 44%;
+                 }
+
                 @media screen and (max-width: 325px){
                     left: 50%;
                     width: 140px;

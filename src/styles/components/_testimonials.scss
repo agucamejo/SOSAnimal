@@ -22,8 +22,11 @@
       gap: 20px;
             
 
-      h4{
+      .name{
         font-size: 32px;
+        font-weight: $semibold;
+        line-height: 38px;
+        font-style: normal;
       }
             
       .card-img{
@@ -32,7 +35,7 @@
         height: 225px;
       }
 
-      p{
+      .testimony{
         font-style: italic;
         font-size: 16px;
         width: 65%;
@@ -79,16 +82,16 @@
           
         .card-img { grid-area: img; }
           
-        h4 { grid-area: title; }
+        .name { grid-area: title; }
           
-        p { grid-area: testimonio; }
+        .testimony { grid-area: testimonio; }
 
-        h4{
+        .name{
           font-size: 32px;
           align-self: flex-end;
         }
 
-        p{
+        .testimony{
           font-size: 18px;
           width: 100%;
         }
@@ -144,11 +147,11 @@
         gap: 28px;
               
 
-        h4{
+        .name{
           font-size: 30px;
         }
 
-        p{
+        .testimony{
           width: 100%;
           font-size: 16px;
         }
