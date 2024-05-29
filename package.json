@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
-    "animate.css": "^4.1.1",
     "axios": "^1.6.8",
     "hamburgers": "^1.2.1",
     "react": "^18.2.0",
