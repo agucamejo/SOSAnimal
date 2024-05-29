@@ -14,7 +14,6 @@ const Collaborations = () => {
        <Helmet>
         <link rel="canonical" href={canonicalUrl} />
         <title>SOS Animal - Colaborar</title>
-        {/* Otros elementos del head */}
       </Helmet>
       <Navbar />
       <div className="contentColab">

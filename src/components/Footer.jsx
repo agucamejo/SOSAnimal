@@ -32,16 +32,16 @@ const Footer = () => {
                   className="logo-img"
                 />
                 <div className="logo-text">
-                  <h4>
+                  <p className='name'>
                     SOS Animal
                     <br />
                     Fray Bentos
-                  </h4>
+                  </p>
                 </div>
               </div>
               <div className="redes">
                 <div className="contact-info">
-                  <h2>Sigamos en contacto</h2>
+                  <p className='contact-title'>Sigamos en contacto</p>
                   <div className="social-icons">
                     <a
                       href="mailto:animalsos2020@gmail.com"
@@ -172,7 +172,7 @@ const Footer = () => {
             </div>
             <div className="redes-mobile">
                 <div className="contact-info">
-                  <h2>Sigamos en contacto</h2>
+                  <p className='contact-title'>Sigamos en contacto</p>
                   <div className="social-icons">
                     <a
                       href="mailto:animalsos2020@gmail.com"
