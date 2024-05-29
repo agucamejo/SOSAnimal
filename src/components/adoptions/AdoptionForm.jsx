@@ -137,10 +137,10 @@ function Formulario() {
   return (
     <div className='adoptions-container'>
       <div className="contentTitles">
-        <SectionTitle text="Adopción" />
+        <SectionTitle text="Adopciones" />
         <p className="subtitle">
           Gracias por considerar darle un hogar a una mascota necesitada. 
-          Si aún no sabes a quién adoptar visita nuestro Instagram.
+          Si aún no sabes a quién adoptar visita nuestras redes.
         </p>
       </div>
       <div className='container-form-law'>

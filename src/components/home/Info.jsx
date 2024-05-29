@@ -15,8 +15,8 @@ function Info() {
           <div className="contentTitleTexts">
             <hr className="line top" />
             <h2 className="title">
-              En SOS Fray Bentos, somos un grupo de
-              personas que se dedica a:
+              En SOS Fray Bentos, somos un <br />voluntariado 
+              que <br />se dedica a:
             </h2>
             <hr className="line" />
           </div>

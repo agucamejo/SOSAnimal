@@ -260,7 +260,7 @@ $tablet-width-footer: 768px;
       }
 
       a {
-        color: $neutrals-600;
+        color: $neutrals-400;
         text-decoration: none;
         display: block;
 
@@ -270,7 +270,7 @@ $tablet-width-footer: 768px;
       }
 
       p{
-        color: $neutrals-600;
+        color: $neutrals-400;
         text-decoration: none;
         display: block;
         font-size: 20px;
@@ -310,7 +310,7 @@ $tablet-width-footer: 768px;
 
       p {
         margin: 5px 0;
-        color: $neutrals-600;
+        color: $neutrals-400;
       }
 
       .creditos {
@@ -320,11 +320,12 @@ $tablet-width-footer: 768px;
         flex-direction: horizontal;
         align-items: middle;
         justify-content: center;
-        color: $neutrals-600;
+
 
         .freepik {
           color: $secondary-700;
           text-decoration: none;
+          font-weight: 600;
         }
 
         .freepik:hover {

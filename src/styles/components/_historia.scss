@@ -16,7 +16,6 @@
 
     .titleHistoria {
       margin-bottom: 0.5em;
-      
 
       @media screen and (max-width: 425px) {
         font-size: 32px;
@@ -90,7 +89,7 @@
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
     border-radius: 32px;
-    cursor: pointer;
+    cursor: default;
     overflow: hidden;
 
     @media screen and (max-width: 955px) {
@@ -133,7 +132,7 @@
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
     border-radius: 32px;
-    cursor: pointer;
+    cursor: default;
     flex: 0 1 211px;
 
     &:hover {
@@ -201,23 +200,23 @@
   }
 
   .rosa {
-    background-color: #eca0ac;
+    background: linear-gradient(180deg, #E86B7F 7%, #ECA0AC 43%);
   }
 
   .celeste {
-    background-color: #3bbae8;
+    background: linear-gradient(180deg, #2976E1 7.12%, #29B0E1 43.39%);
   }
 
   .degrade {
-    background: linear-gradient(#a7cf48, #48cf8e);
+    background: linear-gradient(180deg, #6CAA1E 7%, #48CF8E 43%);
   }
 
   .anaranjado {
-    background-color: #f4b43f;
+    background: linear-gradient(180deg, #C3820A 7%, #F4B43F 43%);
   }
 
   .aqua {
-    background-color: #24d0c6;
+    background: linear-gradient(180deg, #04A6A6 7%, #24D0C6 43%);
   }
 
   .fucsia {
