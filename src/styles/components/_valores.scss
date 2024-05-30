@@ -174,7 +174,7 @@ $mobile-height-banner3: 127px;
                 bottom: 0%;   
                 width: 180px;
                 border-radius: $radius-lg;
-                content: url('/img-perro-big-mobile.png');
+                content: url('/img-perro-big-mobile.webp');
 
                 @media screen and (max-width: 380px){
                    left: 45.8%;
@@ -219,7 +219,7 @@ $mobile-height-banner3: 127px;
         box-shadow: $shadow-1;
         position: relative;
         padding: 20px;
-        background-image: url('/small-dog.png');
+        background-image: url('/small-dog.webp');
         background-color: #F4B43F;
         background-repeat: no-repeat;
         background-position-y: 0px;
@@ -310,7 +310,7 @@ $mobile-height-banner3: 127px;
         border-radius: $radius-lg;
         box-shadow: $shadow-1;
         position: relative;
-        background-image: url('/small-cat.png');
+        background-image: url('/small-cat.webp');
         background-color: #00A0BA;
         background-repeat: no-repeat;
         background-position-y: 0px;

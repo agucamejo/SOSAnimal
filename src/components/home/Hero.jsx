@@ -3,8 +3,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Hero = () => {
   const iconCatDog = './icons/Cat&Dog.svg';
-  const imgDogHero = './images/dog-hero.png';
-  const imgSosHero = './images/sos-hero.png';
+  const imgDogHero = './images/dog-hero.webp';
+  const imgSosHero = './images/sos-hero.webp';
   
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;

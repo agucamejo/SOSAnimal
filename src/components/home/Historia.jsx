@@ -180,8 +180,8 @@ function Historia() {
           >
             <h3 className="titleCard">Marea</h3>
             <button className="btn">9 años</button>
-            <img src="./historiaImg/Marea.png" alt="" className="imgMax" />
-            <img src="./historiaImg/Marea.png" alt="" className="imgMax" />
+            <img src="./historiaImg/Marea.webp" alt="" className="imgMax" />
+            <img src="./historiaImg/Marea.webp" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -235,8 +235,8 @@ function Historia() {
           >
             <h3 className="titleCard">Salvador</h3>
             <button className="btn">3 años</button>
-            <img src="./historiaImg/Salvador.png" alt="" className="imgMin" />
-            <img src="./historiaImg/Salvador.png" alt="" className="imgMin" />
+            <img src="./historiaImg/Salvador.webp" alt="" className="imgMin" />
+            <img src="./historiaImg/Salvador.webp" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -303,8 +303,8 @@ function Historia() {
           >
             <h3 className="titleCard">Chabela</h3>
             <button className="btn">13 años</button>
-            <img src="./historiaImg/Chabela.png" alt="" className="imgMax" />
-            <img src="./historiaImg/Chabela.png" alt="" className="imgMax" />
+            <img src="./historiaImg/Chabela.webp" alt="" className="imgMax" />
+            <img src="./historiaImg/Chabela.webp" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -356,8 +356,8 @@ function Historia() {
           >
             <h3 className="titleCard">Titán</h3>
             <button className="btn">3 años</button>
-            <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
-            <img src="./historiaImg/Titan.png" alt="" className="imgMin" />
+            <img src="./historiaImg/Titan.webp" alt="" className="imgMin" />
+            <img src="./historiaImg/Titan.webp" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -412,8 +412,8 @@ function Historia() {
           >
             <h3 className="titleCard">Beethoven</h3>
             <button className="btn">4 años</button>
-            <img src="./historiaImg/Beethoven.png" alt="" className="imgMax" />
-            <img src="./historiaImg/Beethoven.png" alt="" className="imgMax" />
+            <img src="./historiaImg/Beethoven.webp" alt="" className="imgMax" />
+            <img src="./historiaImg/Beethoven.webp" alt="" className="imgMax" />
             <article className="tablet">
               <button
                 className="btnHistoria"
@@ -466,7 +466,7 @@ function Historia() {
           >
             <h3 className="titleCard">Ramona</h3>
             <button className="btn">3 años</button>
-            <img src="./historiaImg/Ramona.png" alt="" className="imgMin" />
+            <img src="./historiaImg/Ramona.webp" alt="" className="imgMin" />
             <article className="tablet">
               <button
                 className="btnHistoria"
