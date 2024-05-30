@@ -15,6 +15,7 @@ const Home = () => {
     <div>
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
+        
         <title>SOS Animal - Home</title>
       </Helmet>
       <Navbar />
