@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import InfoUtil from "../../components/contact/InfoUtil";
 import Footer from "../../components/Footer";
 
 const Contact = () => {
@@ -6,8 +7,10 @@ const Contact = () => {
        <div>
            <Navbar />
            <h2>Contacto</h2>
+           <InfoUtil />
            <Footer />
        </div>
+       
     );
 }
    
