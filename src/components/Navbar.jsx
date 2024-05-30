@@ -65,41 +65,43 @@ const Navbar = () => {
         </Link>
 
         <ul className={`navbar-links ${isOpen ? "is-open animate__animated animate__fadeInDown" : ""} ${isClose ? "is-open animate__animated animate__fadeOutUp" : ""}`}>
-          <NavLink to="/" onClick={() => handleNavLinkClick('/')}>
-            <li className={`${location.pathname === '/' ? 'active' : ''} `}>
+          <li className={`${location.pathname === '/' ? 'active' : ''} `}>
+            <NavLink to="/" onClick={() => handleNavLinkClick('/')}>
               Inicio
               <svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311" stroke="#0B0A0A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </li>
-          </NavLink>
-          <NavLink to="/collaborations" onClick={() => handleNavLinkClick('/collaborations')}>
-            <li className={`${location.pathname === '/collaborations' ? 'active' : ''}`}>
+            </NavLink>
+          </li>
+          <li className={`${location.pathname === '/collaborations' ? 'active' : ''}`}>
+            <NavLink to="/collaborations" onClick={() => handleNavLinkClick('/collaborations')}>
               ¿Cómo colaborar?
               <svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311" stroke="#0B0A0A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </li>
-          </NavLink>
-          <NavLink to="/contact" onClick={() => handleNavLinkClick('/contact')}>
-            <li className={`${location.pathname === '/contact' ? 'active' : ''} `}>
+            </NavLink>
+          </li>
+          <li className={`${location.pathname === '/contact' ? 'active' : ''} `}>
+            <NavLink to="/contact" onClick={() => handleNavLinkClick('/contact')}>
             Información útil
             <svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311" stroke="#0B0A0A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            </li>
-          </NavLink>
-          <NavLink to="/about" onClick={() => handleNavLinkClick('/about')}>
-            <li className={`${location.pathname === '/about' ? 'active' : ''}`}>
+            </NavLink>
+          </li>
+          <li className={`${location.pathname === '/about' ? 'active' : ''}`}>
+            <NavLink to="/about" onClick={() => handleNavLinkClick('/about')}>
               Sobre nosotros
               <svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.636 14.3638L14.3639 1.6359M14.3639 1.6359V13.6567M14.3639 1.6359H2.34311" stroke="#0B0A0A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </li>
-          </NavLink>
-          <NavLink to="/adoptions" onClick={() => handleNavLinkClick('/adoptions')}>
-            <ButtonSecondary text="Adopciones" />
-          </NavLink>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/adoptions" onClick={() => handleNavLinkClick('/adoptions')}>
+              <ButtonSecondary text="Adopciones" />
+            </NavLink>
+          </li>      
         </ul>
         <div className='container-tablet'>
           <NavLink className="btn-adoptions-tablet" to="/adoptions" onClick={() => handleNavLinkClick('/adoptions')}>
