@@ -34,7 +34,7 @@ function Formulario() {
 
   const handleAgeChange = (event) => {
     const { value } = event.target;
-  
+
     if (/^\d*$/.test(value) && value.length <= 2) {
       if (parseInt(value, 10) < 18) {
         setError("Debes ser mayor de edad");
@@ -45,22 +45,22 @@ function Formulario() {
     }
   };
   
-
   const numericOnly = (event) => {
-    const charCode = (event.which) ? event.which : event.keyCode;
+    const key = event.key;
 
-    if (
-      !(charCode >= 48 && charCode <= 57) &&
-      !(charCode >= 96 && charCode <= 105) &&
-      charCode !== 8 && // Backspace
-      charCode !== 9 && // Tab
-      charCode !== 13 && // Enter
-      charCode !== 37 && // Left arrow
-      charCode !== 39 // Right arrow
-    ) {
+    if( 
+      !(
+        (key >= '0' && key <= '9') || 
+        key === 'Backspace' ||
+        key === 'Tab' ||
+        key === 'Enter' ||
+        key === 'ArrowLeft' ||
+        key === 'ArrowRight' 
+      ) 
+    ){
       event.preventDefault();
     }
-  };  
+  };
 
   const handleTelephoneChange = (event) => {
     const { value } = event.target;
@@ -115,8 +115,7 @@ function Formulario() {
       }
     )
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+      .then(() => {
         openConfirmationModal();
       })
       .catch((error) => {

@@ -64,14 +64,6 @@
   -o-border-radius: $radius-ml;
   border-radius: $radius-ml;
   padding: 6px 12px;
-
-  .enlaceAyuda {
-    text-decoration: none;
-    color: $base-black;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
 }
 
 .btnAyuda:hover {
@@ -82,7 +74,8 @@
 .enlaceAyuda {
   text-decoration: none;
   color: $base-black;
-  z-index: 10000;
+  z-index: 2000;
+  width: 30%;
 }
 
 /*SOCIO*/
