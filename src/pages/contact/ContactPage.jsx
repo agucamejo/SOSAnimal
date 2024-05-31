@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Castraciones from "../../components/contact/Castraciones"
 import Footer from "../../components/Footer";
 import { Helmet } from 'react-helmet';
 
@@ -12,7 +13,9 @@ const Contact = () => {
                 <title>SOS Animal - Información útil</title>
             </Helmet>
            <Navbar />
-           <h2>Contacto</h2>
+           <div>
+                <Castraciones />
+           </div>
            <Footer />
        </div>
     );
