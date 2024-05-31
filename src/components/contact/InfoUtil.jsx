@@ -8,7 +8,7 @@ const InfoCard = () => {
         <img
           src="images/Cat&Dog.svg"
           alt="Información útil"
-          className="header-image"
+          className="header-image img-perrocat"
         />
         <h1>Información útil</h1>
         <p>
