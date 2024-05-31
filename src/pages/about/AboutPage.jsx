@@ -23,8 +23,8 @@ const About = () => {
                 <WhatWeDo />
                 <Speech />
                 <Objectives />
-                <Principles />
                 <Statistics />
+                <Principles />
            </div>
            <Footer />
        </div>
