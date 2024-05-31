@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
 }
 
 .info-card {
@@ -16,7 +17,6 @@
 }
 
 .info-text {
-    max-width: 50%;
     width: 360px;
     height: 200px;
 }
@@ -49,6 +49,7 @@ p {
         width: 100%;
         height: auto;
         justify-content: center;
+        padding-left: 40px;
     }
 
     .info-text {
@@ -72,15 +73,33 @@ p {
         width: 426px;
         height: 268px;
     }
+
+    .img-perrocat{
+        width: 54px;
+        height: 32px;
+    }
 }
 
 @media (max-width: 356px) {
+    .info-container{
+        padding-top: 60px;
+    }
     .info-card {
         flex-direction: column;
         width: 356px;
         height: 329px;
-        justify-content: center;
-        margin-top: 68px;
+        justify-content: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+
+    .info-text {
+        width: 336px;
+        height: 164px;
+        text-align: left;
+        position: relative;
+        z-index: 1;
     }
 
     .info-text h1 {
@@ -91,8 +110,26 @@ p {
         font-size: 0.875rem;
     }
 
+    .info-image {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .info-image img {
-        width: 356px;
-        height: 215px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        padding-top: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    .img-perrocat {
+        width: 48px;
+        height: 28px;
     }
 }
