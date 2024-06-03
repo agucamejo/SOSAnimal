@@ -265,26 +265,29 @@
         }
 
         h2{
-            width: 80%;
-            line-height: 42px;
-            text-align: end;
-            letter-spacing: -1.5px;
+          width: 80%;
+          line-height: 42px;
+          font-size: 40px;
+          text-align: end;
+          letter-spacing: -1.5px;
+          color: $base-black;
 
-      @media screen and (min-width: 1500px) {
-        width: 70%;
-      }
+          @media screen and (min-width: 1500px) {
+            width: 70%;
+          }
 
-      @media screen and (max-width: $tablet) {
-        text-align: start;
-        width: 100%;
-      }
-    }
+          @media screen and (max-width: $tablet) {
+            text-align: start;
+            width: 100%;
+          }
+        }
 
     p {
       font-size: 24px;
       line-height: 28.8px;
       width: 50%;
       text-align: end;
+      color: $base-black;
 
       @media screen and (max-width: $desktop) {
         width: 45%;
@@ -303,7 +306,7 @@
       font-size: 18px;
       line-height: 21.6px;
       font-weight: 800;
-      color: #000;
+      color: $neutrals-1000;
       position: absolute;
       width: max-content;
       border-radius: $radius-round;
@@ -312,10 +315,22 @@
       left: 32px;
     }
 
+    .enlaceAyuda{
+      width: auto;
+    }
+
     .btnAyuda {
       border: 1.5px solid $base-black;
       font-size: 18px;
       padding: 12px 16px;
+      color: $base-black;
+
+      @media screen and (max-width: $desktop) {
+        &:hover{
+          background: none;
+          box-shadow: none;
+        }
+      }
 
       @media screen and (max-width: $tablet) {
         margin-bottom: 18em;
@@ -535,11 +550,11 @@
 
     @media screen and (max-width: $tablet) {
       flex-direction: column;
-      width: 75vw;
-      height: 25vh;
+      margin: 3em 1em;
+      height: 400px;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 430px) {
       height: 350px;
     }
 
@@ -547,22 +562,23 @@
       color: $secondary-1000;
       font-weight: $semibold;
       font-size: 32px;
-      line-height: 40px;
+      line-height: 38.4px;
       align-self: center;
       width: 50%;
       margin-left: 1em;
 
       @media screen and (max-width: $desktop) {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 28px;
+        line-height: 33.6px;
         width: 40%;
       }
 
       @media screen and (max-width: $tablet) {
         margin-top: 1em;
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 26.4px;
         width: 90%;
+        padding-right: 1.5em;
       }
 
       @media screen and (max-width: 375px) {
@@ -572,7 +588,7 @@
     }
 
     .statisticsImg {
-      border-radius: $radius-ml2;
+      border-bottom-right-radius: $radius-ml2;
       position: absolute;
       right: 0;
       bottom: 0;
@@ -583,6 +599,8 @@
 
       @media screen and (max-width: $tablet) {
         margin-top: 1em;
+        border-radius: $radius-ml2;
+        width: 100%;
       }
 
       @media screen and (max-width: 425px) {
@@ -635,7 +653,6 @@
     }
 
     .statisticsCardText {
-      color: $secondary-1000;
       display: flex;
       gap: 0.5em;
       flex-direction: column;
@@ -643,7 +660,7 @@
       width: 130px;
 
       .statisticsCardPrice {
-        color: $secondary-1000;
+        color: $neutrals-1000;
         font-size: 26px;
         line-height: 31px;
         font-weight: $semibold;
@@ -658,21 +675,29 @@
           font-size: 23px;
         }
 
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
+        @media screen and (max-width: $tablet) {
+          font-size: 18px;
+          font-weight: $bold;
+          line-height: 21.6px;
+          height: 22px;
         }
       }
 
       .statisticsCardTitle {
-        color: $secondary-1000;
+        color: $base-black;
         text-align: center;
         font-size: 16px;
         line-height: 19px;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 15px;
+          line-height: 18px;
+        }
       }
     }
 
     .statisticsCardYear {
-      color: $secondary-1000;
+      color: $base-black;
       font-size: 46px;
       line-height: 50px;
       font-weight: $bold;
@@ -711,7 +736,7 @@
   }
 
   .lightgreen {
-    background-color: #95f2c5;
+    background-color: #22d695;
 
     @media screen and (max-width: $tablet) {
       width: 6em;

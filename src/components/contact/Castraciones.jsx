@@ -1,4 +1,5 @@
 import Subtitles from "../Subtitles"
+
 const Castraciones = () => {
     const ImgHuella = './manito-castraciones.svg';
     const ImgAlt = 'Manito azul con fondo blanco';
@@ -9,7 +10,8 @@ const Castraciones = () => {
                 <Subtitles text="¿Por qué es importante castrar a tus mascotas?" />
                 <p className="subtitle">La esterilización de mascotas es una decisión crucial que no solo afecta la vida de nuestros peluditos, sino que también deja una huella significativa en la comunidad en la que vivimos. </p>
             </div>
-            <h4>¿Querés saber en qué se benefician tus mascotas?</h4>
+            <h4 className="title-cast-desktop">¿Querés saber en qué se benefician tus mascotas?</h4>
+            <h4 className="title-cast-mobile">¿En qué se benefician tus mascotas?</h4>
             <div className="container-castraciones-cards">
                 <div className="cards">
                     <img src={ImgHuella} alt={ImgAlt} title={ImgAlt} />
