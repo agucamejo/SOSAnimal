@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 const Error = () => {
     const canonicalUrl = `https://sos-animal.vercel.app/*`;
     const imgError = '/images/error404.png';
+    
     return (
        <div>
             <Helmet>
