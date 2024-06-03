@@ -1,5 +1,6 @@
 import ButtonPrimary from '../../components/ButtonPrimary.jsx';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 const Error = () => {
     const canonicalUrl = `https://sos-animal.vercel.app/*`;
@@ -26,7 +27,7 @@ const Error = () => {
                   </p>
                 </div>
               </div>
-              <ButtonPrimary text="Volver al inicio" className="button-inicio" />
+              <Link to="/"><ButtonPrimary text="Volver al inicio" className="button-inicio" /></Link>
             </div>  
        </div>
     );
