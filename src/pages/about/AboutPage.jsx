@@ -1,12 +1,11 @@
-import Navbar from "../../components/Navbar";
+import Navbar from '../../components/Navbar';
 
 const About = () => {
-    return ( 
-       <div>
-           <Navbar />
-           <h2>Nosotros</h2>
-       </div>
-    );
-}
-   
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
+};
+
 export default About;

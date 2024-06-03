@@ -1,0 +1,94 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+
+    .img {
+      width: 110%;
+      margin-top: 40px;
+    }
+
+    .img-text {
+      position: absolute;
+      top: 78%;
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .button-inicio {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet) {
+  .error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    .container-img {
+      height: 60%;
+      margin-bottom: 0px;
+
+      .img {
+        margin-top: 0px;
+      }
+
+      .img-text {
+        top: 68%;
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .button-inicio {
+      margin: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .error-container {
+    height: 80vh;
+    width: 100%;
+
+    .container-img {
+      height: 75%;
+      margin: 0px;
+      .img {
+        width: 145%;
+      }
+
+      .img-text {
+        top: 70%;
+        h4 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
