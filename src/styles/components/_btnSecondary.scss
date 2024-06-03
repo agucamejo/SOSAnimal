@@ -1,0 +1,96 @@
+$bg-arrow-container: #22D695;
+
+.btn-secondary {
+    color: $neutrals-1000;
+    border-radius: $radius-round;
+    font-size: 16px;
+    border: none;
+    background-color: $secondary-400;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+    width: 162px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      display: flex;
+      gap: 10px;
+      font-weight: $bold;
+      align-items: center;
+    }
+  
+    .text, .icon {
+      overflow: hidden;
+      position: absolute;
+      padding: 14px 24px;
+    }
+  
+    .text {
+      top: 0;
+      transition: top 0.5s;
+    }
+  
+    .icon {
+      color: #fff;
+      top: 100%;
+      
+      transition: top 0.5s;
+  
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  
+    &:hover {
+      background: #F5BF19;
+  
+      .text {
+        top: -100%;
+      }
+  
+      .icon {
+        top: 0;
+      }
+    }
+
+    &:focus{
+      background: $secondary-500;
+    }
+
+    &:active{
+      background: $secondary-700;
+    }
+
+    &:disabled{
+      background: $secondary-700;
+      opacity: 50%;
+      .text {
+        top: 0;
+      }
+  
+      .icon {
+        top: 100%;
+      }
+    }
+
+    //DESKTOP
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        width: 177px; 
+    }
+
+    //TABLET
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        font-size: 18px; 
+    }
+
+    //MOBILE
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+    }
+}

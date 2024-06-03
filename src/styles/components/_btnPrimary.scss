@@ -1,0 +1,68 @@
+$label-btn-primary: #0F0E0E;
+$bg-arrow-container: #22D695;
+
+.btn-primary {
+    border: 2px solid $secondary-800;
+    background: none;
+    color: $label-btn-primary;
+    position: relative; 
+    border-radius: $radius-ml;
+    font-weight: $extrabold;
+    padding: 12px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    //DESKTOP
+    @media screen and (min-width: $desktop) {
+        font-size: 18px; 
+    }
+
+    //TABLET
+    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        font-size: 16px; 
+    }
+
+    //MOBILE
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+    }
+}
+
+.btn-text {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary:hover{
+    background-color: $secondary-200;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.primary-arrow-container{
+    background-color: $bg-arrow-container;
+    border-radius: $radius-round;
+    width: 24px;
+    height: 24px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-primary:hover{
+    background-color: $secondary-200;
+    transition: ease-out 300ms;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+    
+    .primary-arrow-container{
+        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.14);
+    }
+}
