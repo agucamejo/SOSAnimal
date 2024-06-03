@@ -24,7 +24,11 @@
 h1 {
     font-size: 46px;
     margin-bottom: 10px;
-    font-family: 'mountriel serif';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;  
+    font-family: 'mountriel-regular';
+    letter-spacing: -1px;
+    font-weight: 700;
     line-height: 52.44px;
 }
 

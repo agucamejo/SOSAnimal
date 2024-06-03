@@ -21,17 +21,26 @@
     }
 
     .img-text {
-      position: absolute;
-      top: 78%;
+      margin-top: -80px;
+      width: 435px;
+      color: $neutrals-900;
 
+      h4{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      
       p {
         margin-top: 20px;
+        font-size: 14px;
+        line-height: 16.8px;
       }
     }
   }
 
   .button-inicio {
-    margin-bottom: 10px;
+    margin-bottom: 80px;
   }
 }
 
@@ -44,15 +53,12 @@
     width: 100%;
 
     .container-img {
-      height: 60%;
-      margin-bottom: 0px;
 
       .img {
         margin-top: 0px;
       }
 
       .img-text {
-        top: 68%;
         h4 {
           font-size: 20px;
         }
@@ -70,25 +76,41 @@
 
 @media screen and (max-width: $tablet) {
   .error-container {
-    height: 80vh;
     width: 100%;
-
+    margin-top: 5em;
+    
     .container-img {
-      height: 75%;
-      margin: 0px;
+
       .img {
         width: 145%;
       }
 
       .img-text {
-        top: 70%;
+        width: 300px;
+
+        @media screen and (max-width: 500px){
+          margin-top: -40px;
+        }
+
         h4 {
           font-size: 16px;
+
+          br{
+            display: none;
+          }
         }
         p {
           font-size: 14px;
+
+          br{
+            display: none;
+          }
         }
       }
+    }
+
+    .btn-primary{
+      margin-top: 10px;
     }
   }
 }
