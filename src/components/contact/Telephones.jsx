@@ -24,23 +24,21 @@ const Telephones = () => {
   };
 
   const handleImageClick = (event, message, number) => {
-    const { clientX, clientY } = event;
-    const cardRect = event.target.closest('.card').getBoundingClientRect();
-  
-    const offsetX = clientX - cardRect.left;
-    const offsetY = clientY - cardRect.top;
-  
+    
+    const buttonRect = event.target.getBoundingClientRect();
+
+
     navigator.clipboard.writeText(number)
       .then(() => {
         Toastify({
           text: message,
           duration: 2000,
-          gravity: "top", 
-          position: "left", 
-          stopOnFocus: true, 
+          gravity: "top",
+          position: "left",
+          stopOnFocus: true,
           offset: {
-            x: offsetX,
-            y: offsetY
+            x: buttonRect.left + (buttonRect.width / 2) - 75, 
+            y: buttonRect.top - 80 
           },
           style: {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -50,7 +48,6 @@ const Telephones = () => {
       .catch((error) => {
         console.error('Error al copiar en el portapapeles:', error);
       });
-
   };
   
   useEffect(() => {
@@ -131,21 +128,21 @@ const Telephones = () => {
                                 <p className="name">Emergencias</p>
                                 <div className="num-icon">
                                     <p className="tel">911</p>
-                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "911")}/>
+                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "911")}/>
                                 </div>
                             </div>
                             <div className="name-tel">
                                 <p className="name">Anónimos</p>
                                 <div className="num-icon">
                                     <p className="tel">0800 5000</p>
-                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "0800 5000")}/>
+                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "0800 5000")}/>
                                 </div>
                             </div>
                             <div className="name-tel">
                                 <p className="name">Seccional N°1</p>
                                 <div className="num-icon">
                                     <p className="tel">2030 6788</p>
-                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "2030 6788")}/>
+                                    <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "copiado", "2030 6788")}/>
                                 </div>
                             </div>
                             <div className="name-tel">
@@ -183,13 +180,17 @@ const Telephones = () => {
                     <div className="tels-names-container">
                         <div className="name-tel">
                             <p className="name">Nora</p>
-                            <p className="tel">099 075 685</p>
-                            <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "099 075 685")}/>
+                            <div className="num-icon">
+                                <p className="tel">099 075 685</p>
+                                <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "099 075 685")}/>
+                            </div>
                         </div>
                         <div className="name-tel">
                             <p className="name">Javier</p>
-                            <p className="tel">091 713 667</p>
-                            <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "091 713 667")}/>
+                            <div className="num-icon">
+                                <p className="tel">091 713 667</p>
+                                <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Número copiado", "091 713 667")}/>
+                            </div>
                         </div>
                     </div>
                 </div>

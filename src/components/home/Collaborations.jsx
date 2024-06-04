@@ -6,7 +6,7 @@ const Collaborations = () => {
   const imgManCollaboration = './images/desktop1.svg';
   const imgDogCollaboration = './images/desktop2.svg';
   const imgWomanCollaboration = './images/desktop3.svg';
-  const imgWomanTablet = './images/tablet3.png';
+  const imgWomanTablet = './images/tablet.svg';
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;

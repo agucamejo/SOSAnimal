@@ -1,29 +1,12 @@
 .containerFAQ {
-  margin: 0 6em;
+  margin: 0 3.75em;
   padding: 56px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .contentTitlesFAQ {
-    width: 30vw;
+  .contentTitles {
     margin-bottom: 28px;
-
-    @media screen and (max-width: $tablet) {
-      width: 50vw;
-    }
-
-    .titleFAQ {
-      text-align: center;
-      margin-top: -1em;
-      font-weight: $bold;
-
-      @media screen and (max-width: $tablet) {
-        font-size: 40px;
-        line-height: 36px;
-        margin-top: -0.5em;
-      }
-    }
   }
 
   .containerAskFAQ {
@@ -31,8 +14,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
 
     @media screen and (max-width: 605px) {
       width: 130%;
@@ -40,12 +23,12 @@
 
     .askFAQ {
       margin-bottom: 20px;
-      border-radius: $radius-sm;
       -webkit-border-radius: $radius-sm;
       -moz-border-radius: $radius-sm;
       -ms-border-radius: $radius-sm;
       -o-border-radius: $radius-sm;
-      box-shadow: $shadow-1;
+      border-radius: $radius-sm;
+      box-shadow: $shadow-2;
       background-color: $secondary-100;
       min-width: 200px;
 

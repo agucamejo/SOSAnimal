@@ -34,10 +34,9 @@ function Faq() {
 
   return (
     <section className="containerFAQ">
-      <section className="contentTitlesFAQ">
-        <Subtitles />
-        <h2 className="titleFAQ">Preguntas frecuentes</h2>
-      </section>
+      <div className="contentTitles">
+        <Subtitles text="Preguntas frecuentes" />
+      </div>
       <article className="containerAskFAQ">
         {askAndAnswers.map((item, index) => (
           <section className="askFAQ" key={index}>

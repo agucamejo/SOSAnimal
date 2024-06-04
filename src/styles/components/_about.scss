@@ -249,9 +249,10 @@
         justify-items: end;
         gap:24px;
         margin: 5em;
+        max-width: 1200px;
 
         @media screen and (min-width: $desktop){
-            margin: 5em 9em 5em 9em;
+          margin: 5em 3.75em;
         }
 
     @media screen and (max-width: $tablet) {
@@ -401,6 +402,7 @@
 
         p {
           margin-top: 10px;
+          line-height: 24px;
         }
 
         @media screen and (max-width: $tablet) {
@@ -544,9 +546,10 @@
     background: linear-gradient(#a7cf48, #48cf8e);
     border-radius: $radius-ml2;
     height: 300px;
-    margin: 3em;
+    margin: 3.75em;
     display: flex;
     position: relative;
+    max-width: 1200px;
 
     @media screen and (max-width: $tablet) {
       flex-direction: column;
@@ -616,7 +619,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 2em;
+    gap: 1.2em;
 
     @media screen and (max-width: $desktop) {
       gap: 1em;
