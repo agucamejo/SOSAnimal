@@ -384,6 +384,12 @@
 
   .btnVoluntario {
     font-size: 18px;
+    border: none;
+    background-color: $base-white;
+
+    &:hover{
+      background-color: $base-white
+    }
 
     @media screen and (max-width: $tablet) {
       margin-bottom: -3em;

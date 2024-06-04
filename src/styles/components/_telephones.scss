@@ -1,9 +1,12 @@
 .telephones-container{
-    margin: 4em 0;
+    margin: 4em 3.75em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+
+    @media screen and (max-width: $desktop) {
+        margin: 4em 0;
+    }
   
     .contentTitles {
       width: 366px;
@@ -28,7 +31,7 @@
         display: grid;
         gap: $space-ml;
         width: 100%;
-        padding: 0 3.75em;
+        
         max-width: 1200px;
 
         @media screen and (max-width: $desktop) {

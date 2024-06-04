@@ -16,7 +16,7 @@ const Contact = () => {
         <title>SOS Animal - Información útil</title>
       </Helmet>
       <Navbar />
-      <div>
+      <div className="info">
         <Hero />
         <Telephones />
         <FAQ />
