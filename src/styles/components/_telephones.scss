@@ -162,9 +162,10 @@
                     }
                 }
 
-                img:hover{
-                    cursor: pointer;
-                    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+                .copy-icon{
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
                 
             }
