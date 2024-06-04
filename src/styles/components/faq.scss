@@ -1,0 +1,110 @@
+.containerFAQ {
+  margin: 0 6em;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contentTitlesFAQ {
+    width: 30vw;
+    margin-bottom: 28px;
+
+    @media screen and (max-width: $tablet) {
+      width: 50vw;
+    }
+
+    .titleFAQ {
+      text-align: center;
+      margin-top: -1em;
+      font-weight: $bold;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 40px;
+        line-height: 36px;
+        margin-top: -0.5em;
+      }
+    }
+  }
+
+  .containerAskFAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 1000px;
+
+    @media screen and (max-width: 605px) {
+      width: 130%;
+    }
+
+    .askFAQ {
+      margin-bottom: 20px;
+      border-radius: $radius-sm;
+      -webkit-border-radius: $radius-sm;
+      -moz-border-radius: $radius-sm;
+      -ms-border-radius: $radius-sm;
+      -o-border-radius: $radius-sm;
+      box-shadow: $shadow-1;
+      background-color: $secondary-100;
+      min-width: 200px;
+
+      .askFAQHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 28px;
+        min-height: 3.5rem;
+        position: relative;
+        cursor: pointer;
+        gap: 10px;
+
+        .titleAskFAQ {
+          font-size: 22px;
+          line-height: 26.4px;
+          font-weight: $semibold;
+          width: 70vw;
+          max-width: 1000px;
+
+          @media screen and (max-width: $tablet) {
+            font-size: 16px;
+            line-height: 19.2px;
+          }
+
+          @media screen and (max-width: 425px) {
+            width: 50vw;
+          }
+        }
+
+        .iconFAQ {
+          width: 2em;
+          height: 2.5em;
+        }
+      }
+    }
+
+    .askFAQText {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      .textAskFAQ {
+        padding: 0 28px 16px 28px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: $regular;
+        color: $neutrals-700;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 16px;
+          line-height: 19.2px;
+        }
+      }
+    }
+  }
+}
+
+.askFAQHeader.active + .askFAQText {
+  max-height: 200px;
+}
