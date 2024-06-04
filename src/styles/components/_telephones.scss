@@ -1,0 +1,314 @@
+.telephones-container{
+    margin: 4em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    .contentTitles {
+      width: 366px;
+      height: auto;
+      text-align: center;
+  
+      @media screen and (max-width: $tablet) {
+        width: 290px;
+      }
+  
+      .container-subtitles{
+        margin-bottom: 0px;
+      }
+  
+      .subtitle {
+        margin-bottom: 2em;
+        color: $neutrals-900;
+      }
+    }
+
+    .tel-card-container{
+        display: grid;
+        gap: $space-ml;
+        width: 80%;
+
+        @media screen and (min-width: 1200px) {
+            width: 1000px;
+        }
+
+        @media screen and (max-width: $desktop) {
+            width: 85%;
+            gap: $space-sm
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 95%;
+        }
+
+        .row{
+            display: flex;
+            gap: $space-ml;
+
+            @media screen and (max-width: $desktop) {
+                gap: $space-sm
+            }
+
+            @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+            }
+
+            .card{
+                box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.18);
+                border-radius: $radius-ml;
+                padding: $space-ml $space-sm;
+                display: grid;
+                justify-items: center;
+                align-content: space-evenly;
+
+                .tel-card-title{
+                    font-size: 32px;
+                    line-height: 38.4px;
+                    text-align: center;
+                    font-weight: $semibold;
+                    color: $base-black;
+
+                    @media screen and (max-width: $desktop) {
+                        line-height: 33px;
+                        letter-spacing: -2px;
+                    }
+                }
+
+                .tel-card-text{
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    text-align: center;
+                    color: $neutrals-800;
+                    margin-top: 4px;
+                }
+
+                .tel-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+                    
+                    .tel{
+                        font-size: 27.5px;
+                        line-height: 33.9px;
+                        font-weight: $semibold;
+                        color: $base-black;
+                        margin-right: 6px;
+                    }
+                }
+
+                .gif-num{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 28px;
+                    gap: 40px;
+
+                    @media screen and (max-width: $desktop){
+                        margin-top: 20px;
+                        gap: 30px;
+                    }
+
+                    .tel-icon{
+                        margin-top: 0px;
+                    }
+                }
+
+                .tels-names-container{
+                    display: grid;
+                    gap: 10px;
+
+                    .name-tel{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .name{
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: $semibold;
+                            color: $base-black;
+
+                            @media screen and (max-width: $desktop){
+                                font-size: 16px;
+                                line-height: 19.4px;
+                            }
+                        }
+
+                        .tel{
+                            font-size: 16px;
+                            line-height: 19.2px;
+                            margin-left: 20px;
+                            margin-right: 6px;
+                        }
+
+                        .num-icon{
+                            display: flex;
+                            width: 50%;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+
+                #lottie{
+                    width: 100px;
+                    height: 100px;
+
+                    @media screen and (max-width: $desktop) {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+
+                img:hover{
+                    cursor: pointer;
+                    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+                }
+                
+            }
+
+            .card-short{
+                width: 30%;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+
+            .card-large{
+                width: 70%;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+
+            .bg-skyblue{
+                border: 3px solid $success-200;
+                background-color: $success;
+
+                .vets-container{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: $space-sm;
+                    margin-top: 28px;
+
+                    @media screen and (max-width: $desktop){
+                        margin-top: 20px;
+                    }
+
+                    .vet{
+                        background-color: #CFFFF7;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: $space-s $space-sm;
+                        border-radius: $radius-m;
+                        gap: 2px;
+                        width: 49%;
+
+                        @media screen and (max-width: $desktop){
+                            border-radius: $radius-s;
+                            width: 48%;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+
+                        .logo-vet{
+                            width: 110px;
+                            height: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .bg-purple{
+                border: 3px solid #E6AFEF;
+                background-color: #FEF5FF;
+
+                .tel-icon{
+                    
+                    .tel{
+                        font-size: 24px;
+                        line-height: 30.9px;
+                        font-weight: $semibold;
+                        color: $base-black;
+                        margin-right: 6px;
+                    }
+                }
+            }
+
+            .bg-red{
+                border: 3px solid #FAA1AA;
+                background-color: #FFF4F5;
+
+                .tel-card-title{
+                    margin-top: 15px;
+                }
+            }
+
+            .bg-green{
+                border: 3px solid $secondary-700;
+                background-color: $secondary-200;
+
+                .tels-names-container{
+                    width: 50%;
+
+                    @media screen and (max-width: $desktop) {
+                        width: 90%;
+                    }
+
+                    @media screen and (max-width: 767px){
+                        .name-tel {
+                            .tel{
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bg-orange{
+                border: 3px solid $primary;
+                background-color: $primary-200;
+            }
+
+            .bg-gray{
+                border: 3px solid $neutrals-400;
+                background-color: $neutrals-50;
+
+                .tels-names-container{
+                    justify-items: center;
+
+                    @media screen and (max-width: $desktop){
+                        .name-tel {
+                            .tel{
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 767px){
+                        .name-tel {
+                            .tel{
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (max-width: $desktop) {
+                    .tel-card-title{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
-import Castraciones from "../../components/contact/Castraciones"
-import InfoUtil from "../../components/contact/InfoUtil";
+import Hero from "../../components/contact/HeroContact";
+import Telephones from "../../components/contact/Telephones";
+import Castraciones from "../../components/contact/Castraciones";
 import Footer from "../../components/Footer";
 import { Helmet } from 'react-helmet';
 
@@ -15,7 +16,8 @@ const Contact = () => {
             </Helmet>
            <Navbar />
            <div>
-                <InfoUtil />
+                <Hero />
+                <Telephones />
                 <Castraciones />
            </div>
            <Footer />

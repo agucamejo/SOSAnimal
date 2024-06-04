@@ -1,6 +1,4 @@
-import React from "react";
-
-const InfoCard = () => {
+const HeroContact = () => {
   return (
     <div className="info-container">
     <div className="info-card">
@@ -24,4 +22,4 @@ const InfoCard = () => {
   );
 };
 
-export default InfoCard;
+export default HeroContact;
