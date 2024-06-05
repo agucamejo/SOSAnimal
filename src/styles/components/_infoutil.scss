@@ -1,8 +1,9 @@
 .info-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .info-card {
@@ -34,8 +35,8 @@ p {
 }
 
 .info-image img {
-    width: 548px;
-    height: 325px;
+    width: 100%;
+    height: auto;
 }
 
 .img-perrocat{
@@ -53,8 +54,8 @@ p {
     }
 
     .info-text {
-        width: 302px;
-        height: 160px;
+        width: 50%;
+        height: auto;
     }
 
     h1 {
@@ -70,8 +71,8 @@ p {
     }
 
     .info-image img {
-        width: 426px;
-        height: 268px;
+        width: 100%;
+        height: auto;
     }
 
     .img-perrocat{
@@ -86,16 +87,16 @@ p {
     }
     .info-card {
         flex-direction: column;
-        width: 356px;
-        height: 329px;
-        justify-content: right;
+        width: 100%;
+        height: auto;
+        justify-content: center;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 30px;
     }
 
     .info-text {
-        width: 336px;
+        width: auto;
         height: 164px;
         text-align: left;
         position: relative;
@@ -120,12 +121,8 @@ p {
     .info-image img {
         width: 100%;
         height: auto;
-        position: absolute;
-        padding-top: 10px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         z-index: 0;
+        margin-top: -20px;
     }
 
     .img-perrocat {
