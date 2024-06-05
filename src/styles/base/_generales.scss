@@ -17,9 +17,20 @@ body {
   src: url('/fonts/mountriel-regular-serif-400.otf') format('opentype');
 }
 
+@media screen and (min-width: 1025px) {
+  .container-home{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    overflow: hidden;
+  }
+}
+
 .estructure-home{
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  overflow: hidden;
 }
 
 .info{

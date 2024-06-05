@@ -12,7 +12,7 @@ const Home = () => {
   const canonicalUrl = `https://sos-animal.vercel.app/`;
 
   return (
-    <div>
+    <div className='container-home'>
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
         <title>SOS Animal - Home</title>
