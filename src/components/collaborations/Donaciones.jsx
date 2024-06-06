@@ -38,7 +38,7 @@ function Donaciones() {
       </section>
       <section className="containerImgDonaciones">
         <img
-          src="/colaboracionImg/perroMarron.png"
+          src="/colaboracionImg/perroMarron.webp"
           alt="Perro de color marron"
           className="imgDonaciones"
         />

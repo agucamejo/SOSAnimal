@@ -92,22 +92,22 @@ const Telephones = () => {
                     <p className="tel-card-text">Contactate inmediatamente con las siguientes clínicas:</p>
                     <div className="vets-container">
                         <div className="vet">
-                            <div className="logo-vet"><img src="./logo-mundo-animal.png" alt="Logo Veterinaria Mundo Animal" /></div>
+                            <div className="logo-vet"><img src="contactImg/logo-mundo-animal.webp" alt="Logo Veterinaria Mundo Animal" /></div>
                             <p className="tel">092 982 008</p>
                             <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "092 982 008")} />
                         </div>
                         <div className="vet">
-                            <div className="logo-vet"><img src="./logo-huellas.png" alt="Logo Huellas - Clínica Veterinaria" /></div>
+                            <div className="logo-vet"><img src="contactImg/logo-huellas.webp" alt="Logo Huellas - Clínica Veterinaria" /></div>
                             <p className="tel">099 241 822</p>
                             <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "099 241 822")}/>
                         </div>
                         <div className="vet">
-                            <div className="logo-vet"><img src="./logo-martineta.png" alt="Logo Veterinaria La Martineta" /></div>
+                            <div className="logo-vet"><img src="contactImg/logo-martineta.webp" alt="Logo Veterinaria La Martineta" /></div>
                             <p className="tel">4563 5017</p>
                             <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "4563 5017")}/>
                         </div>
                         <div className="vet">
-                            <div className="logo-vet"><img src="./logo-amaral.png" alt="Logo Clínica Veterinaria - Dra. Amaral" /></div>
+                            <div className="logo-vet"><img src="contactImg/logo-amaral.webp" alt="Logo Clínica Veterinaria - Dra. Amaral" /></div>
                             <p className="tel">4562 2779</p>
                             <img src="./copy-icon.svg" className="copy-icon" title="Copiar" onClick={(e) => handleImageClick(e, "Copiado", "4562 2779")}/>
                         </div>

@@ -8,7 +8,7 @@ const Statistics = () => {
           años
         </p>
         <img
-          src="/dogs.png"
+          src="/aboutImg/dogs.webp"
           alt="Foto de seis perros de distintas razas"
           className="statisticsImg"
         />

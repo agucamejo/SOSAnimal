@@ -27,7 +27,7 @@ function Socio() {
           className="animation"
         />
         <img
-          src="./colaboracionImg/gatico.png"
+          src="./colaboracionImg/gatico.webp"
           alt="gato gris"
           className="imgSocio"
         />
