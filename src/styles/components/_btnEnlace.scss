@@ -1,40 +1,33 @@
 .btn-link {
     color: $label-btn-primary;
-    border:none;
-    background: none;
     font-weight: $semibold;
-    padding: 4px 10px;
-    font-size: 16px;
+    background-color: $base-white;
+    font-size: 18px;
+    padding: 16px 14px 16px 22px;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    border: none;
+    max-height: 52px;
 
-    //DESKTOP
-    @media screen and (min-width: $desktop) {
-        font-size: 22px; 
-    }
-
-    //TABLET
-    @media screen and (max-width: $desktop) and (min-width: $tablet) {
-        font-size: 22px; 
-    }
-
-    //MOBILE
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $desktop){
         font-size: 16px;
+        padding:  14px 12px 14px 20px;
+        max-height: 47px;
+
+        @media screen and (max-width: $tablet){
+            padding:  12px 10px 12px 18px;
+            max-height: 43px;
+        }
     }
+
 }
 
 .link-arrow-container{
-    background-color: $primary-400;
     border-radius: $radius-round;
-    width: 24px;
-    height: 24px;
     justify-self: center;
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;

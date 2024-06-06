@@ -4,10 +4,17 @@ import Socio from '../../components/collaborations/Socio';
 import Voluntario from '../../components/collaborations/Voluntario';
 import Donaciones from '../../components/collaborations/Donaciones';
 import Subtitles from '../../components/Subtitles';
+import { Helmet } from 'react-helmet';
 
 const Collaborations = () => {
+  const canonicalUrl = `https://sos-animal.vercel.app/collaborations`;
+
   return (
     <div>
+       <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+        <title>SOS Animal - Colaborar</title>
+      </Helmet>
       <Navbar />
       <div className="contentColab">
         <section className="colaborations">

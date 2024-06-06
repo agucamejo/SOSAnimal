@@ -1,9 +1,9 @@
 function Voluntario() {
   return (
-    <div className="containerVoluntario">
+    <div className="containerVoluntario" id="voluntarios">
       <section className="containerImgVoluntario">
         <img
-          src="/colaboracionImg/perroBlanco&Negro.png"
+          src="/colaboracionImg/perroBlanco&Negro.webp"
           alt="Perro de color blanco y negro"
           className="imgVoluntario"
         />

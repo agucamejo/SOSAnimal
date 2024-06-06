@@ -137,10 +137,10 @@ function Formulario() {
   return (
     <div className='adoptions-container'>
       <div className="contentTitles">
-        <SectionTitle text="Adopción" />
+        <SectionTitle text="Adopciones" />
         <p className="subtitle">
           Gracias por considerar darle un hogar a una mascota necesitada. 
-          Si aún no sabes a quién adoptar visita nuestro Instagram.
+          Si aún no sabes a quién adoptar visita nuestras redes.
         </p>
       </div>
       <div className='container-form-law'>
@@ -155,7 +155,7 @@ function Formulario() {
           <input type="text" value={name} name="Name" placeholder="Tu nombre" onChange={handleNameChange} required/>
           <p>Teléfono</p>
           <div className="container-phone">
-            <span className="span-phone"><img src="./uruguay-flag.png" alt="Bandera de Uruguay"/> +598</span>
+            <span className="span-phone"><img src="adoptionsImg/uruguay-flag.webp" alt="Bandera de Uruguay"/> +598</span>
             <input autoComplete="nope" className="input-phone" type="text" value={telephone} name="Telephone" onChange={handleTelephoneChange} required/>
           </div>
           <div className='edad-container'>

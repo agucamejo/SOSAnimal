@@ -35,6 +35,8 @@
       font-size: 3em;
       line-height: 52px;
       font-weight: $bold;
+      font-family: 'Lato';
+      -webkit-text-stroke-width: 0px;
 
       @media screen and (max-width: $tablet) {
         font-size: 2.5em;
@@ -55,15 +57,27 @@
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: $extrabold;
   cursor: pointer;
-  -webkit-border-radius: $radius-ml;
-  -moz-border-radius: $radius-ml;
-  -ms-border-radius: $radius-ml;
-  -o-border-radius: $radius-ml;
-  border-radius: $radius-ml;
-  padding: 6px 12px;
+  -webkit-border-radius: $radius-ml2;
+  -moz-border-radius: $radius-ml2;
+  -ms-border-radius: $radius-ml2;
+  -o-border-radius: $radius-ml2;
+  border-radius: $radius-ml2;
+  padding: 16px 14px 16px 22px;
+  max-height: 52px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 16px;
+    padding: 14px 12px 14px 20px;
+    max-height: 47px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 12px 10px 12px 18px;
+      max-height: 43px;
+    }
+  }
 
   .enlaceAyuda {
     text-decoration: none;
@@ -74,15 +88,37 @@
   }
 }
 
-.btnAyuda:hover {
+.btnAyuda:hover,
+.btnAyudaDonaciones:hover {
   background-color: $secondary-200;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.btnAyudaDonaciones {
+  border: 1.5px solid $secondary-800;
+  background: none;
+  color: $label-btn-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 16px;
+  font-weight: $extrabold;
+  cursor: pointer;
+  -webkit-border-radius: $radius-ml;
+  -moz-border-radius: $radius-ml;
+  -ms-border-radius: $radius-ml;
+  -o-border-radius: $radius-ml;
+  border-radius: $radius-ml;
+  padding: 16px 12px 16px 18px;
+  max-height: 52px;
 }
 
 .enlaceAyuda {
   text-decoration: none;
   color: $base-black;
   z-index: 2000;
+  width: 30%;
 }
 
 /*SOCIO*/
@@ -122,6 +158,12 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 450px) {
+    height: 55%;
+    width: 100%;
+    padding: 58px 0 58px 10px;
+  }
+
   .titleSocio {
     font-size: 2.5em;
     line-height: 1.2em;
@@ -143,7 +185,7 @@
     font-size: 1.5em;
     line-height: 1.5em;
     font-weight: $regular;
-    color: #0f0e0e;
+    color: $base-black;
     width: 20em;
 
     @media screen and (max-width: $desktop) {
@@ -154,6 +196,10 @@
     @media screen and (max-width: $tablet) {
       font-size: 1em;
       line-height: 1.2em;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
     }
   }
 
@@ -338,6 +384,12 @@
 
   .btnVoluntario {
     font-size: 18px;
+    border: none;
+    background-color: $base-white;
+
+    &:hover {
+      background-color: $secondary-200;
+    }
 
     @media screen and (max-width: $tablet) {
       margin-bottom: -3em;
@@ -374,6 +426,7 @@
   gap: 26px;
   margin: 58px 0 58px 58px;
   max-width: 482px;
+  color: $base-black;
 
   @media screen and (max-width: $desktop) {
     width: 387px;
@@ -445,12 +498,28 @@
 
     .btnDonaciones {
       width: 178px;
-      height: 47px;
+      height: 52px;
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        height: 47px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        height: 43px;
+      }
     }
 
     .btnDonacionesSinIcono {
       width: 192px;
-      height: 47px;
+      height: 52px;
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        height: 47px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        height: 43px;
+      }
     }
   }
 }

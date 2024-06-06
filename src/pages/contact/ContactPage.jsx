@@ -1,16 +1,30 @@
 import Navbar from "../../components/Navbar";
-import InfoUtil from "../../components/contact/InfoUtil";
+import Hero from "../../components/contact/HeroContact";
+import Telephones from "../../components/contact/Telephones";
+import Castraciones from "../../components/contact/Castraciones";
 import Footer from "../../components/Footer";
+import { Helmet } from 'react-helmet';
+import FAQ from '../../components/contact/FAQ'
 
 const Contact = () => {
-    return ( 
-       <div>
-           <Navbar />
-           <InfoUtil />
-           <Footer />
-       </div>
-       
-    );
+  const canonicalUrl = `https://sos-animal.vercel.app/contact`
+
+  return ( 
+    <div>
+      <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+        <title>SOS Animal - Información útil</title>
+      </Helmet>
+      <Navbar />
+      <div className="info">
+        <Hero />
+        <Telephones />
+        <FAQ />
+        <Castraciones />
+      </div>
+      <Footer />
+    </div>   
+  );
 }
-   
+
 export default Contact;

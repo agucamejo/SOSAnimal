@@ -13,7 +13,7 @@ function Donaciones() {
   }
 
   return (
-    <section className="containerDonaciones">
+    <section className="containerDonaciones" id="donaciones">
       <Modal isOpen={isModalOpen} onClose={closeModal} />
       <section className="containerTextDonaciones">
         <h2 className="titleDonaciones">Donaciones</h2>
@@ -23,24 +23,22 @@ function Donaciones() {
         </p>
         <p className="textDonacionesVerde">¡Ayudá a nuestros amigos peludos!</p>
         <div className="containerBtnsDonaciones">
-          <button className="btnAyuda btnDonaciones" onClick={openModal}>
+          <button className="btnAyudaDonaciones btnDonaciones" onClick={openModal}>
             Hacé una donación
           </button>
           <a
-            className="enlaceAyuda"
+            className="enlaceAyuda btnAyudaDonaciones btnDonacionesSinIcono"
             target="_blank"
             href="https://api.whatsapp.com/send?phone=+59892336700&text=%C2%A1Hola%20SOS!%20%F0%9F%91%8B%20%F0%9F%90%B6%20Quiero%20donar%20suministros,%20%C2%BFme%20podr%C3%A1n%20enviar%20informaci%C3%B3n?%20%20%C2%A1Muchas%20gracias!%F0%9F%98%BD"
           >
-            <button className="btnAyuda btnDonacionesSinIcono">
-              Doná suministros
-              <img src="/colaboracionImg/whapp.svg" alt="Whatsapp Icon" />
-            </button>
+            Doná suministros
+            <img src="/colaboracionImg/whapp.svg" alt="Whatsapp Icon" />
           </a>
         </div>
       </section>
       <section className="containerImgDonaciones">
         <img
-          src="/colaboracionImg/perroMarron.png"
+          src="/colaboracionImg/perroMarron.webp"
           alt="Perro de color marron"
           className="imgDonaciones"
         />

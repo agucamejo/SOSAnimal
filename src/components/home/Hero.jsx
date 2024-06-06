@@ -1,9 +1,17 @@
 import ButtonPrimary from '../ButtonPrimary';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Hero = () => {
   const iconCatDog = './icons/Cat&Dog.svg';
-  const imgDogHero = './images/dog-hero.png';
-  const imgSosHero = './images/sos-hero.png';
+  const imgDogHero = './images/dog-hero.webp';
+  const imgSosHero = './images/sos-hero.webp';
+  
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
+  
   return (
     <div className="hero-section">
       <div className="hero-sos1">
@@ -25,7 +33,7 @@ const Hero = () => {
           Invertimos cada recurso en el bienestar animal.
           Unite a nuestra causa y hacé posible más acciones solidarias.
         </p>
-        <ButtonPrimary text="Donaciones" />
+        <Link to="/collaborations#donaciones" scroll={el => scrollWithOffset(el)}><ButtonPrimary text="Donaciones"/></Link>
       </div>
 
       <div className="sos-dog">

@@ -17,10 +17,10 @@ const ImageSlider = () => {
             modules={[Autoplay, Navigation]}
             className="mySwiper"
         >
-            <SwiperSlide><img src="./AboutUs-1.png" alt="Image 1" /></SwiperSlide>
-            <SwiperSlide><img src="./AboutUs-2.png" alt="Image 2" /></SwiperSlide>
-            <SwiperSlide><img src="./AboutUs-3.png" alt="Image 3" /></SwiperSlide>
-            <SwiperSlide><img src="./AboutUs-4.png" alt="Image 4" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-1.webp" alt="Image 1" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-2.webp" alt="Image 2" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-3.webp" alt="Image 3" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-4.webp" alt="Image 4" /></SwiperSlide>
         </Swiper>
     );
 }

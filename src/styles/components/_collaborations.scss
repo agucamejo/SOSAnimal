@@ -128,11 +128,6 @@
       .desktop3 {
         width: 100%;
         height: 100%;
-
-        @media screen and (max-width: $tablet) {
-          height: auto;
-          content: url('/desktop3.svg');
-        }
       }
 
       @media screen and (max-width: $tablet) {
@@ -153,9 +148,7 @@
 
       .tablet3 {
         height: auto;
-        margin-top: 20px;
         width: 100%;
-        margin-bottom: 30px;
       }
 
       @media screen and (max-width: $tablet) {

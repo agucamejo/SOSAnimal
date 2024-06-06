@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Subtitles = ({ text }) => {
+const SectionTitle = ({ text }) => {
   return (
     <div className='container-subtitles'>
         <svg viewBox="0 0 60 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,8 +12,8 @@ const Subtitles = ({ text }) => {
   );
 }
 
-Subtitles.propTypes = {
+SectionTitle.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-export default Subtitles;
+export default SectionTitle;

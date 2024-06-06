@@ -8,7 +8,7 @@
 .contentInfo {
   margin: 0em 2em 2em 2em;
   padding: 2em;
-  background: url('/infoImg/imgSolaFondo.png'),
+  background: url('/infoImg/imgSolaFondo.webp'),
     linear-gradient(#a7cf48, #48cf8e);
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -25,11 +25,11 @@
   @media screen and (max-width: 3000px) {
     background-position: 50% 100%;
     background-size: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
   }
 
   @media screen and (max-width: 1440px) {
-    background: url('/infoImg/imgSolaFondo.png'),
+    background: url('/infoImg/imgSolaFondo.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -38,7 +38,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    background: url('/infoImg/imgSolaFondo.png'),
+    background: url('/infoImg/imgSolaFondo.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 100%;
@@ -46,73 +46,62 @@
   }
 
   @media screen and (max-width: 950px) {
-    background: url('/infoImg/imgSolaTablet.png'),
+    background: url('/infoImg/imgSolaTablet.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
   }
 
   @media screen and (max-width: 876px) {
-    background: url('/infoImg/imgSolaTablet.png'),
+    background: url('/infoImg/imgSolaTablet.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
   }
 
   @media screen and (max-width: $tablet) {
-    background: url('/infoImg/imgSolaTablet.png'),
+    background: url('/infoImg/imgSolaTablet.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 15%;
   }
 
   @media screen and (max-width: 745px) {
-    background: url('/infoImg/imgSolaTablet.png'),
+    background: url('/infoImg/imgSolaTablet.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 50% 12%;
   }
 
   @media screen and (max-width: 740px) {
-    background: url('/infoImg/imgSolaTablet.png'),
+    background: url('/infoImg/imgSolaTablet.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 90% 20%;
   }
 
   @media screen and (max-width: 425px) {
-    background: url('/infoImg/imgSolaMobile.png'),
+    background: url('/infoImg/imgSolaMobile.webp'),
       linear-gradient(#a7cf48, #48cf8e);
     background-repeat: no-repeat;
     background-position: 50% 25%;
   }
 
   .btn {
-    background-color: #ffffff1f;
-    -webkit-border-radius: $radius-ml;
-    -moz-border-radius: $radius-ml;
-    -ms-border-radius: $radius-ml;
-    -o-border-radius: $radius-ml;
-    border-radius: $radius-ml;
+    -webkit-border-radius: $radius-round;
+    -moz-border-radius: $radius-round;
+    -ms-border-radius: $radius-round;
+    -o-border-radius: $radius-round;
+    border-radius: $radius-round;
     font-weight: $semibold;
     position: relative;
     z-index: 800;
-    border: none;
     color: $base-black;
-    font-size: 22px;
 
-    @media screen and (max-width: $max) {
-      padding: 8px 20px;
+    &:hover{
+      background-color: $secondary-200;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
     }
-
-    @media screen and (max-width: 425px) {
-      padding: 4px 10px;
-      font-size: 16px;
-    }
-  }
-
-  .btn:hover {
-    background-color: #ffffff80;
   }
 }
 
@@ -241,10 +230,6 @@
     margin-top: 6em;
   }
 
-  @media screen and (max-width: 425px) {
-    margin: 7em 0;
-  }
-
   .card {
     background-color: $base-white;
     width: 285px;
@@ -325,7 +310,7 @@
 
     .text {
       font-size: 16px;
-      color: $neutrals-600;
+      color: $neutrals-700;
       line-height: 19.2px;
 
       @media screen and (max-width: 1200px) {

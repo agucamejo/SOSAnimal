@@ -12,6 +12,9 @@
     letter-spacing: -1px;
     font-size: 46px;
     font-weight: 700;    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;  
+    font-family: 'mountriel-regular';
 
     @media screen and (max-width: $desktop) and (min-width: $tablet){
       font-size: 40px;
@@ -32,8 +35,8 @@
     height: 28px;
   }
 
-  @media screen and (min-width: 1025px) {
-    margin-bottom: 18px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 15px;
     width: 366px;
     height: 135px;
 
