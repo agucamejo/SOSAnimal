@@ -8,8 +8,8 @@ const HeroContact = () => {
           alt="Información útil"
           className="header-image img-perrocat"
         />
-        <h1>Información útil</h1>
-        <p>
+        <h1 className="title-info">Información útil</h1>
+        <p className="subtitle-info">
           Acá encontrarás recursos valiosos para el cuidado de tus mascotas como
           contactos de emergencia, consejos prácticos y datos a tener en cuenta.
         </p>

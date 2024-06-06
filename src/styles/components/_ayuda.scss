@@ -14,37 +14,21 @@
     padding: 1.5em 3em 0 3em;
   }
 
-  .contentTitlesColab {
-    width: 35em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .contentTitles {
+    width: 366px;
+    text-align: center;
+    margin-top: 4em;
 
-    @media screen and (max-width: $desktop) {
-      width: 80vw;
-      padding: 1.5em 2em 0 2em;
+    @media screen and (max-width: $tablet) {
+      width: 290px;
     }
 
-    .container-subtitles {
-      margin-bottom: 0;
+    .container-subtitles{
+      margin-bottom: 0px;
     }
 
-    .titleColab {
-      text-align: center;
-      margin-top: -0.8em;
-      font-size: 3em;
-      line-height: 52px;
-      font-weight: $bold;
-      font-family: 'Lato';
-      -webkit-text-stroke-width: 0px;
-
-      @media screen and (max-width: $tablet) {
-        font-size: 2.5em;
-      }
-
-      @media screen and (max-width: $mobile) {
-        font-size: 2em;
-      }
+    .subtitle {
+      color: $neutrals-900;
     }
   }
 }
@@ -150,7 +134,7 @@
   padding: 58px 0 58px 58px;
 
   @media screen and (max-width: $desktop) {
-    padding: 46px 0 46px 36px;
+    padding: 32px 0 46px 36px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -161,7 +145,7 @@
   @media screen and (max-width: 450px) {
     height: 55%;
     width: 100%;
-    padding: 58px 0 58px 10px;
+    padding: 32px 0 58px 10px;
   }
 
   .titleSocio {
@@ -382,6 +366,10 @@
     }
   }
 
+  .enlaceVoluntario{
+    width: auto;
+  }
+
   .btnVoluntario {
     font-size: 18px;
     border: none;
@@ -592,7 +580,7 @@
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
   border-radius: 24px;
-  z-index: 1000;
+  z-index: 15000;
   animation: slideIn 0.3s forwards;
 
   @media screen and (max-width: $tablet) {
@@ -629,8 +617,8 @@
   }
 
   .animationChancho {
-    width: 15em;
-    height: 15em;
+    width: 200px;
+    height: 200px;
 
     @media screen and (max-width: $tablet) {
       width: 10em;
@@ -649,6 +637,13 @@
     .textModal {
       font-weight: $bold;
       font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      
+      .titleModal{
+        margin-bottom: 1em;
+        font-weight: $bold;
+      }
 
       @media screen and (max-width: $tablet) {
         font-size: 0.9em;
@@ -668,8 +663,8 @@
       }
     }
 
-    .textModal:nth-child(2) {
-      margin-top: 0.5em;
+    .textModal:nth-child(3) {
+      margin-top: 0.3em;
 
       @media screen and (max-width: $tablet) {
         margin-top: 0.2em;

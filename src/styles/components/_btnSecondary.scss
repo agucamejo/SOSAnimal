@@ -3,7 +3,7 @@ $bg-arrow-container: #22d695;
 .btn-secondary {
   color: $neutrals-1000;
   border-radius: $radius-round;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   background-color: $secondary-400;
   cursor: pointer;
@@ -11,7 +11,7 @@ $bg-arrow-container: #22d695;
   position: relative;
   overflow: hidden;
   width: 162px;
-  height: 52px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,12 +88,10 @@ $bg-arrow-container: #22d695;
   //TABLET
   @media screen and (max-width: $desktop) and (min-width: $tablet) {
     font-size: 18px;
-    height: 47px;
   }
 
   //MOBILE
   @media screen and (max-width: $tablet) {
     font-size: 16px;
-    height: 43px;
   }
 }

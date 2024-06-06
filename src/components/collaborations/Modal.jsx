@@ -63,17 +63,21 @@ function Modal({ isOpen, onClose }) {
           loop
           src="./colaboracionImg/animacionChancho.json"
           className="animationChancho"
+          speed={0.5}
         />
 
         <section className="contentTextModal">
           <p className="textModal">
-            <span className="spanModal">Titular:</span> Fiorella Batista
+            <span className="titleModal">Datos para transferir</span> 
           </p>
           <p className="textModal">
-            <span className="spanModal">Banco:</span> Midinero
+            <span className="spanModal">Titular: </span>&nbsp; Fiorella Batista
           </p>
           <p className="textModal">
-            <span className="spanModal">N° de cuenta:</span> 6145664
+            <span className="spanModal">Banco: </span>&nbsp; Midinero
+          </p>
+          <p className="textModal">
+            <span className="spanModal">N° de cuenta:</span>&nbsp;6145664
             <IoMdCopy
               className="copy"
               onClick={(e) => handleImageClick(e, "Copiado", "6145664")}
