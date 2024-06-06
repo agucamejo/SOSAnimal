@@ -15,7 +15,7 @@ const HeroContact = () => {
         </p>
       </div>
       <div className="info-image">
-        <img src="contactImg/gatos_info.webp" alt="Gatos" />
+        <img src="./contactImg/gatos_info.webp" alt="Gatos" />
       </div>
     </div>
     </div>
