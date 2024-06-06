@@ -498,12 +498,28 @@
 
     .btnDonaciones {
       width: 178px;
-      height: 47px;
+      height: 52px;
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        height: 47px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        height: 43px;
+      }
     }
 
     .btnDonacionesSinIcono {
       width: 192px;
-      height: 47px;
+      height: 52px;
+
+      @media screen and (max-width: $desktop) and (min-width: $tablet) {
+        height: 47px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        height: 43px;
+      }
     }
   }
 }
