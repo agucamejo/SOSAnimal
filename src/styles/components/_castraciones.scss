@@ -6,8 +6,9 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: $tablet) {
-        padding: 1em 1em;
+    @media screen and (max-width: $desktop) {
+        margin-top: 32px;
+        padding: 0em 1em;
     }
   
     .contentTitles {

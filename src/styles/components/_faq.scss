@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: $desktop) {
+    padding: 32px 0;
+  }
+
   .contentTitles {
     margin-bottom: 28px;
   }
