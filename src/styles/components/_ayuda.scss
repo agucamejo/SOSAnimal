@@ -5,7 +5,7 @@
 }
 
 .colaborations {
-  padding: 4em 3.75em 0 3.75em;
+  padding: 4.5em 3.75em 0 3.75em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +18,7 @@
     width: 366px;
     text-align: center;
     margin-top: 4em;
+    margin-bottom: 2em;
 
     @media screen and (max-width: $tablet) {
       width: 290px;
@@ -161,7 +162,6 @@
 
     @media screen and (max-width: $tablet) {
       font-size: 2em;
-      line-height: 2.1em;
     }
   }
 
@@ -271,6 +271,7 @@
   -ms-border-radius: $radius-ml2;
   -o-border-radius: $radius-ml2;
   border-radius: $radius-ml2;
+  max-width: 1200px;
 
   @media screen and (max-width: $desktop) {
     width: 85vw;
@@ -310,7 +311,6 @@
   align-items: flex-end;
   gap: 26px;
   margin: 58px 58px 58px 0;
-  max-width: 482px;
 
   @media screen and (max-width: $tablet) {
     text-align: left;
@@ -330,7 +330,6 @@
 
     @media screen and (max-width: $tablet) {
       font-size: 2em;
-      line-height: 2.1em;
     }
   }
 
@@ -438,7 +437,7 @@
 
     @media screen and (max-width: $tablet) {
       font-size: 2em;
-      line-height: 2.1em;
+      margin-top: 1em;
     }
   }
 
@@ -485,8 +484,10 @@
     }
 
     .btnDonaciones {
-      width: 178px;
+      width: 192px;
       height: 52px;
+      color: $base-white;
+      background-color: $secondary-800;
 
       @media screen and (max-width: $desktop) and (min-width: $tablet) {
         height: 47px;
