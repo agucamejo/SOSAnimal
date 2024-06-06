@@ -30,6 +30,7 @@ const Footer = () => {
                   src="images/logo-footer.svg"
                   alt="Logo SOS Animal Fray Bentos"
                   className="logo-img"
+                  loading="lazy"
                 />
                 <div className="logo-text">
                   <p className='name'>
@@ -228,6 +229,7 @@ const Footer = () => {
                 src="images/perro-mini.svg"
                 alt="Perro mini"
                 className="perro-mini"
+                loading="lazy"
               />
             </p>
           </div>
