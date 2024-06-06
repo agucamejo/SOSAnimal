@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Subtitles from '../Subtitles'
+import ButtonPrimary from '../ButtonPrimary'
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Historia() {
   const [showIconMarea, setShowIconMarea] = useState(false)
@@ -159,7 +161,6 @@ function Historia() {
     setShowHistoriaRamona(false)
   }
 
-
   return (
     <section className="contentHistoria">
       <article className="contentTitles">
@@ -231,7 +232,6 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Salvador')}
             onMouseLeave={() => handleMouseLeave('Salvador')}
-            
           >
             <h3 className="titleCard">Salvador</h3>
             <button className="btn">3 años</button>
@@ -299,7 +299,6 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Chabela')}
             onMouseLeave={() => handleMouseLeave('Chabela')}
-            
           >
             <h3 className="titleCard">Chabela</h3>
             <button className="btn">13 años</button>
@@ -352,7 +351,6 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Titan')}
             onMouseLeave={() => handleMouseLeave('Titan')}
-            
           >
             <h3 className="titleCard">Titán</h3>
             <button className="btn">3 años</button>
@@ -368,13 +366,13 @@ function Historia() {
               {showHistoriaTitan && (
                 <div className="contentHistoriaTablet">
                   <p className="textCardTablet">
-                    Mucho gusto, mi nombre es Titán, me encontraron
-                    en el basurero de Fray Bentos en el 2021, ya sin fuerzas, mi cuerpo
-                    estaba completamente quemado, sin pelos y sangrando, una
-                    voluntaria me tuvo en transitorio y gracias a los cuidados
-                    del grupo y veterinarios luego de muchos meses logré
-                    recuperarme completamente, mi familia adoptiva viajó desde
-                    el departamento de Canelones para llevarme con ellos a
+                    Mucho gusto, mi nombre es Titán, me encontraron en el
+                    basurero de Fray Bentos en el 2021, ya sin fuerzas, mi
+                    cuerpo estaba completamente quemado, sin pelos y sangrando,
+                    una voluntaria me tuvo en transitorio y gracias a los
+                    cuidados del grupo y veterinarios luego de muchos meses
+                    logré recuperarme completamente, mi familia adoptiva viajó
+                    desde el departamento de Canelones para llevarme con ellos a
                     vivir, en donde pude conocer el mar.
                   </p>
                 </div>
@@ -408,7 +406,6 @@ function Historia() {
             }`}
             onMouseEnter={() => handleMouseEnter('Beethoven')}
             onMouseLeave={() => handleMouseLeave('Beethoven')}
-            
           >
             <h3 className="titleCard">Beethoven</h3>
             <button className="btn">4 años</button>
@@ -511,11 +508,17 @@ function Historia() {
               transformarlo todo. ¿Te animás a ser parte de su felicidad?
               ¡Adoptá hoy y formá parte de sus vidas!
             </p>
+            <Link to="/adoptions">
+              <ButtonPrimary text="Adopciones" className="buttonPrimary" />
+            </Link>
           </section>
         </article>
       </article>
+      <Link to="/adoptions">
+        <ButtonPrimary text="Adopciones" className="buttonPrimary2" />
+      </Link>
     </section>
   )
 }
 
-export default Historia;
+export default Historia
