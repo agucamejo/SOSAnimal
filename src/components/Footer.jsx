@@ -167,7 +167,7 @@ const Footer = () => {
               <p>AYUDA</p>
               <div className="enlaces-ayuda">
                 <Link to="/contact#faq" scroll={el => scrollWithOffset(el)}>Preguntas frecuentes</Link>
-                <Link to="/contact#emergencias" scroll={el => scrollWithOffset(el)}>Números de emergencia</Link>
+                <Link to="/contact#telephones" scroll={el => scrollWithOffset(el)}>Números de emergencia</Link>
                 <Link to="/about#charlas" scroll={el => scrollWithOffset(el)}>Charlas educativas</Link>
               </div>
             </div>

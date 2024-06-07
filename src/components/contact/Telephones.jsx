@@ -80,7 +80,7 @@ const Telephones = () => {
   }, []);
 
   return (
-    <div className="telephones-container">
+    <div className="telephones-container" id="telephones">
         <div className="contentTitles">
             <Subtitles text="Teléfonos útiles" />
             <p className="subtitle">Líneas de ayuda y asistencia </p>

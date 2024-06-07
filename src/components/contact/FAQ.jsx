@@ -33,7 +33,7 @@ function Faq() {
   }, [activeIndex])
 
   return (
-    <section className="containerFAQ">
+    <section className="containerFAQ" id="faq">
       <div className="contentTitles">
         <Subtitles text="Preguntas frecuentes" />
       </div>
