@@ -31,7 +31,17 @@
 
   @media screen and (max-width: $desktop) {
     margin: 0;
-  } 
+  }
+
+  .buttonPrimary2 {
+    margin-top: 1em;
+    margin-left: 1em;
+    visibility: hidden;
+
+    @media screen and (max-width: 955px) {
+      visibility: visible;
+    }
+  }
 }
 
 .contentCardsHistoria {
@@ -46,9 +56,10 @@
     width: 688px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $tablet) {
     max-width: 500px;
     height: auto;
+    background-color: #24d0c6;
   }
 
   @media screen and (max-width: 425px) {
@@ -67,7 +78,7 @@
     width: 688px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $tablet) {
     flex-direction: column;
     width: 500px;
     align-items: center;
@@ -96,7 +107,7 @@
       cursor: default;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: $tablet) {
       width: 359px;
       height: 262px;
       margin-bottom: 0;
@@ -143,7 +154,7 @@
       cursor: default;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: $tablet) {
       flex: none;
       width: 359px;
       height: 262px;
@@ -197,26 +208,31 @@
     .right {
       text-align: right;
     }
+
+    .buttonPrimary {
+      margin-top: 1em;
+      margin-left: 1em;
+    }
   }
 
   .rosa {
-    background: linear-gradient(180deg, #E86B7F 7%, #ECA0AC 43%);
+    background: linear-gradient(180deg, #e86b7f 7%, #eca0ac 43%);
   }
 
   .celeste {
-    background: linear-gradient(180deg, #2976E1 7.12%, #29B0E1 43.39%);
+    background: linear-gradient(180deg, #2976e1 7.12%, #29b0e1 43.39%);
   }
 
   .degrade {
-    background: linear-gradient(180deg, #6CAA1E 7%, #48CF8E 43%);
+    background: linear-gradient(180deg, #6caa1e 7%, #48cf8e 43%);
   }
 
   .anaranjado {
-    background: linear-gradient(180deg, #C3820A 7%, #F4B43F 43%);
+    background: linear-gradient(180deg, #c3820a 7%, #f4b43f 43%);
   }
 
   .aqua {
-    background: linear-gradient(180deg, #04A6A6 7%, #24D0C6 43%);
+    background: linear-gradient(180deg, #04a6a6 7%, #24d0c6 43%);
   }
 
   .fucsia {
@@ -347,7 +363,7 @@
         top: 15vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 1vh;
       }
 
@@ -364,7 +380,7 @@
         top: 15vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 3vh;
       }
 
@@ -381,7 +397,7 @@
         top: 17vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 3vh;
       }
 
@@ -398,7 +414,7 @@
         top: 12vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 0;
       }
 
@@ -415,7 +431,7 @@
         top: 15vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 1vh;
       }
 
@@ -432,7 +448,7 @@
         top: 20vh;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: $tablet) {
         top: 7.5vh;
       }
 
@@ -488,7 +504,7 @@
       -ms-border-radius: $radius-m;
       -o-border-radius: $radius-m;
       border-radius: $radius-m;
-      display:flex;
+      display: flex;
       align-items: center;
       -webkit-animation: expand-from-bottom-right 0.5s ease forwards;
       animation: expand-from-bottom-right 0.5s ease forwards;
@@ -527,7 +543,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $tablet) {
   .reverse {
     flex-direction: column;
     margin-top: -2em;
@@ -579,5 +595,9 @@
   100% {
     transform: translate(0, 0) scale(1);
     opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1);
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -o-transform: translate(0, 0) scale(1);
   }
 }
