@@ -17,10 +17,10 @@ const ImageSlider = () => {
             modules={[Autoplay, Navigation]}
             className="mySwiper"
         >
-            <SwiperSlide><img src="./aboutImg/AboutUs-1.webp" alt="Image 1" /></SwiperSlide>
-            <SwiperSlide><img src="./aboutImg/AboutUs-2.webp" alt="Image 2" /></SwiperSlide>
-            <SwiperSlide><img src="./aboutImg/AboutUs-3.webp" alt="Image 3" /></SwiperSlide>
-            <SwiperSlide><img src="./aboutImg/AboutUs-4.webp" alt="Image 4" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-1.webp" alt="Grupo de SOS Animal en una plaza" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-2.webp" alt="Grupo de SOS Animal en una feria" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-3.webp" alt="Bandera con el logo de SOS Animal" /></SwiperSlide>
+            <SwiperSlide><img src="./aboutImg/AboutUs-4.webp" alt="Grupo de SOS Animal con una mascota" /></SwiperSlide>
         </Swiper>
     );
 }
