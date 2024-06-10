@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Error = () => {
     const canonicalUrl = `https://sos-animal.vercel.app/*`;
-    const imgError = '/images/error404.png';
+    const imgError = '/images/error404.webp';
     
     return (
        <div>
