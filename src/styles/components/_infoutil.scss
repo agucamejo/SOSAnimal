@@ -54,6 +54,46 @@ p {
 
 @media (max-width: 768px) {
     .info-card {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding-left: 40px;
+    }
+
+    .info-text {
+        width: 50%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 36.48px;
+        letter-spacing: -1%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 19.2px;
+        font-family: 'Lato';
+    }
+
+    .info-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-perrocat{
+        width: 54px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .info-container{
+        padding-top: 60px;
+    }
+    .info-card {
         flex-direction: column;
         width: 100%;
         height: auto;
